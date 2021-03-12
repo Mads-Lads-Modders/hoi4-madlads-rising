@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+		LOL_comrade_rule = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.5
+        stability_factor = -0.4
+        war_support_factor = 0.1
+			}
+			#rule = {
+				#can_create_factions = yes
+			}
+		}
+  }
+}

@@ -1,0 +1,34 @@
+state=
+{
+	id=188
+	name="STATE_188"
+	manpower = 250000
+
+
+	state_category = city
+
+	history = {
+		victory_points = {
+			3288 10
+		}
+		owner = XAV
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+			3288 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = LIT
+		add_core_of = XAV
+
+		1939.3.22 = {
+			owner = GER
+			controller = GER
+		}
+	}
+	provinces={
+		3288
+	}
+}

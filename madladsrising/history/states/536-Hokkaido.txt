@@ -1,0 +1,37 @@
+
+state={
+	id=536
+	name="STATE_536"
+	manpower = 7812000
+	resources={
+		Steel=11 # was: 16
+	}
+	state_category = megalopolis
+
+	history={
+		owner = HOK
+		add_core_of = HOK
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 5
+			air_base = 5
+			10444 = {
+				naval_base = 5
+				bunker = 3
+				coastal_bunker = 3
+			}
+		}
+		victory_points = {
+			10444 15
+		}
+		victory_points = {
+			12421 5
+		}
+
+	}
+
+	provinces={
+		1512 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=82
+	name="STATE_82"
+	manpower = 2941500
+	resources={
+		aluminium=6
+	}
+
+	state_category = large_city
+
+	history={
+		victory_points = {
+			9606 15
+		}
+		owner = SRI
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 4
+		}
+		add_core_of = ROM
+		add_core_of = TRA
+		add_core_of = SRI
+	}
+
+	provinces={
+		646 662 3649 9606 11592 11608
+	}
+}

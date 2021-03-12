@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		XAV_ultranationalists = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+			}
+			#rule = {
+				#can_create_factions = yes
+			}
+		}
+  }
+}

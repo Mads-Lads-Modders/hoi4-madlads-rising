@@ -1,0 +1,2207 @@
+focus_tree = {
+	id = prussian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = XAV
+		}
+	}
+##########################
+##### Political Tree #####
+##########################
+  focus = {
+    id = XAV_first_focus
+    icon = GFX_goal_generic_demand_territory
+    #prerequisite = { focus = ITA_industrial_effort_2 }
+    x = 44
+    y = 0
+    #relative_position_id = ITA_industrial_effort_2
+    cost = 10
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_POLITICAL }
+
+    completion_reward = {
+      add_political_power = 120
+    }
+  }
+  #
+  focus = {
+    id = XAV_fascism_path1
+    icon = GFX_goal_support_fascism
+    prerequisite = { focus = XAV_first_focus }
+		mutually_exclusive = { focus = XAV_communist_path }
+    x = 12
+    y = 1
+    relative_position_id = XAV_first_focus
+    cost = 10
+    ai_will_do = {
+      factor = 1
+    }
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_POLITICAL}
+
+    completion_reward = {
+      #ticking fascism support needed
+      add_popularity = {ideology = fascism popularity= .10}
+ 		}
+    }
+    #
+    focus = {
+      id = XAV_fascism_path2
+      icon = GFX_focus_generic_military_mission
+      prerequisite = { focus = XAV_fascism_path1 }
+  		#mutually_exclusive = { focus = SRI_monarchist_path }
+      x = 0
+      y = 1
+      relative_position_id = XAV_fascism_path1
+      cost = 10
+      ai_will_do = {
+        factor = 1
+      }
+      available_if_capitulated = yes
+      search_filters = { FOCUS_FILTER_POLITICAL}
+
+      completion_reward = {
+        #ticking fascism support needed
+        add_popularity = {ideology = fascism popularity= .05}
+        add_ideas = {XAV_ultranationalists}
+
+   		}
+      }
+			#
+	    focus = {
+	      id = XAV_power_vacuum
+	      icon = GFX_focus_generic_strike_at_democracy2
+	      prerequisite = { focus = XAV_fascism_path2 }
+	  		#mutually_exclusive = { focus = SRI_monarchist_path }
+	      x = 0
+	      y = 1
+	      relative_position_id = XAV_fascism_path2
+	      cost = 10
+	      ai_will_do = {
+	        factor = 1
+	      }
+	      available_if_capitulated = yes
+	      search_filters = { FOCUS_FILTER_POLITICAL}
+
+	      completion_reward = {
+				   add_political_power = 69
+	        #ticking fascism support needed
+	        #add_popularity = {ideology = fascism popularity= .05}
+	        #add_ideas = {XAV_ultranationalists}
+
+	   		}
+	      }
+				#
+		    focus = {
+		      id = XAV_prussian_path
+		      icon = GFX_focus_ger_revive_kaiserreich
+		      prerequisite = { focus = XAV_power_vacuum }
+		  		mutually_exclusive = { focus = XAV_locke_path }
+		      x = -3
+		      y = 1
+		      relative_position_id = XAV_power_vacuum
+		      cost = 10
+		      ai_will_do = {
+		        factor = 1
+		      }
+		      available_if_capitulated = yes
+		      search_filters = { FOCUS_FILTER_POLITICAL}
+
+		      completion_reward = {
+					   add_political_power = 69
+		        #ticking fascism support needed
+		        #add_popularity = {ideology = fascism popularity= .05}
+		        #add_ideas = {XAV_ultranationalists}
+
+		   		}
+		      }
+					#
+			    focus = {
+			      id = XAV_locke_path
+			      icon = GFX_goal_generic_forceful_treaty
+			      prerequisite = { focus = XAV_power_vacuum }
+			  		mutually_exclusive = { focus = XAV_prussian_path }
+			      x = 3
+			      y = 1
+			      relative_position_id = XAV_power_vacuum
+			      cost = 10
+			      ai_will_do = {
+			        factor = 1
+			      }
+			      available_if_capitulated = yes
+			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+			      completion_reward = {
+						   add_political_power = 69
+			        #ticking fascism support needed
+			        #add_popularity = {ideology = fascism popularity= .05}
+			        #add_ideas = {XAV_ultranationalists}
+
+			   		}
+			      }
+						#
+				    focus = {
+				      id = XAV_prussian_claims
+				      icon = GFX_goal_generic_occupy_states_ongoing_war
+				      prerequisite = { focus = XAV_prussian_path }
+				  		#mutually_exclusive = { focus = XAV_locke_path }
+				      x = -5
+				      y = 1
+				      relative_position_id = XAV_prussian_path
+				      cost = 10
+				      ai_will_do = {
+				        factor = 1
+				      }
+				      available_if_capitulated = yes
+				      search_filters = { FOCUS_FILTER_POLITICAL}
+
+				      completion_reward = {
+							   add_political_power = 69
+				        #ticking fascism support needed
+				        #add_popularity = {ideology = fascism popularity= .05}
+				        #add_ideas = {XAV_ultranationalists}
+
+				   		}
+				      }
+							#
+					    focus = {
+					      id = XAV_prussian_claims_baltics
+					      icon = GFX_goal_generic_major_war
+					      prerequisite = { focus = XAV_prussian_claims }
+					  		#mutually_exclusive = { focus = XAV_locke_path }
+					      x = -3
+					      y = 1
+					      relative_position_id = XAV_prussian_claims
+					      cost = 10
+					      ai_will_do = {
+					        factor = 1
+					      }
+					      available_if_capitulated = yes
+					      search_filters = { FOCUS_FILTER_POLITICAL}
+
+					      completion_reward = {
+								   add_political_power = 69
+					        #ticking fascism support needed
+					        #add_popularity = {ideology = fascism popularity= .05}
+					        #add_ideas = {XAV_ultranationalists}
+
+					   		}
+					      }
+								#
+						    focus = {
+						      id = XAV_prussian_claims_border
+						      icon = GFX_goal_generic_major_war
+						      prerequisite = { focus = XAV_prussian_claims }
+						  		#mutually_exclusive = { focus = XAV_locke_path }
+						      x = -1
+						      y = 1
+						      relative_position_id = XAV_prussian_claims
+						      cost = 10
+						      ai_will_do = {
+						        factor = 1
+						      }
+						      available_if_capitulated = yes
+						      search_filters = { FOCUS_FILTER_POLITICAL}
+
+						      completion_reward = {
+									   add_political_power = 69
+						        #ticking fascism support needed
+						        #add_popularity = {ideology = fascism popularity= .05}
+						        #add_ideas = {XAV_ultranationalists}
+
+						   		}
+						      }
+									#
+							    focus = {
+							      id = XAV_prussian_claims_scand
+							      icon = GFX_goal_generic_major_war
+							      prerequisite = { focus = XAV_prussian_claims }
+							  		#mutually_exclusive = { focus = XAV_locke_path }
+							      x = 1
+							      y = 1
+							      relative_position_id = XAV_prussian_claims
+							      cost = 10
+							      ai_will_do = {
+							        factor = 1
+							      }
+							      available_if_capitulated = yes
+							      search_filters = { FOCUS_FILTER_POLITICAL}
+
+							      completion_reward = {
+										   add_political_power = 69
+							        #ticking fascism support needed
+							        #add_popularity = {ideology = fascism popularity= .05}
+							        #add_ideas = {XAV_ultranationalists}
+
+							   		}
+							      }
+										#
+								    focus = {
+								      id = XAV_prussian_claims_danes
+								      icon = GFX_goal_generic_major_war
+								      prerequisite = { focus = XAV_prussian_claims }
+								  		#mutually_exclusive = { focus = XAV_locke_path }
+								      x = 3
+								      y = 1
+								      relative_position_id = XAV_prussian_claims
+								      cost = 10
+								      ai_will_do = {
+								        factor = 1
+								      }
+								      available_if_capitulated = yes
+								      search_filters = { FOCUS_FILTER_POLITICAL}
+
+								      completion_reward = {
+											   add_political_power = 69
+								        #ticking fascism support needed
+								        #add_popularity = {ideology = fascism popularity= .05}
+								        #add_ideas = {XAV_ultranationalists}
+
+								   		}
+								      }
+											#
+									    focus = {
+									      id = XAV_prussian_claims_poland
+									      icon = GFX_goal_generic_more_territorial_claims
+									      prerequisite = { focus = XAV_prussian_claims_baltics }
+									  		#mutually_exclusive = { focus = XAV_locke_path }
+									      x = 0
+									      y = 1
+									      relative_position_id = XAV_prussian_claims_baltics
+									      cost = 10
+									      ai_will_do = {
+									        factor = 1
+									      }
+									      available_if_capitulated = yes
+									      search_filters = { FOCUS_FILTER_POLITICAL}
+
+									      completion_reward = {
+												   add_political_power = 69
+									        #ticking fascism support needed
+									        #add_popularity = {ideology = fascism popularity= .05}
+									        #add_ideas = {XAV_ultranationalists}
+
+									   		}
+									      }
+												#
+										    focus = {
+										      id = XAV_prussian_claims_unite_prussia
+										      icon = GFX_focus_generic_strike_at_democracy1
+										      prerequisite = { focus = XAV_prussian_claims_poland }
+										  		#mutually_exclusive = { focus = XAV_locke_path }
+										      x = 0
+										      y = 1
+										      relative_position_id = XAV_prussian_claims_poland
+										      cost = 10
+										      ai_will_do = {
+										        factor = 1
+										      }
+										      available_if_capitulated = yes
+										      search_filters = { FOCUS_FILTER_POLITICAL}
+
+										      completion_reward = {
+													   add_political_power = 69
+										        #ticking fascism support needed
+										        #add_popularity = {ideology = fascism popularity= .05}
+										        #add_ideas = {XAV_ultranationalists}
+
+										   		}
+										      }
+													#
+											    focus = {
+											      id = XAV_prussian_claims_agression
+											      icon = GFX_goal_generic_more_territorial_claims
+											      prerequisite = { focus = XAV_prussian_claims_border }
+											  		#mutually_exclusive = { focus = XAV_locke_path }
+											      x = 0
+											      y = 1
+											      relative_position_id = XAV_prussian_claims_border
+											      cost = 10
+											      ai_will_do = {
+											        factor = 1
+											      }
+											      available_if_capitulated = yes
+											      search_filters = { FOCUS_FILTER_POLITICAL}
+
+											      completion_reward = {
+														   add_political_power = 69
+											        #ticking fascism support needed
+											        #add_popularity = {ideology = fascism popularity= .05}
+											        #add_ideas = {XAV_ultranationalists}
+
+											   		}
+											      }
+														#
+												    focus = {
+												      id = XAV_prussian_claims_unite_peoples
+												      icon = GFX_goal_tripartite_pact
+												      prerequisite = { focus = XAV_prussian_claims_agression }
+												  		#mutually_exclusive = { focus = XAV_locke_path }
+												      x = 0
+												      y = 2
+												      relative_position_id = XAV_prussian_claims_agression
+												      cost = 10
+												      ai_will_do = {
+												        factor = 1
+												      }
+												      available_if_capitulated = yes
+												      search_filters = { FOCUS_FILTER_POLITICAL}
+
+												      completion_reward = {
+															   add_political_power = 69
+												        #ticking fascism support needed
+												        #add_popularity = {ideology = fascism popularity= .05}
+												        #add_ideas = {XAV_ultranationalists}
+
+												   		}
+												      }
+															#
+													    focus = {
+													      id = XAV_prussian_claims_north
+													      icon = GFX_goal_generic_more_territorial_claims
+													      prerequisite = { focus = XAV_prussian_claims_scand }
+													  		#mutually_exclusive = { focus = XAV_locke_path }
+													      x = 0
+													      y = 1
+													      relative_position_id = XAV_prussian_claims_scand
+													      cost = 10
+													      ai_will_do = {
+													        factor = 1
+													      }
+													      available_if_capitulated = yes
+													      search_filters = { FOCUS_FILTER_POLITICAL}
+
+													      completion_reward = {
+																   add_political_power = 69
+													        #ticking fascism support needed
+													        #add_popularity = {ideology = fascism popularity= .05}
+													        #add_ideas = {XAV_ultranationalists}
+
+													   		}
+													      }
+																#
+														    focus = {
+														      id = XAV_prussian_claims_finland
+														      icon = GFX_goal_generic_territory_or_war
+														      prerequisite = { focus = XAV_prussian_claims_north }
+														  		#mutually_exclusive = { focus = XAV_locke_path }
+														      x = 0
+														      y = 1
+														      relative_position_id = XAV_prussian_claims_north
+														      cost = 10
+														      ai_will_do = {
+														        factor = 1
+														      }
+														      available_if_capitulated = yes
+														      search_filters = { FOCUS_FILTER_POLITICAL}
+
+														      completion_reward = {
+																	   add_political_power = 69
+														        #ticking fascism support needed
+														        #add_popularity = {ideology = fascism popularity= .05}
+														        #add_ideas = {XAV_ultranationalists}
+
+														   		}
+														      }
+																	#
+															    focus = {
+															      id = XAV_prussian_claims_britain
+															      icon = GFX_goal_generic_more_territorial_claims
+															      prerequisite = { focus = XAV_prussian_claims_danes }
+															  		#mutually_exclusive = { focus = XAV_locke_path }
+															      x = 0
+															      y = 1
+															      relative_position_id = XAV_prussian_claims_danes
+															      cost = 10
+															      ai_will_do = {
+															        factor = 1
+															      }
+															      available_if_capitulated = yes
+															      search_filters = { FOCUS_FILTER_POLITICAL}
+
+															      completion_reward = {
+																		   add_political_power = 69
+															        #ticking fascism support needed
+															        #add_popularity = {ideology = fascism popularity= .05}
+															        #add_ideas = {XAV_ultranationalists}
+
+															   		}
+															      }
+																		#
+																    focus = {
+																      id = XAV_prussian_claims_denounce
+																      icon = GFX_focus_eng_decolonization
+																      prerequisite = { focus = XAV_prussian_claims_britain }
+																  		#mutually_exclusive = { focus = XAV_locke_path }
+																      x = 0
+																      y = 1
+																      relative_position_id = XAV_prussian_claims_britain
+																      cost = 10
+																      ai_will_do = {
+																        factor = 1
+																      }
+																      available_if_capitulated = yes
+																      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																      completion_reward = {
+																			   add_political_power = 69
+																        #ticking fascism support needed
+																        #add_popularity = {ideology = fascism popularity= .05}
+																        #add_ideas = {XAV_ultranationalists}
+
+																   		}
+																      }
+																			#
+																	    focus = {
+																	      id = XAV_secret_police
+																	      icon = GFX_goal_rhineland
+																	      prerequisite = { focus = XAV_prussian_path }
+																	  		#mutually_exclusive = { focus = XAV_locke_path }
+																	      x = 0
+																	      y = 1
+																	      relative_position_id = XAV_prussian_path
+																	      cost = 10
+																	      ai_will_do = {
+																	        factor = 1
+																	      }
+																	      available_if_capitulated = yes
+																	      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																	      completion_reward = {
+																				   add_political_power = 69
+																	        #ticking fascism support needed
+																	        #add_popularity = {ideology = fascism popularity= .05}
+																	        #add_ideas = {XAV_ultranationalists}
+
+																	   		}
+																	      }
+																				#
+																		    focus = {
+																		      id = XAV_political_stability
+																		      icon = GFX_goal_generic_propaganda
+																		      prerequisite = { focus = XAV_secret_police }
+																		  		#mutually_exclusive = { focus = XAV_locke_path }
+																		      x = 0
+																		      y = 1
+																		      relative_position_id = XAV_secret_police
+																		      cost = 10
+																		      ai_will_do = {
+																		        factor = 1
+																		      }
+																		      available_if_capitulated = yes
+																		      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																		      completion_reward = {
+																					   add_political_power = 69
+																		        #ticking fascism support needed
+																		        #add_popularity = {ideology = fascism popularity= .05}
+																		        #add_ideas = {XAV_ultranationalists}
+
+																		   		}
+																		      }
+																					#
+																			    focus = {
+																			      id = XAV_military_youth
+																			      icon = GFX_goal_generic_military_sphere
+																			      prerequisite = { focus = XAV_political_stability }
+																			  		#mutually_exclusive = { focus = XAV_locke_path }
+																			      x = 0
+																			      y = 1
+																			      relative_position_id = XAV_political_stability
+																			      cost = 10
+																			      ai_will_do = {
+																			        factor = 1
+																			      }
+																			      available_if_capitulated = yes
+																			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																			      completion_reward = {
+																						   add_political_power = 69
+																			        #ticking fascism support needed
+																			        #add_popularity = {ideology = fascism popularity= .05}
+																			        #add_ideas = {XAV_ultranationalists}
+
+																			   		}
+																			      }
+																						#
+																				    focus = {
+																				      id = XAV_oil_reserves
+																				      icon = GFX_goal_generic_oil_refinery
+																				      prerequisite = { focus = XAV_prussian_path }
+																				  		#mutually_exclusive = { focus = XAV_locke_path }
+																				      x = 2
+																				      y = 1
+																				      relative_position_id = XAV_prussian_path
+																				      cost = 10
+																				      ai_will_do = {
+																				        factor = 1
+																				      }
+																				      available_if_capitulated = yes
+																				      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																				      completion_reward = {
+																							   add_political_power = 69
+																				        #ticking fascism support needed
+																				        #add_popularity = {ideology = fascism popularity= .05}
+																				        #add_ideas = {XAV_ultranationalists}
+
+																				   		}
+																				      }
+																							#
+																					    focus = {
+																					      id = XAV_steel_industry
+																					      icon = GFX_focus_generic_steel
+																					      prerequisite = { focus = XAV_oil_reserves }
+																					  		#mutually_exclusive = { focus = XAV_locke_path }
+																					      x = 0
+																					      y = 1
+																					      relative_position_id = XAV_oil_reserves
+																					      cost = 10
+																					      ai_will_do = {
+																					        factor = 1
+																					      }
+																					      available_if_capitulated = yes
+																					      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																					      completion_reward = {
+																								   add_political_power = 69
+																					        #ticking fascism support needed
+																					        #add_popularity = {ideology = fascism popularity= .05}
+																					        #add_ideas = {XAV_ultranationalists}
+
+																					   		}
+																					      }
+																								#
+																						    focus = {
+																						      id = XAV_military_complex
+																						      icon = GFX_goal_generic_construct_mil_factory
+																						      prerequisite = { focus = XAV_steel_industry}
+																						  		#mutually_exclusive = { focus = XAV_locke_path }
+																						      x = 0
+																						      y = 1
+																						      relative_position_id = XAV_steel_industry
+																						      cost = 10
+																						      ai_will_do = {
+																						        factor = 1
+																						      }
+																						      available_if_capitulated = yes
+																						      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																						      completion_reward = {
+																									   add_political_power = 69
+																						        #ticking fascism support needed
+																						        #add_popularity = {ideology = fascism popularity= .05}
+																						        #add_ideas = {XAV_ultranationalists}
+
+																						   		}
+																						      }
+																									#
+																							    focus = {
+																							      id = XAV_social_contract
+																							      icon = GFX_goal_generic_improve_relations
+																							      prerequisite = { focus = XAV_locke_path}
+																							  		#mutually_exclusive = { focus = XAV_locke_path }
+																							      x = 0
+																							      y = 1
+																							      relative_position_id = XAV_locke_path
+																							      cost = 10
+																							      ai_will_do = {
+																							        factor = 1
+																							      }
+																							      available_if_capitulated = yes
+																							      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																							      completion_reward = {
+																										   add_political_power = 69
+																							        #ticking fascism support needed
+																							        #add_popularity = {ideology = fascism popularity= .05}
+																							        #add_ideas = {XAV_ultranationalists}
+
+																							   		}
+																							      }
+																										#
+																								    focus = {
+																								      id = XAV_property
+																								      icon = GFX_goal_generic_consumer_goods
+																								      prerequisite = { focus = XAV_social_contract}
+																								  		#mutually_exclusive = { focus = XAV_locke_path }
+																								      x = 0
+																								      y = 1
+																								      relative_position_id = XAV_social_contract
+																								      cost = 10
+																								      ai_will_do = {
+																								        factor = 1
+																								      }
+																								      available_if_capitulated = yes
+																								      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																								      completion_reward = {
+																											   add_political_power = 69
+																								        #ticking fascism support needed
+																								        #add_popularity = {ideology = fascism popularity= .05}
+																								        #add_ideas = {XAV_ultranationalists}
+
+																								   		}
+																								      }
+																											#
+																									    focus = {
+																									      id = XAV_booming_economy
+																									      icon = GFX_focus_mex_privatisation
+																									      prerequisite = { focus = XAV_property}
+																									  		#mutually_exclusive = { focus = XAV_locke_path }
+																									      x = 0
+																									      y = 1
+																									      relative_position_id = XAV_property
+																									      cost = 10
+																									      ai_will_do = {
+																									        factor = 1
+																									      }
+																									      available_if_capitulated = yes
+																									      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																									      completion_reward = {
+																												   add_political_power = 69
+																									        #ticking fascism support needed
+																									        #add_popularity = {ideology = fascism popularity= .05}
+																									        #add_ideas = {XAV_ultranationalists}
+
+																									   		}
+																									      }
+																												#
+																										    focus = {
+																										      id = XAV_religious_tolerance
+																										      icon = GFX_focus_generic_diplomatic_treaty
+																										      prerequisite = { focus = XAV_locke_path}
+																										  		#mutually_exclusive = { focus = XAV_locke_path }
+																										      x = -2
+																										      y = 1
+																										      relative_position_id = XAV_locke_path
+																										      cost = 10
+																										      ai_will_do = {
+																										        factor = 1
+																										      }
+																										      available_if_capitulated = yes
+																										      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																										      completion_reward = {
+																													   add_political_power = 69
+																										        #ticking fascism support needed
+																										        #add_popularity = {ideology = fascism popularity= .05}
+																										        #add_ideas = {XAV_ultranationalists}
+
+																										   		}
+																										      }
+																													#
+																											    focus = {
+																											      id = XAV_secularism
+																											      icon = GFX_focus_mex_restore_the_army_of_christ
+																											      prerequisite = { focus = XAV_religious_tolerance}
+																											  		#mutually_exclusive = { focus = XAV_reigious_tolerance }
+																											      x = 0
+																											      y = 1
+																											      relative_position_id = XAV_religious_tolerance
+																											      cost = 10
+																											      ai_will_do = {
+																											        factor = 1
+																											      }
+																											      available_if_capitulated = yes
+																											      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																											      completion_reward = {
+																														   add_political_power = 69
+																											        #ticking fascism support needed
+																											        #add_popularity = {ideology = fascism popularity= .05}
+																											        #add_ideas = {XAV_ultranationalists}
+
+																											   		}
+																											      }
+																														#
+																												    focus = {
+																												      id = XAV_starting_young
+																												      icon = GFX_focus_generic_military_academy
+																												      prerequisite = { focus = XAV_locke_path}
+																												  		#mutually_exclusive = { focus = XAV_locke_path }
+																												      x = 2
+																												      y = 1
+																												      relative_position_id = XAV_locke_path
+																												      cost = 10
+																												      ai_will_do = {
+																												        factor = 1
+																												      }
+																												      available_if_capitulated = yes
+																												      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																												      completion_reward = {
+																															   add_political_power = 69
+																												        #ticking fascism support needed
+																												        #add_popularity = {ideology = fascism popularity= .05}
+																												        #add_ideas = {XAV_ultranationalists}
+
+																												   		}
+																												      }
+																															#
+																													    focus = {
+																													      id = XAV_enemy_work
+																													      icon = GFX_focus_CZE_german_puppet
+																													      prerequisite = { focus = XAV_starting_young}
+																													  		#mutually_exclusive = { focus = XAV_locke_path }
+																													      x = 0
+																													      y = 1
+																													      relative_position_id = XAV_starting_young
+																													      cost = 10
+																													      ai_will_do = {
+																													        factor = 1
+																													      }
+																													      available_if_capitulated = yes
+																													      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																													      completion_reward = {
+																																   add_political_power = 69
+																													        #ticking fascism support needed
+																													        #add_popularity = {ideology = fascism popularity= .05}
+																													        #add_ideas = {XAV_ultranationalists}
+
+																													   		}
+																													      }
+																																#
+																														    focus = {
+																														      id = XAV_honoring_heritage
+																														      icon = GFX_focus_chi_british_cooperation
+																														      prerequisite = { focus = XAV_locke_path}
+																														  		#mutually_exclusive = { focus = XAV_locke_path }
+																														      x = 4
+																														      y = 1
+																														      relative_position_id = XAV_locke_path
+																														      cost = 10
+																														      ai_will_do = {
+																														        factor = 1
+																														      }
+																														      available_if_capitulated = yes
+																														      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																														      completion_reward = {
+																																	   add_political_power = 69
+																														        #ticking fascism support needed
+																														        #add_popularity = {ideology = fascism popularity= .05}
+																														        #add_ideas = {XAV_ultranationalists}
+
+																														   		}
+																														      }
+																																	#
+																															    focus = {
+																															      id = XAV_foreign_advisors
+																															      icon = GFX_goal_generic_intelligence_exchange
+																															      prerequisite = { focus = XAV_honoring_heritage}
+																															  		#mutually_exclusive = { focus = XAV_locke_path }
+																															      x = 0
+																															      y = 1
+																															      relative_position_id = XAV_honoring_heritage
+																															      cost = 10
+																															      ai_will_do = {
+																															        factor = 1
+																															      }
+																															      available_if_capitulated = yes
+																															      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																															      completion_reward = {
+																																		   add_political_power = 69
+																															        #ticking fascism support needed
+																															        #add_popularity = {ideology = fascism popularity= .05}
+																															        #add_ideas = {XAV_ultranationalists}
+
+																															   		}
+																															      }
+																																		#
+																																    focus = {
+																																      id = XAV_british_fighter
+																																      icon = GFX_goal_generic_air_fighter
+																																      prerequisite = { focus = XAV_foreign_advisors}
+																																  		#mutually_exclusive = { focus = XAV_locke_path }
+																																      x = 0
+																																      y = 1
+																																      relative_position_id = XAV_foreign_advisors
+																																      cost = 10
+																																      ai_will_do = {
+																																        factor = 1
+																																      }
+																																      available_if_capitulated = yes
+																																      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																      completion_reward = {
+																																			   add_political_power = 69
+																																        #ticking fascism support needed
+																																        #add_popularity = {ideology = fascism popularity= .05}
+																																        #add_ideas = {XAV_ultranationalists}
+
+																																   		}
+																																      }
+																																			#
+																																	    focus = {
+																																	      id = XAV_uncivilized
+																																	      icon = GFX_goal_generic_major_war
+																																	      prerequisite = { focus = XAV_locke_path}
+																																	  		#mutually_exclusive = { focus = XAV_locke_path }
+																																	      x = 8
+																																	      y = 1
+																																	      relative_position_id = XAV_locke_path
+																																	      cost = 10
+																																	      ai_will_do = {
+																																	        factor = 1
+																																	      }
+																																	      available_if_capitulated = yes
+																																	      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																	      completion_reward = {
+																																				   add_political_power = 69
+																																	        #ticking fascism support needed
+																																	        #add_popularity = {ideology = fascism popularity= .05}
+																																	        #add_ideas = {XAV_ultranationalists}
+
+																																	   		}
+																																	      }
+																																				#
+																																		    focus = {
+																																		      id = XAV_unruly_baltics
+																																		      icon = GFX_goal_generic_more_territorial_claims
+																																		      prerequisite = { focus = XAV_uncivilized}
+																																		  		#mutually_exclusive = { focus = XAV_locke_path }
+																																		      x = -2
+																																		      y = 1
+																																		      relative_position_id = XAV_uncivilized
+																																		      cost = 10
+																																		      ai_will_do = {
+																																		        factor = 1
+																																		      }
+																																		      available_if_capitulated = yes
+																																		      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																		      completion_reward = {
+																																					   add_political_power = 69
+																																		        #ticking fascism support needed
+																																		        #add_popularity = {ideology = fascism popularity= .05}
+																																		        #add_ideas = {XAV_ultranationalists}
+
+																																		   		}
+																																		      }
+																																					#
+																																			    focus = {
+																																			      id = XAV_erasing_sisu
+																																			      icon = GFX_goal_demand_sudetenland
+																																			      prerequisite = { focus = XAV_unruly_baltics}
+																																			  		#mutually_exclusive = { focus = XAV_locke_path }
+																																			      x = 0
+																																			      y = 1
+																																			      relative_position_id = XAV_unruly_baltics
+																																			      cost = 10
+																																			      ai_will_do = {
+																																			        factor = 1
+																																			      }
+																																			      available_if_capitulated = yes
+																																			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																			      completion_reward = {
+																																						   add_political_power = 69
+																																			        #ticking fascism support needed
+																																			        #add_popularity = {ideology = fascism popularity= .05}
+																																			        #add_ideas = {XAV_ultranationalists}
+
+																																			   		}
+																																			      }
+																																						#
+																																				    focus = {
+																																				      id = XAV_polish_barbarians
+																																				      icon = GFX_goal_generic_demand_territory
+																																				      prerequisite = { focus = XAV_uncivilized}
+																																				  		#mutually_exclusive = { focus = XAV_locke_path }
+																																				      x = 0
+																																				      y = 1
+																																				      relative_position_id = XAV_uncivilized
+																																				      cost = 10
+																																				      ai_will_do = {
+																																				        factor = 1
+																																				      }
+																																				      available_if_capitulated = yes
+																																				      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																				      completion_reward = {
+																																							   add_political_power = 69
+																																				        #ticking fascism support needed
+																																				        #add_popularity = {ideology = fascism popularity= .05}
+																																				        #add_ideas = {XAV_ultranationalists}
+
+																																				   		}
+																																				      }
+																																							#
+																																					    focus = {
+																																					      id = XAV_free_slovaks
+																																					      icon = GFX_goal_generic_territory_or_war
+																																					      prerequisite = { focus = XAV_polish_barbarians}
+																																					  		#mutually_exclusive = { focus = XAV_locke_path }
+																																					      x = 0
+																																					      y = 1
+																																					      relative_position_id = XAV_polish_barbarians
+																																					      cost = 10
+																																					      ai_will_do = {
+																																					        factor = 1
+																																					      }
+																																					      available_if_capitulated = yes
+																																					      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																					      completion_reward = {
+																																								   add_political_power = 69
+																																					        #ticking fascism support needed
+																																					        #add_popularity = {ideology = fascism popularity= .05}
+																																					        #add_ideas = {XAV_ultranationalists}
+
+																																					   		}
+																																					      }
+																																								#
+																																						    focus = {
+																																						      id = XAV_purge_nazism
+																																						      icon = GFX_focus_ger_oppose_hitler
+																																						      prerequisite = { focus = XAV_uncivilized}
+																																						  		#mutually_exclusive = { focus = XAV_locke_path }
+																																						      x = 2
+																																						      y = 1
+																																						      relative_position_id = XAV_uncivilized
+																																						      cost = 10
+																																						      ai_will_do = {
+																																						        factor = 1
+																																						      }
+																																						      available_if_capitulated = yes
+																																						      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																						      completion_reward = {
+																																									   add_political_power = 69
+																																						        #ticking fascism support needed
+																																						        #add_popularity = {ideology = fascism popularity= .05}
+																																						        #add_ideas = {XAV_ultranationalists}
+
+																																						   		}
+																																						      }
+																																									#
+																																							    focus = {
+																																							      id = XAV_reverse_revolution
+																																							      icon = GFX_focus_ger_strike_at_the_source
+																																							      prerequisite = { focus = XAV_purge_nazism}
+																																							  		#mutually_exclusive = { focus = XAV_locke_path }
+																																							      x = 0
+																																							      y = 1
+																																							      relative_position_id = XAV_purge_nazism
+																																							      cost = 10
+																																							      ai_will_do = {
+																																							        factor = 1
+																																							      }
+																																							      available_if_capitulated = yes
+																																							      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																							      completion_reward = {
+																																										   add_political_power = 69
+																																							        #ticking fascism support needed
+																																							        #add_popularity = {ideology = fascism popularity= .05}
+																																							        #add_ideas = {XAV_ultranationalists}
+
+																																							   		}
+																																							      }
+																																										######################################
+																																										########### Communist Path ###########
+																																										######################################
+																																								    focus = {
+																																								      id = XAV_communist_path
+																																								      icon = GFX_goal_support_communism
+																																								      prerequisite = { focus = XAV_first_focus}
+																																								  		mutually_exclusive = { focus = XAV_fascism_path1 }
+																																								      x = -10
+																																								      y = 1
+																																								      relative_position_id = XAV_first_focus
+																																								      cost = 10
+																																								      ai_will_do = {
+																																								        factor = 1
+																																								      }
+																																								      available_if_capitulated = yes
+																																								      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																								      completion_reward = {
+																																											   add_political_power = 69
+																																								        #ticking fascism support needed
+																																								        #add_popularity = {ideology = fascism popularity= .05}
+																																								        #add_ideas = {XAV_ultranationalists}
+
+																																								   		}
+																																								      }
+																																											#
+																																											focus = {
+																																												id = XAV_red_konigsburg
+																																												icon = GFX_focus_generic_soviet_politics
+																																												prerequisite = { focus = XAV_communist_path}
+																																												#mutually_exclusive = { focus = XAV_locke_path }
+																																												x = 0
+																																												y = 1
+																																												relative_position_id = XAV_communist_path
+																																												cost = 10
+																																												ai_will_do = {
+																																													factor = 1
+																																												}
+																																												available_if_capitulated = yes
+																																												search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																												completion_reward = {
+																																													 add_political_power = 69
+																																													#ticking fascism support needed
+																																													#add_popularity = {ideology = fascism popularity= .05}
+																																													#add_ideas = {XAV_ultranationalists}
+
+																																												}
+																																												}
+																																												#
+																																										    focus = {
+																																										      id = XAV_stalinism
+																																										      icon = GFX_focus_generic_join_comintern
+																																										      prerequisite = { focus = XAV_red_konigsburg}
+																																										  		mutually_exclusive = { focus = XAV_radicalize_unions }
+																																										      x = -8
+																																										      y = 1
+																																										      relative_position_id = XAV_red_konigsburg
+																																										      cost = 10
+																																										      ai_will_do = {
+																																										        factor = 1
+																																										      }
+																																										      available_if_capitulated = yes
+																																										      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																										      completion_reward = {
+																																													   add_political_power = 69
+																																										        #ticking fascism support needed
+																																										        #add_popularity = {ideology = fascism popularity= .05}
+																																										        #add_ideas = {XAV_ultranationalists}
+
+																																										   		}
+																																										      }
+																																											#
+																																									    focus = {
+																																									      id = XAV_great_purge
+																																									      icon = GFX_goal_generic_war_with_comintern
+																																									      prerequisite = { focus = XAV_stalinism}
+																																									  		#mutually_exclusive = { focus = XAV_locke_path }
+																																									      x = 0
+																																									      y = 1
+																																									      relative_position_id = XAV_stalinism
+																																									      cost = 10
+																																									      ai_will_do = {
+																																									        factor = 1
+																																									      }
+																																									      available_if_capitulated = yes
+																																									      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																									      completion_reward = {
+																																												   add_political_power = 69
+																																									        #ticking fascism support needed
+																																									        #add_popularity = {ideology = fascism popularity= .05}
+																																									        #add_ideas = {XAV_ultranationalists}
+
+																																									   		}
+																																									      }
+																																												#
+																																										    focus = {
+																																										      id = XAV_legit_politics
+																																										      icon = GFX_goal_generic_forceful_treaty
+																																										      prerequisite = { focus = XAV_great_purge}
+																																										  		#mutually_exclusive = { focus = XAV_locke_path }
+																																										      x = -4
+																																										      y = 1
+																																										      relative_position_id = XAV_great_purge
+																																										      cost = 10
+																																										      ai_will_do = {
+																																										        factor = 1
+																																										      }
+																																										      available_if_capitulated = yes
+																																										      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																										      completion_reward = {
+																																													   add_political_power = 69
+																																										        #ticking fascism support needed
+																																										        #add_popularity = {ideology = fascism popularity= .05}
+																																										        #add_ideas = {XAV_ultranationalists}
+
+																																										   		}
+																																										      }
+																																													#
+																																											    focus = {
+																																											      id = XAV_smash_unions
+																																											      icon = GFX_goal_generic_political_pressure
+																																											      prerequisite = { focus = XAV_great_purge}
+																																											  		#mutually_exclusive = { focus = XAV_locke_path }
+																																											      x = -2
+																																											      y = 1
+																																											      relative_position_id = XAV_great_purge
+																																											      cost = 10
+																																											      ai_will_do = {
+																																											        factor = 1
+																																											      }
+																																											      available_if_capitulated = yes
+																																											      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																											      completion_reward = {
+																																														   add_political_power = 69
+																																											        #ticking fascism support needed
+																																											        #add_popularity = {ideology = fascism popularity= .05}
+																																											        #add_ideas = {XAV_ultranationalists}
+
+																																											   		}
+																																											      }
+																																														#
+																																												    focus = {
+																																												      id = XAV_cleanse_army
+																																												      icon = GFX_goal_generic_more_territorial_claims
+																																												      prerequisite = { focus = XAV_great_purge}
+																																												  		#mutually_exclusive = { focus = XAV_locke_path }
+																																												      x = 0
+																																												      y = 1
+																																												      relative_position_id = XAV_great_purge
+																																												      cost = 10
+																																												      ai_will_do = {
+																																												        factor = 1
+																																												      }
+																																												      available_if_capitulated = yes
+																																												      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																												      completion_reward = {
+																																															   add_political_power = 69
+																																												        #ticking fascism support needed
+																																												        #add_popularity = {ideology = fascism popularity= .05}
+																																												        #add_ideas = {XAV_ultranationalists}
+
+																																												   		}
+																																												      }
+																																															#
+																																													    focus = {
+																																													      id = XAV_purify_navy
+																																													      icon = GFX_goal_generic_amphibious_assault
+																																													      prerequisite = { focus = XAV_great_purge}
+																																													  		#mutually_exclusive = { focus = XAV_locke_path }
+																																													      x = 2
+																																													      y = 1
+																																													      relative_position_id = XAV_great_purge
+																																													      cost = 10
+																																													      ai_will_do = {
+																																													        factor = 1
+																																													      }
+																																													      available_if_capitulated = yes
+																																													      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																													      completion_reward = {
+																																																   add_political_power = 69
+																																													        #ticking fascism support needed
+																																													        #add_popularity = {ideology = fascism popularity= .05}
+																																													        #add_ideas = {XAV_ultranationalists}
+
+																																													   		}
+																																													      }
+																																																#
+																																														    focus = {
+																																														      id = XAV_weed_air
+																																														      icon = GFX_goal_generic_build_airforce
+																																														      prerequisite = { focus = XAV_great_purge}
+																																														  		#mutually_exclusive = { focus = XAV_locke_path }
+																																														      x = 4
+																																														      y = 1
+																																														      relative_position_id = XAV_great_purge
+																																														      cost = 10
+																																														      ai_will_do = {
+																																														        factor = 1
+																																														      }
+																																														      available_if_capitulated = yes
+																																														      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																														      completion_reward = {
+																																																	   add_political_power = 69
+																																														        #ticking fascism support needed
+																																														        #add_popularity = {ideology = fascism popularity= .05}
+																																														        #add_ideas = {XAV_ultranationalists}
+
+																																														   		}
+																																														      }
+																																																	#
+																																															    focus = {
+																																															      id = XAV_new_soviet_prussia
+																																															      icon = GFX_focus_ger_great_red_menace
+																																															      prerequisite = { focus = XAV_legit_politics }
+																																																		prerequisite = { focus = XAV_smash_unions }
+																																																		prerequisite = { focus = XAV_cleanse_army }
+																																																		prerequisite = { focus = XAV_purify_navy }
+																																																		prerequisite = { focus = XAV_weed_air }
+																																															  		#mutually_exclusive = { focus = XAV_locke_path }
+																																															      x = 0
+																																															      y = 1
+																																															      relative_position_id = XAV_cleanse_army
+																																															      cost = 10
+																																															      ai_will_do = {
+																																															        factor = 1
+																																															      }
+																																															      available_if_capitulated = yes
+																																															      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																															      completion_reward = {
+																																																		   add_political_power = 69
+																																															        #ticking fascism support needed
+																																															        #add_popularity = {ideology = fascism popularity= .05}
+																																															        #add_ideas = {XAV_ultranationalists}
+
+																																															   		}
+																																															      }
+																																																		#
+																																																    focus = {
+																																																      id = XAV_five_year_plan
+																																																      icon = GFX_goal_generic_construct_civ_factory
+																																																      prerequisite = { focus = XAV_new_soviet_prussia}
+																																																  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																      x = -3
+																																																      y = 1
+																																																      relative_position_id = XAV_new_soviet_prussia
+																																																      cost = 10
+																																																      ai_will_do = {
+																																																        factor = 1
+																																																      }
+																																																      available_if_capitulated = yes
+																																																      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																      completion_reward = {
+																																																			   add_political_power = 69
+																																																        #ticking fascism support needed
+																																																        #add_popularity = {ideology = fascism popularity= .05}
+																																																        #add_ideas = {XAV_ultranationalists}
+
+																																																   		}
+																																																      }
+																																																			#
+																																																	    focus = {
+																																																	      id = XAV_look_to_soviets
+																																																	      icon = GFX_goal_tripartite_pact
+																																																	      prerequisite = { focus = XAV_new_soviet_prussia}
+																																																	  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																	      x = 0
+																																																	      y = 1
+																																																	      relative_position_id = XAV_new_soviet_prussia
+																																																	      cost = 10
+																																																	      ai_will_do = {
+																																																	        factor = 1
+																																																	      }
+																																																	      available_if_capitulated = yes
+																																																	      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																	      completion_reward = {
+																																																				   add_political_power = 69
+																																																	        #ticking fascism support needed
+																																																	        #add_popularity = {ideology = fascism popularity= .05}
+																																																	        #add_ideas = {XAV_ultranationalists}
+
+																																																	   		}
+																																																	      }
+																																																				#
+																																																		    focus = {
+																																																		      id = XAV_monitor_soviets
+																																																		      icon = GFX_focus_eng_expose_the_belly_of_the_bear
+																																																		      prerequisite = { focus = XAV_new_soviet_prussia}
+																																																		  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																		      x = 2
+																																																		      y = 1
+																																																		      relative_position_id = XAV_new_soviet_prussia
+																																																		      cost = 10
+																																																		      ai_will_do = {
+																																																		        factor = 1
+																																																		      }
+																																																		      available_if_capitulated = yes
+																																																		      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																		      completion_reward = {
+																																																					   add_political_power = 69
+																																																		        #ticking fascism support needed
+																																																		        #add_popularity = {ideology = fascism popularity= .05}
+																																																		        #add_ideas = {XAV_ultranationalists}
+
+																																																		   		}
+																																																		      }
+																																																					#
+																																																			    focus = {
+																																																			      id = XAV_boost_civilian_industry
+																																																			      icon = GFX_goal_generic_soviet_construction
+																																																			      prerequisite = { focus = XAV_five_year_plan}
+																																																			  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																			      x = -1
+																																																			      y = 1
+																																																			      relative_position_id = XAV_five_year_plan
+																																																			      cost = 10
+																																																			      ai_will_do = {
+																																																			        factor = 1
+																																																			      }
+																																																			      available_if_capitulated = yes
+																																																			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																			      completion_reward = {
+																																																						   add_political_power = 69
+																																																			        #ticking fascism support needed
+																																																			        #add_popularity = {ideology = fascism popularity= .05}
+																																																			        #add_ideas = {XAV_ultranationalists}
+
+																																																			   		}
+																																																			      }
+																																																						#
+																																																				    focus = {
+																																																				      id = XAV_exploit_resources
+																																																				      icon = GFX_focus_generic_steel
+																																																				      prerequisite = { focus = XAV_boost_civilian_industry}
+																																																				  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																				      x = 0
+																																																				      y = 1
+																																																				      relative_position_id = XAV_boost_civilian_industry
+																																																				      cost = 10
+																																																				      ai_will_do = {
+																																																				        factor = 1
+																																																				      }
+																																																				      available_if_capitulated = yes
+																																																				      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																				      completion_reward = {
+																																																							   add_political_power = 69
+																																																				        #ticking fascism support needed
+																																																				        #add_popularity = {ideology = fascism popularity= .05}
+																																																				        #add_ideas = {XAV_ultranationalists}
+
+																																																				   		}
+																																																				      }
+																																																							#
+																																																					    focus = {
+																																																					      id = XAV_war_preparations
+																																																					      icon = GFX_goal_generic_construct_mil_factory
+																																																					      prerequisite = { focus = XAV_exploit_resources}
+																																																					  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																					      x = 0
+																																																					      y = 1
+																																																					      relative_position_id = XAV_exploit_resources
+																																																					      cost = 10
+																																																					      ai_will_do = {
+																																																					        factor = 1
+																																																					      }
+																																																					      available_if_capitulated = yes
+																																																					      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																					      completion_reward = {
+																																																								   add_political_power = 69
+																																																					        #ticking fascism support needed
+																																																					        #add_popularity = {ideology = fascism popularity= .05}
+																																																					        #add_ideas = {XAV_ultranationalists}
+
+																																																					   		}
+																																																					      }
+																																																								#
+																																																						    focus = {
+																																																						      id = XAV_militarization
+																																																						      icon = GFX_goal_generic_construct_mil_factory
+																																																						      prerequisite = { focus = XAV_five_year_plan}
+																																																						  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																						      x = 1
+																																																						      y = 1
+																																																						      relative_position_id = XAV_five_year_plan
+																																																						      cost = 10
+																																																						      ai_will_do = {
+																																																						        factor = 1
+																																																						      }
+																																																						      available_if_capitulated = yes
+																																																						      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																						      completion_reward = {
+																																																									   add_political_power = 69
+																																																						        #ticking fascism support needed
+																																																						        #add_popularity = {ideology = fascism popularity= .05}
+																																																						        #add_ideas = {XAV_ultranationalists}
+
+																																																						   		}
+																																																						      }
+																																																									#
+																																																							    focus = {
+																																																							      id = XAV_tractor_tanks
+																																																							      icon = GFX_focus_prc_agrarian_socialism
+																																																							      prerequisite = { focus = XAV_militarization}
+																																																							  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																							      x = 0
+																																																							      y = 1
+																																																							      relative_position_id = XAV_militarization
+																																																							      cost = 10
+																																																							      ai_will_do = {
+																																																							        factor = 1
+																																																							      }
+																																																							      available_if_capitulated = yes
+																																																							      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																							      completion_reward = {
+																																																										   add_political_power = 69
+																																																							        #ticking fascism support needed
+																																																							        #add_popularity = {ideology = fascism popularity= .05}
+																																																							        #add_ideas = {XAV_ultranationalists}
+
+																																																							   		}
+																																																							      }
+																																																										#
+																																																								    focus = {
+																																																								      id = XAV_fuel_reserves
+																																																								      icon = GFX_goal_generic_oil_refinery
+																																																								      prerequisite = { focus = XAV_tractor_tanks}
+																																																								  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																								      x = 0
+																																																								      y = 1
+																																																								      relative_position_id = XAV_tractor_tanks
+																																																								      cost = 10
+																																																								      ai_will_do = {
+																																																								        factor = 1
+																																																								      }
+																																																								      available_if_capitulated = yes
+																																																								      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																								      completion_reward = {
+																																																											   add_political_power = 69
+																																																								        #ticking fascism support needed
+																																																								        #add_popularity = {ideology = fascism popularity= .05}
+																																																								        #add_ideas = {XAV_ultranationalists}
+
+																																																								   		}
+																																																								      }
+																																																											#
+																																																									    focus = {
+																																																									      id = XAV_soviet_advisors
+																																																									      icon = GFX_focus_chi_mission_to_the_soviet_union
+																																																									      prerequisite = { focus = XAV_look_to_soviets}
+																																																									  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																									      x = 0
+																																																									      y = 1
+																																																									      relative_position_id = XAV_look_to_soviets
+																																																									      cost = 10
+																																																									      ai_will_do = {
+																																																									        factor = 1
+																																																									      }
+																																																									      available_if_capitulated = yes
+																																																									      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																									      completion_reward = {
+																																																												   add_political_power = 69
+																																																									        #ticking fascism support needed
+																																																									        #add_popularity = {ideology = fascism popularity= .05}
+																																																									        #add_ideas = {XAV_ultranationalists}
+
+																																																									   		}
+																																																									      }
+																																																												#
+																																																										    focus = {
+																																																										      id = XAV_join_comintern
+																																																										      icon = GFX_focus_generic_join_comintern
+																																																										      prerequisite = { focus = XAV_soviet_advisors}
+																																																										  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																										      x = 0
+																																																										      y = 1
+																																																										      relative_position_id = XAV_soviet_advisors
+																																																										      cost = 10
+																																																										      ai_will_do = {
+																																																										        factor = 1
+																																																										      }
+																																																										      available_if_capitulated = yes
+																																																										      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																										      completion_reward = {
+																																																													   add_political_power = 69
+																																																										        #ticking fascism support needed
+																																																										        #add_popularity = {ideology = fascism popularity= .05}
+																																																										        #add_ideas = {XAV_ultranationalists}
+
+																																																										   		}
+																																																										      }
+																																																													#
+																																																											    focus = {
+																																																											      id = XAV_soviet_armor
+																																																											      icon = GFX_goal_generic_army_tanks
+																																																											      prerequisite = { focus = XAV_join_comintern}
+																																																											  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																											      x = 0
+																																																											      y = 1
+																																																											      relative_position_id = XAV_join_comintern
+																																																											      cost = 10
+																																																											      ai_will_do = {
+																																																											        factor = 1
+																																																											      }
+																																																											      available_if_capitulated = yes
+																																																											      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																											      completion_reward = {
+																																																														   add_political_power = 69
+																																																											        #ticking fascism support needed
+																																																											        #add_popularity = {ideology = fascism popularity= .05}
+																																																											        #add_ideas = {XAV_ultranationalists}
+
+																																																											   		}
+																																																											      }
+																																																														#
+																																																												    focus = {
+																																																												      id = XAV_women_workforce
+																																																												      icon = GFX_focus_generic_military_mission
+																																																												      prerequisite = { focus = XAV_monitor_soviets}
+																																																												  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																												      x = 0
+																																																												      y = 1
+																																																												      relative_position_id = XAV_monitor_soviets
+																																																												      cost = 10
+																																																												      ai_will_do = {
+																																																												        factor = 1
+																																																												      }
+																																																												      available_if_capitulated = yes
+																																																												      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																												      completion_reward = {
+																																																															   add_political_power = 69
+																																																												        #ticking fascism support needed
+																																																												        #add_popularity = {ideology = fascism popularity= .05}
+																																																												        #add_ideas = {XAV_ultranationalists}
+
+																																																												   		}
+																																																												      }
+																																																															#
+																																																													    focus = {
+																																																													      id = XAV_enigma_code
+																																																													      icon = GFX_focus_generic_cryptologic_bomb
+																																																													      prerequisite = { focus = XAV_women_workforce}
+																																																													  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																													      x = 0
+																																																													      y = 1
+																																																													      relative_position_id = XAV_women_workforce
+																																																													      cost = 10
+																																																													      ai_will_do = {
+																																																													        factor = 1
+																																																													      }
+																																																													      available_if_capitulated = yes
+																																																													      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																													      completion_reward = {
+																																																																   add_political_power = 69
+																																																													        #ticking fascism support needed
+																																																													        #add_popularity = {ideology = fascism popularity= .05}
+																																																													        #add_ideas = {XAV_ultranationalists}
+
+																																																													   		}
+																																																													      }
+																																																																#
+																																																																focus = {
+																																																																	id = XAV_radicalize_unions
+																																																																	icon = GFX_focus_YUG_pan_slavic_congress
+																																																																	prerequisite = { focus = XAV_red_konigsburg}
+																																																																	mutually_exclusive = { focus = XAV_stalinism }
+																																																																	x = 3
+																																																																	y = 1
+																																																																	relative_position_id = XAV_red_konigsburg
+																																																																	cost = 10
+																																																																	ai_will_do = {
+																																																																		factor = 1
+																																																																	}
+																																																																	available_if_capitulated = yes
+																																																																	search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																	completion_reward = {
+																																																																		 add_political_power = 69
+																																																																		#ticking fascism support needed
+																																																																		#add_popularity = {ideology = fascism popularity= .05}
+																																																																		#add_ideas = {XAV_ultranationalists}
+
+																																																																	}
+																																																																	}
+																																																																	#
+																																																															    focus = {
+																																																															      id = XAV_party_instability
+																																																															      icon = GFX_goal_generic_war_with_comintern
+																																																															      prerequisite = { focus = XAV_radicalize_unions}
+																																																															  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																															      x = 0
+																																																															      y = 1
+																																																															      relative_position_id = XAV_radicalize_unions
+																																																															      cost = 10
+																																																															      ai_will_do = {
+																																																															        factor = 1
+																																																															      }
+																																																															      available_if_capitulated = yes
+																																																															      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																															      completion_reward = {
+																																																																		   add_political_power = 69
+																																																															        #ticking fascism support needed
+																																																															        #add_popularity = {ideology = fascism popularity= .05}
+																																																															        #add_ideas = {XAV_ultranationalists}
+
+																																																															   		}
+																																																															      }
+																																																																		#
+																																																																    focus = {
+																																																																      id = XAV_hans_sauf
+																																																																      icon = GFX_goal_anschluss
+																																																																      prerequisite = { focus = XAV_party_instability}
+																																																																  		mutually_exclusive = { focus = XAV_ernst_meyer }
+																																																																      x = -1
+																																																																      y = 1
+																																																																      relative_position_id = XAV_party_instability
+																																																																      cost = 10
+																																																																      ai_will_do = {
+																																																																        factor = 1
+																																																																      }
+																																																																      available_if_capitulated = yes
+																																																																      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																      completion_reward = {
+																																																																			   add_political_power = 69
+																																																																        #ticking fascism support needed
+																																																																        #add_popularity = {ideology = fascism popularity= .05}
+																																																																        #add_ideas = {XAV_ultranationalists}
+
+																																																																   		}
+																																																																      }
+																																																																			#
+																																																																	    focus = {
+																																																																	      id = XAV_ernst_meyer
+																																																																	      icon = GFX_focus_chi_mission_to_germany
+																																																																	      prerequisite = { focus = XAV_party_instability}
+																																																																	  		mutually_exclusive = { focus = XAV_hans_sauf }
+																																																																	      x = 1
+																																																																	      y = 1
+																																																																	      relative_position_id = XAV_party_instability
+																																																																	      cost = 10
+																																																																	      ai_will_do = {
+																																																																	        factor = 1
+																																																																	      }
+																																																																	      available_if_capitulated = yes
+																																																																	      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																	      completion_reward = {
+																																																																				   add_political_power = 69
+																																																																	        #ticking fascism support needed
+																																																																	        #add_popularity = {ideology = fascism popularity= .05}
+																																																																	        #add_ideas = {XAV_ultranationalists}
+
+																																																																	   		}
+																																																																	      }
+																																																																				#
+																																																																		    focus = {
+																																																																		      id = XAV_exile_germans
+																																																																		      icon = GFX_goal_generic_forceful_treaty
+																																																																		      prerequisite = { focus = XAV_hans_sauf}
+																																																																		  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																		      x = 0
+																																																																		      y = 1
+																																																																		      relative_position_id = XAV_hans_sauf
+																																																																		      cost = 10
+																																																																		      ai_will_do = {
+																																																																		        factor = 1
+																																																																		      }
+																																																																		      available_if_capitulated = yes
+																																																																		      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																		      completion_reward = {
+																																																																					   add_political_power = 69
+																																																																		        #ticking fascism support needed
+																																																																		        #add_popularity = {ideology = fascism popularity= .05}
+																																																																		        #add_ideas = {XAV_ultranationalists}
+
+																																																																		   		}
+																																																																		      }
+																																																																					#
+																																																																			    focus = {
+																																																																			      id = XAV_konigsburg_home
+																																																																			      icon = GFX_focus_ger_strike_at_the_source
+																																																																			      prerequisite = { focus = XAV_exile_germans}
+																																																																			  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																			      x = 0
+																																																																			      y = 1
+																																																																			      relative_position_id = XAV_exile_germans
+																																																																			      cost = 10
+																																																																			      ai_will_do = {
+																																																																			        factor = 1
+																																																																			      }
+																																																																			      available_if_capitulated = yes
+																																																																			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																			      completion_reward = {
+																																																																						   add_political_power = 69
+																																																																			        #ticking fascism support needed
+																																																																			        #add_popularity = {ideology = fascism popularity= .05}
+																																																																			        #add_ideas = {XAV_ultranationalists}
+
+																																																																			   		}
+																																																																			      }
+																																																																						#
+																																																																				    focus = {
+																																																																				      id = XAV_germans_in_arms
+																																																																				      icon = GFX_focus_attack_germany
+																																																																				      prerequisite = { focus = XAV_ernst_meyer}
+																																																																				  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																				      x = 0
+																																																																				      y = 1
+																																																																				      relative_position_id = XAV_ernst_meyer
+																																																																				      cost = 10
+																																																																				      ai_will_do = {
+																																																																				        factor = 1
+																																																																				      }
+																																																																				      available_if_capitulated = yes
+																																																																				      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																				      completion_reward = {
+																																																																							   add_political_power = 69
+																																																																				        #ticking fascism support needed
+																																																																				        #add_popularity = {ideology = fascism popularity= .05}
+																																																																				        #add_ideas = {XAV_ultranationalists}
+
+																																																																				   		}
+																																																																				      }
+																																																																							#
+																																																																					    focus = {
+																																																																					      id = XAV_expanding_abroad
+																																																																					      icon = GFX_goal_generic_military_sphere
+																																																																					      prerequisite = { focus = XAV_germans_in_arms}
+																																																																					  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																					      x = 0
+																																																																					      y = 1
+																																																																					      relative_position_id = XAV_germans_in_arms
+																																																																					      cost = 10
+																																																																					      ai_will_do = {
+																																																																					        factor = 1
+																																																																					      }
+																																																																					      available_if_capitulated = yes
+																																																																					      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																					      completion_reward = {
+																																																																								   add_political_power = 69
+																																																																					        #ticking fascism support needed
+																																																																					        #add_popularity = {ideology = fascism popularity= .05}
+																																																																					        #add_ideas = {XAV_ultranationalists}
+
+																																																																					   		}
+																																																																					      }
+																																																																								#
+																																																																								focus = {
+																																																																									id = XAV_peoples_state
+																																																																									icon = GFX_focus_generic_join_comintern
+																																																																									prerequisite = { focus = XAV_expanding_abroad}
+																																																																									prerequisite = { focus = XAV_konigsburg_home}
+																																																																									#mutually_exclusive = { focus = XAV_locke_path }
+																																																																									x = 1
+																																																																									y = 1
+																																																																									relative_position_id = XAV_konigsburg_home
+																																																																									cost = 10
+																																																																									ai_will_do = {
+																																																																										factor = 1
+																																																																									}
+																																																																									available_if_capitulated = yes
+																																																																									search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																									completion_reward = {
+																																																																										 add_political_power = 69
+																																																																										#ticking fascism support needed
+																																																																										#add_popularity = {ideology = fascism popularity= .05}
+																																																																										#add_ideas = {XAV_ultranationalists}
+
+																																																																									}
+																																																																									}
+																																																																									#
+																																																																							    focus = {
+																																																																							      id = XAV_education_reform
+																																																																							      icon = GFX_focus_generic_socialist_science
+																																																																							      prerequisite = { focus = XAV_peoples_state}
+																																																																							  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																							      x = -2
+																																																																							      y = 1
+																																																																							      relative_position_id = XAV_peoples_state
+																																																																							      cost = 10
+																																																																							      ai_will_do = {
+																																																																							        factor = 1
+																																																																							      }
+																																																																							      available_if_capitulated = yes
+																																																																							      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																							      completion_reward = {
+																																																																										   add_political_power = 69
+																																																																							        #ticking fascism support needed
+																																																																							        #add_popularity = {ideology = fascism popularity= .05}
+																																																																							        #add_ideas = {XAV_ultranationalists}
+
+																																																																							   		}
+																																																																							      }
+																																																																										#
+																																																																								    focus = {
+																																																																								      id = XAV_red_guard
+																																																																								      icon = GFX_focus_generic_manpower
+																																																																								      prerequisite = { focus = XAV_education_reform}
+																																																																								  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																								      x = 0
+																																																																								      y = 1
+																																																																								      relative_position_id = XAV_education_reform
+																																																																								      cost = 10
+																																																																								      ai_will_do = {
+																																																																								        factor = 1
+																																																																								      }
+																																																																								      available_if_capitulated = yes
+																																																																								      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																								      completion_reward = {
+																																																																											   add_political_power = 69
+																																																																								        #ticking fascism support needed
+																																																																								        #add_popularity = {ideology = fascism popularity= .05}
+																																																																								        #add_ideas = {XAV_ultranationalists}
+
+																																																																								   		}
+																																																																								      }
+																																																																											#
+																																																																									    focus = {
+																																																																									      id = XAV_next_gen
+																																																																									      icon = GFX_focus_generic_military_academy
+																																																																									      prerequisite = { focus = XAV_red_guard}
+																																																																									  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																									      x = 0
+																																																																									      y = 1
+																																																																									      relative_position_id = XAV_red_guard
+																																																																									      cost = 10
+																																																																									      ai_will_do = {
+																																																																									        factor = 1
+																																																																									      }
+																																																																									      available_if_capitulated = yes
+																																																																									      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																									      completion_reward = {
+																																																																												   add_political_power = 69
+																																																																									        #ticking fascism support needed
+																																																																									        #add_popularity = {ideology = fascism popularity= .05}
+																																																																									        #add_ideas = {XAV_ultranationalists}
+
+																																																																									   		}
+																																																																									      }
+																																																																												#
+																																																																										    focus = {
+																																																																										      id = XAV_seizing_industries
+																																																																										      icon = GFX_goal_generic_soviet_construction
+																																																																										      prerequisite = { focus = XAV_peoples_state}
+																																																																										  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																										      x = 0
+																																																																										      y = 1
+																																																																										      relative_position_id = XAV_peoples_state
+																																																																										      cost = 10
+																																																																										      ai_will_do = {
+																																																																										        factor = 1
+																																																																										      }
+																																																																										      available_if_capitulated = yes
+																																																																										      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																										      completion_reward = {
+																																																																													   add_political_power = 69
+																																																																										        #ticking fascism support needed
+																																																																										        #add_popularity = {ideology = fascism popularity= .05}
+																																																																										        #add_ideas = {XAV_ultranationalists}
+
+																																																																										   		}
+																																																																										      }
+																																																																													#
+																																																																											    focus = {
+																																																																											      id = XAV_claim_resources
+																																																																											      icon = GFX_goal_generic_construct_civilian
+																																																																											      prerequisite = { focus = XAV_seizing_industries}
+																																																																											  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																											      x = 0
+																																																																											      y = 1
+																																																																											      relative_position_id = XAV_seizing_industries
+																																																																											      cost = 10
+																																																																											      ai_will_do = {
+																																																																											        factor = 1
+																																																																											      }
+																																																																											      available_if_capitulated = yes
+																																																																											      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																											      completion_reward = {
+																																																																														   add_political_power = 69
+																																																																											        #ticking fascism support needed
+																																																																											        #add_popularity = {ideology = fascism popularity= .05}
+																																																																											        #add_ideas = {XAV_ultranationalists}
+
+																																																																											   		}
+																																																																											      }
+																																																																														#
+																																																																												    focus = {
+																																																																												      id = XAV_prussian_hammer
+																																																																												      icon = GFX_focus_generic_strike_at_democracy1
+																																																																												      prerequisite = { focus = XAV_claim_resources}
+																																																																												  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																												      x = 0
+																																																																												      y = 1
+																																																																												      relative_position_id = XAV_claim_resources
+																																																																												      cost = 10
+																																																																												      ai_will_do = {
+																																																																												        factor = 1
+																																																																												      }
+																																																																												      available_if_capitulated = yes
+																																																																												      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																												      completion_reward = {
+																																																																															   add_political_power = 69
+																																																																												        #ticking fascism support needed
+																																																																												        #add_popularity = {ideology = fascism popularity= .05}
+																																																																												        #add_ideas = {XAV_ultranationalists}
+
+																																																																												   		}
+																																																																												      }
+																																																																															#
+																																																																													    focus = {
+																																																																													      id = XAV_prussian_pot
+																																																																													      icon = GFX_goal_generic_national_unity
+																																																																													      prerequisite = { focus = XAV_peoples_state}
+																																																																													  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																													      x = 2
+																																																																													      y = 1
+																																																																													      relative_position_id = XAV_peoples_state
+																																																																													      cost = 10
+																																																																													      ai_will_do = {
+																																																																													        factor = 1
+																																																																													      }
+																																																																													      available_if_capitulated = yes
+																																																																													      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																													      completion_reward = {
+																																																																																   add_political_power = 69
+																																																																													        #ticking fascism support needed
+																																																																													        #add_popularity = {ideology = fascism popularity= .05}
+																																																																													        #add_ideas = {XAV_ultranationalists}
+
+																																																																													   		}
+																																																																													      }
+																																																																																#
+																																																																														    focus = {
+																																																																														      id = XAV_equality_all
+																																																																														      icon = GFX_goal_generic_neutrality_focus
+																																																																														      prerequisite = { focus = XAV_prussian_pot}
+																																																																														  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																														      x = 0
+																																																																														      y = 1
+																																																																														      relative_position_id = XAV_prussian_pot
+																																																																														      cost = 10
+																																																																														      ai_will_do = {
+																																																																														        factor = 1
+																																																																														      }
+																																																																														      available_if_capitulated = yes
+																																																																														      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																														      completion_reward = {
+																																																																																	   add_political_power = 69
+																																																																														        #ticking fascism support needed
+																																																																														        #add_popularity = {ideology = fascism popularity= .05}
+																																																																														        #add_ideas = {XAV_ultranationalists}
+
+																																																																														   		}
+																																																																														      }
+																																																																																	#
+																																																																															    focus = {
+																																																																															      id = XAV_true_red_haven
+																																																																															      icon = GFX_focus_prc_maoism
+																																																																															      prerequisite = { focus = XAV_equality_all}
+																																																																															  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																															      x = 0
+																																																																															      y = 1
+																																																																															      relative_position_id = XAV_equality_all
+																																																																															      cost = 10
+																																																																															      ai_will_do = {
+																																																																															        factor = 1
+																																																																															      }
+																																																																															      available_if_capitulated = yes
+																																																																															      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																															      completion_reward = {
+																																																																																		   add_political_power = 69
+																																																																															        #ticking fascism support needed
+																																																																															        #add_popularity = {ideology = fascism popularity= .05}
+																																																																															        #add_ideas = {XAV_ultranationalists}
+
+																																																																															   		}
+																																																																															      }
+																																																																																		#
+																																																																																    focus = {
+																																																																																      id = XAV_increased_conscription
+																																																																																      icon = GFX_focus_generic_military_mission
+																																																																																      prerequisite = { focus = XAV_konigsburg_home}
+																																																																																  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																																      x = -3
+																																																																																      y = 2
+																																																																																      relative_position_id = XAV_konigsburg_home
+																																																																																      cost = 10
+																																																																																      ai_will_do = {
+																																																																																        factor = 1
+																																																																																      }
+																																																																																      available_if_capitulated = yes
+																																																																																      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																      completion_reward = {
+																																																																																			   add_political_power = 69
+																																																																																        #ticking fascism support needed
+																																																																																        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																        #add_ideas = {XAV_ultranationalists}
+
+																																																																																   		}
+																																																																																      }
+																																																																																			#
+																																																																																	    focus = {
+																																																																																	      id = XAV_workers_willpower
+																																																																																	      icon = GFX_focus_generic_support_the_left_right
+																																																																																	      prerequisite = { focus = XAV_increased_conscription}
+																																																																																	  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																																	      x = 0
+																																																																																	      y = 1
+																																																																																	      relative_position_id = XAV_increased_conscription
+																																																																																	      cost = 10
+																																																																																	      ai_will_do = {
+																																																																																	        factor = 1
+																																																																																	      }
+																																																																																	      available_if_capitulated = yes
+																																																																																	      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																	      completion_reward = {
+																																																																																				   add_political_power = 69
+																																																																																	        #ticking fascism support needed
+																																																																																	        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																	        #add_ideas = {XAV_ultranationalists}
+
+																																																																																	   		}
+																																																																																	      }
+																																																																																				#
+																																																																																		    focus = {
+																																																																																		      id = XAV_laboratories
+																																																																																		      icon = GFX_focus_research2
+																																																																																		      prerequisite = { focus = XAV_workers_willpower}
+																																																																																		  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																																		      x = 0
+																																																																																		      y = 1
+																																																																																		      relative_position_id = XAV_workers_willpower
+																																																																																		      cost = 10
+																																																																																		      ai_will_do = {
+																																																																																		        factor = 1
+																																																																																		      }
+																																																																																		      available_if_capitulated = yes
+																																																																																		      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																		      completion_reward = {
+																																																																																					   add_political_power = 69
+																																																																																		        #ticking fascism support needed
+																																																																																		        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																		        #add_ideas = {XAV_ultranationalists}
+
+																																																																																		   		}
+																																																																																		      }
+																																																																																					#
+																																																																																			    focus = {
+																																																																																			      id = XAV_baltic_ambitions
+																																																																																			      icon = GFX_goal_generic_major_war
+																																																																																			      prerequisite = { focus = XAV_expanding_abroad}
+																																																																																			  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																																			      x = 4
+																																																																																			      y = 2
+																																																																																			      relative_position_id = XAV_expanding_abroad
+																																																																																			      cost = 10
+																																																																																			      ai_will_do = {
+																																																																																			        factor = 1
+																																																																																			      }
+																																																																																			      available_if_capitulated = yes
+																																																																																			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																			      completion_reward = {
+																																																																																						   add_political_power = 69
+																																																																																			        #ticking fascism support needed
+																																																																																			        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																			        #add_ideas = {XAV_ultranationalists}
+
+																																																																																			   		}
+																																																																																			      }
+																																																																																						#
+																																																																																				    focus = {
+																																																																																				      id = XAV_danzig_prussians
+																																																																																				      icon = GFX_goal_generic_occupy_states_ongoing_war
+																																																																																				      prerequisite = { focus = XAV_baltic_ambitions}
+																																																																																				  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																																																				      x = 0
+																																																																																				      y = 1
+																																																																																				      relative_position_id = XAV_baltic_ambitions
+																																																																																				      cost = 10
+																																																																																				      ai_will_do = {
+																																																																																				        factor = 1
+																																																																																				      }
+																																																																																				      available_if_capitulated = yes
+																																																																																				      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																				      completion_reward = {
+																																																																																							   add_political_power = 69
+																																																																																				        #ticking fascism support needed
+																																																																																				        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																				        #add_ideas = {XAV_ultranationalists}
+
+																																																																																				   		}
+																																																																																				      }
+																																																																																							#
+																																																																																					    focus = {
+																																																																																					      id = XAV_red_germany
+																																																																																					      icon = GFX_focus_attack_germany
+																																																																																					      prerequisite = { focus = XAV_danzig_prussians}
+																																																																																					  		mutually_exclusive = { focus = XAV_sudeten_minority }
+																																																																																					      x = -1
+																																																																																					      y = 1
+																																																																																					      relative_position_id = XAV_danzig_prussians
+																																																																																					      cost = 10
+																																																																																					      ai_will_do = {
+																																																																																					        factor = 1
+																																																																																					      }
+																																																																																					      available_if_capitulated = yes
+																																																																																					      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																					      completion_reward = {
+																																																																																								   add_political_power = 69
+																																																																																					        #ticking fascism support needed
+																																																																																					        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																					        #add_ideas = {XAV_ultranationalists}
+
+																																																																																					   		}
+																																																																																					      }
+																																																																																								#
+																																																																																						    focus = {
+																																																																																						      id = XAV_sudeten_minority
+																																																																																						      icon = GFX_goal_generic_more_territorial_claims
+																																																																																						      prerequisite = { focus = XAV_danzig_prussians}
+																																																																																						  		mutually_exclusive = { focus = XAV_red_germany }
+																																																																																						      x = 1
+																																																																																						      y = 1
+																																																																																						      relative_position_id = XAV_danzig_prussians
+																																																																																						      cost = 10
+																																																																																						      ai_will_do = {
+																																																																																						        factor = 1
+																																																																																						      }
+																																																																																						      available_if_capitulated = yes
+																																																																																						      search_filters = { FOCUS_FILTER_POLITICAL}
+
+																																																																																						      completion_reward = {
+																																																																																									   add_political_power = 69
+																																																																																						        #ticking fascism support needed
+																																																																																						        #add_popularity = {ideology = fascism popularity= .05}
+																																																																																						        #add_ideas = {XAV_ultranationalists}
+
+																																																																																						   		}
+																																																																																						      }
+
+
+
+
+
+
+
+
+
+
+  } #end focus tree

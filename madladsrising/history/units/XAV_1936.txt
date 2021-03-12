@@ -1,0 +1,76 @@
+division_template = {
+	name = "Divizia de Infanterie"			# Infantry Division
+
+
+	division_names_group = ROM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+#### LAND UNITS ####
+
+# Corp Alpinisti
+division = {
+  #name = "Brigada 1 de Munte Mixtă"
+  division_name = {    # New syntax for compatibility with name lists
+    is_name_ordered = yes
+    name_order = 1
+  }
+  location = 281
+  division_template = "Divizia de Infanterie"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.7
+
+}
+division = {
+  #name = "Brigada 2 de Munte Mixtă"
+  division_name = {    # New syntax for compatibility with name lists
+    is_name_ordered = yes
+    name_order = 2
+  }
+  location = 266
+  division_template = "Divizia de Infanterie"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.7
+
+}
+division = {
+  #name = "Brigada 3 de Munte Mixtă"
+  division_name = {    # New syntax for compatibility with name lists
+    is_name_ordered = yes
+    name_order = 3
+  }
+  location = 408
+  division_template = "Divizia de Infanterie"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.7
+
+}
+division = {
+  #name = "Brigada 4 de Munte Mixtă"
+  division_name = {    # New syntax for compatibility with name lists
+    is_name_ordered = yes
+    name_order = 4
+  }
+  location = 6402
+  division_template = "Divizia de Infanterie"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.7
+
+}
+}

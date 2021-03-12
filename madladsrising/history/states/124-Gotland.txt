@@ -1,0 +1,24 @@
+state=
+{
+	id=124
+	name="STATE_124"
+	manpower = 256988
+
+	state_category = small_island
+
+	history=
+	{
+		owner = XAV
+		add_core_of = XAV
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 6
+			408 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces={
+		408 6258
+	}
+}

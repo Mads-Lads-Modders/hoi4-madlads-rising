@@ -1,0 +1,117 @@
+focus_tree = {
+	id = schnitz_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SRI
+		}
+	}
+
+  focus = {
+    id = SRI_first_focus
+    icon = GFX_goal_generic_demand_territory
+    #prerequisite = { focus = ITA_industrial_effort_2 }
+    x = 4
+    y = 0
+    #relative_position_id = ITA_industrial_effort_2
+    cost = 5
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_POLITICAL }
+
+    completion_reward = {
+      add_political_power = 120
+    }
+  }
+  #
+  focus = {
+    id = SRI_fascism_path
+    icon = GFX_goal_support_fascism
+    prerequisite = { focus = SRI_first_focus }
+		mutually_exclusive = { focus = SRI_monarchist_path }
+    x = 3
+    y = 1
+    #relative_position_id = SRI_first_focus
+    cost = 10
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+
+    completion_reward = {
+      add_stability = .05
+      add_war_support = .1
+    }
+  }
+	#
+	focus = {
+		id = SRI_monarchist_path
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = SRI_first_focus }
+		mutually_exclusive = { focus = SRI_fascism_path }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+		 add_stability = -.1
+		 add_popularity = {ideology = neutrality popularity= .15}
+		}
+	}
+	#
+	focus = {
+		id = SRI_flip_monarchist
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = SRI_monarchist_path }
+		x = 0
+		y = 1
+		relative_position_id = SRI_monarchist_path
+		cost = 10
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+		set_politics = {
+			ruling_party = neutrality
+		}
+
+	  set_popularities = {
+		democratic = 5
+		neutrality = 70
+		fascism = 20
+		communism = 5
+	}
+	hidden_effect = {
+		retire_country_leader = yes
+	}
+	create_country_leader = {
+		name = "His Majesty Alex Schnitz"
+		desc = "POLITICS_GETÚLIO_VARGAS_DESC"
+		picture = "SRI leader.dds"
+		expire = "1954.8.24"
+		ideology = despotism
+		traits = {
+			inexperienced_monarch
+			}
+		 }
+	  }
+	 }
+	}
