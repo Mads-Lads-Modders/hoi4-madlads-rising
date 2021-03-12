@@ -260,7 +260,7 @@ continuous_focus_position = { x = 1000 y = 1600 }
 									    icon = GFX_focus_ger_revive_kaiserreich
 									    prerequisite = { focus = SRI_demand_uni focus = SRI_march_sea}
 									 	#mutually_exclusive = { focus = SRI_roman_forts }
-									    x = -2
+									    x = 2
 									    y = 1
 								     relative_position_id = SRI_demand_uni
 									    cost = 10
@@ -277,3 +277,22 @@ continuous_focus_position = { x = 1000 y = 1600 }
 							        #add_ideas = {XAV_ultranationalists}
 									  		}
 									      }
+												#
+											   focus = {
+								   id = SRI_fuck_hungary
+						    icon = GFX_focus_ger_revive_kaiserreich
+									   prerequisite = { focus = SRI_revival_friend focus }
+							 	#mutually_exclusive = { focus = SRI_roman_forts }
+								    x = 0
+								    y = 1
+						     relative_position_id = SRI_revival_friend
+								    cost = 10
+						     ai_will_do = {
+						        factor = 1
+						      }
+						      available_if_capitulated = yes
+								     search_filters = { FOCUS_FILTER_POLITICAL}
+							     completion_reward = {
+									   add_political_power = 69
+											  		}
+											      }
