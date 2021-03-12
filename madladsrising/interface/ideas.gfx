@@ -5614,6 +5614,10 @@ spriteTypes = {
 	  name = "GFX_idea_LOL_comrade_rule"
 	  texturefile = "gfx/interface/ideas/officers_purged.dds"
   }
+	spriteType = {
+	  name = "GFX_idea_XAV_undecided_fate"
+		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
+	}
 
 
 
