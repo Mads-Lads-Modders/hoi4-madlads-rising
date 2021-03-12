@@ -201,3 +201,27 @@ focus_tree = {
 						 add_political_power = 69
 					}
 					}
+					#
+			    focus = {
+			      id = SRI_attack_prob
+			      icon = GFX_focus_ger_revive_kaiserreich
+			      prerequisite = { focus = SRI_flip_monarchist }
+			  		mutually_exclusive = { focus = SRI_roman_forts }
+			      x = 2
+			      y = 1
+			      relative_position_id = SRI_roman_forts
+			      cost = 10
+			      ai_will_do = {
+			        factor = 1
+			      }
+			      available_if_capitulated = yes
+			      search_filters = { FOCUS_FILTER_POLITICAL}
+
+			      completion_reward = {
+						   add_political_power = 69
+			        #ticking fascism support needed
+			        #add_popularity = {ideology = fascism popularity= .05}
+			        #add_ideas = {XAV_ultranationalists}
+
+			   		}
+			      }
