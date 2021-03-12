@@ -59,6 +59,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SRI_fascism_path }
 		x = 0
 		y = 2
+		relative_position_id = SRI_first_focus
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
@@ -116,7 +117,7 @@ focus_tree = {
 		focus = {
 		id = SRI_roman_forts
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = SRI_monarchist_path }
+		prerequisite = { focus = SRI_flip_monarchist_ }
 		x = -1
 		y = 1
 		relative_position_id = SRI_monarchist_path
@@ -140,4 +141,3 @@ focus_tree = {
 				add_building_construction = { type = bunker province = 3676 level = 3 instant_build = yes }
 		    }
 		  }
-			
