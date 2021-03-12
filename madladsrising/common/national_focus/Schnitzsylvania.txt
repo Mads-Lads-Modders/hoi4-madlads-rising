@@ -133,6 +133,8 @@ focus_tree = {
 		    search_filters = { FOCUS_FILTER_POLITICAL}
 
 		    completion_reward = {
+				army_experience = 5
+				9 = {
 				add_building_construction = { type = bunker province = 690 level = 3 instant_build = yes }
 				add_building_construction = { type = bunker province = 3649 level = 3 instant_build = yes }
 				add_building_construction = { type = bunker province = 11592 level = 3 instant_build = yes }
@@ -144,6 +146,7 @@ focus_tree = {
 				add_building_construction = { type = bunker province = 3676 level = 3 instant_build = yes }
 		    }
 		  }
+			}
 			#
 			focus = {
 				id = SRI_guerilla_tac
