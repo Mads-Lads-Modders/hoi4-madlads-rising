@@ -350,7 +350,7 @@ factor = 1
  id = SRI_dep_mus
   icon = GFX_goal_generic_demand_territory
   prerequisite = { focus = SRI_indo_ita }
-  x = 3
+  x = 0
   y = 1
 relative_position_id = SRI_indo_ita
 cost = 5
@@ -363,3 +363,63 @@ completion_reward = {
  add_political_power = 69
   }
   }
+	#
+focus = {
+id = SRI_dig_up
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_dep_mus }
+mutually_exclusive = { focus = SRI_stay_here }
+mutually_exclusive = { focus = SRI_pope_here }
+x = -3
+y = 1
+relative_position_id = SRI_dep_mus
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_stay_here
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_dep_mus }
+mutually_exclusive = { focus = SRI_pope_here }
+mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_dep_mus
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_pope_here
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_dep_mus }
+mutually_exclusive = { focus = SRI_stay_here }
+mutually_exclusive = { focus = SRI_dig_up }
+x = 3
+y = 1
+relative_position_id = SRI_dep_mus
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
