@@ -1,0 +1,11 @@
+focus_tree = {
+	id = comrade_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = LOL
+		}
+	}
