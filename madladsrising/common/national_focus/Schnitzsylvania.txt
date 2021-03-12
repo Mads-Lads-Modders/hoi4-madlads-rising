@@ -1,16 +1,16 @@
 focus_tree = {
 	id = schnitz_focus
-
 	country = {
 		factor = 0
 
 		modifier = {
 			add = 10
 			tag = SRI
-		}
+}
 	}
+continuous_focus_position = { x = 1000 y = 1600 }
 
-  focus = {
+	focus = {
     id = SRI_first_focus
     icon = GFX_goal_generic_demand_territory
     #prerequisite = { focus = ITA_industrial_effort_2 }
@@ -208,3 +208,72 @@ focus_tree = {
 	        #add_ideas = {XAV_ultranationalists}
 			  		}
 			      }
+						#
+					    focus = {
+					    id = SRI_through_mountains
+					    icon = GFX_focus_ger_revive_kaiserreich
+					    prerequisite = { focus = SRI_attack_prob }
+					 	#mutually_exclusive = { focus = SRI_roman_forts }
+					    x = 0
+					    y = 1
+				     relative_position_id = SRI_attack_prob
+					    cost = 10
+				     ai_will_do = {
+			        factor = 1
+			      }
+			      available_if_capitulated = yes
+				     search_filters = { FOCUS_FILTER_POLITICAL}
+
+				     completion_reward = {
+						   add_political_power = 69
+				       #ticking fascism support needed
+			        #add_popularity = {ideology = fascism popularity= .05}
+			        #add_ideas = {XAV_ultranationalists}
+					  		}
+					      }
+								#
+							    focus = {
+							    id = SRI_march_sea
+							    icon = GFX_focus_ger_revive_kaiserreich
+							    prerequisite = { focus = SRI_through_mountains }
+							 	#mutually_exclusive = { focus = SRI_roman_forts }
+							    x = 0
+							    y = 1
+						     relative_position_id = SRI_through_mountains
+							    cost = 10
+						     ai_will_do = {
+					        factor = 1
+					      }
+					      available_if_capitulated = yes
+						     search_filters = { FOCUS_FILTER_POLITICAL}
+
+						     completion_reward = {
+								   add_political_power = 69
+						       #ticking fascism support needed
+					        #add_popularity = {ideology = fascism popularity= .05}
+					        #add_ideas = {XAV_ultranationalists}
+							  		}
+							      }
+										#
+									    focus = {
+									    id = SRI_revival_friend
+									    icon = GFX_focus_ger_revive_kaiserreich
+									    prerequisite = { focus = SRI_demand_uni focus = SRI_march_sea}
+									 	#mutually_exclusive = { focus = SRI_roman_forts }
+									    x = -2
+									    y = 1
+								     relative_position_id = SRI_demand_uni
+									    cost = 10
+								     ai_will_do = {
+							        factor = 1
+							      }
+							      available_if_capitulated = yes
+								     search_filters = { FOCUS_FILTER_POLITICAL}
+
+								     completion_reward = {
+										   add_political_power = 69
+								       #ticking fascism support needed
+							        #add_popularity = {ideology = fascism popularity= .05}
+							        #add_ideas = {XAV_ultranationalists}
+									  		}
+									      }
