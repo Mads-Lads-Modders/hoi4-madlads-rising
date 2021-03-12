@@ -35,8 +35,8 @@ focus_tree = {
     icon = GFX_goal_support_fascism
     prerequisite = { focus = SRI_first_focus }
 		mutually_exclusive = { focus = SRI_monarchist_path }
-    x = 3
-    y = 1
+    x = -3
+    y = 2
     #relative_position_id = SRI_first_focus
     cost = 10
     ai_will_do = {
@@ -57,8 +57,8 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = SRI_first_focus }
 		mutually_exclusive = { focus = SRI_fascism_path }
-		x = 5
-		y = 1
+		x = 0
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
@@ -111,7 +111,33 @@ focus_tree = {
 		traits = {
 			inexperienced_monarch
 			}
-		 }
-	  }
-	 }
-	}
+}
+#
+		focus = {
+		id = SRI_roman_forts
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = SRI_monarchist_path }
+		x = -1
+		y = 1
+		relative_position_id = SRI_monarchist_path
+		cost = 10
+		ai_will_do = {
+		factor = 1
+}
+
+		    available_if_capitulated = no
+		    search_filters = { FOCUS_FILTER_POLITICAL}
+
+		    completion_reward = {
+				add_building_construction = { type = bunker province = 690 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3649 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11592 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9619 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 662 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3665 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6679 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6709 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3676 level = 3 instant_build = yes }
+		    }
+		  }
+			
