@@ -4,9 +4,7 @@ OOB = "XAV_1936"
 
 set_research_slots = 4
 
-add_ideas = {
-  XAV_undecided_fate
-}
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
@@ -30,6 +28,9 @@ set_popularities = {
 
 set_convoys = 25
 
+add_ideas = {
+  XAV_undecided_fate
+}
 
 create_country_leader = {
 	name = "Locke"
