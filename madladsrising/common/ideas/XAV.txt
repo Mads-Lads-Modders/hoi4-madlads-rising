@@ -3,7 +3,7 @@ ideas = {
 	country = {
 	  XAV_undecided_fate = {
 		  allowed = {
-			  always = yes
+			  original_TAG = XAV
 			}
 			removal_cost = -1
 
