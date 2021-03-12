@@ -113,6 +113,8 @@ focus_tree = {
 			inexperienced_monarch
 			}
 }
+}
+}
 #
 		focus = {
 		id = SRI_roman_forts
