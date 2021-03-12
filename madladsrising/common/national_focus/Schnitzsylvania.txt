@@ -281,7 +281,7 @@ continuous_focus_position = { x = 1000 y = 1600 }
 											   focus = {
 								   id = SRI_fuck_hungary
 						    icon = GFX_focus_ger_revive_kaiserreich
-									   prerequisite = { focus = SRI_revival_friend focus }
+									   prerequisite = { focus = SRI_revival_friend }
 							 	#mutually_exclusive = { focus = SRI_roman_forts }
 								    x = 0
 								    y = 1
