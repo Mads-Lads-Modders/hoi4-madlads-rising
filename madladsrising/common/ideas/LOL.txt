@@ -18,9 +18,7 @@ ideas = {
         stability_factor = -0.4
         war_support_factor = 0.1
 			}
-			#rule = {
-				#can_create_factions = yes
-			}
+		
 		}
   }
 }

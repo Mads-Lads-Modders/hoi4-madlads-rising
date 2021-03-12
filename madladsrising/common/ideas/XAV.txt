@@ -27,9 +27,7 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 			}
-			#rule = {
-				#can_create_factions = yes
-			}
+
 		}
   }
 }
