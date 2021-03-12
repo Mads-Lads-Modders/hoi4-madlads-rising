@@ -8,7 +8,7 @@ focus_tree = {
 			tag = SRI
 }
 	}
-continuous_focus_position = { x = 1000 y = 1600 }
+continuous_focus_position = { x = 3000 y = 1600 }
 
 	focus = {
     id = SRI_first_focus
@@ -149,230 +149,217 @@ continuous_focus_position = { x = 1000 y = 1600 }
 			}
 			#
 			focus = {
-				id = SRI_guerilla_tac
-				icon = GFX_focus_ger_revive_kaiserreich
-				prerequisite = { focus = SRI_roman_forts }
-				x = 0
-				y = 1
-				relative_position_id = SRI_roman_forts
-				cost = 10
-				ai_will_do = {
-					factor = 1
-				}
-				available_if_capitulated = yes
-				search_filters = { FOCUS_FILTER_POLITICAL}
+		id = SRI_guerilla_tac
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = SRI_roman_forts }
+		x = 0
+		y = 1
+		relative_position_id = SRI_roman_forts
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+		 add_political_power = 69
+		}
+		}
+		#
+		focus = {
+		id = SRI_demand_uni
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = SRI_guerilla_tac }
+		x = 0
+		y = 1
+		relative_position_id = SRI_guerilla_tac
+		cost = 10
+		ai_will_do = {
+		factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = 69
+		}
+		}
+		#
+	 focus = {
+	 id = SRI_attack_prob
+  icon = GFX_focus_ger_revive_kaiserreich
+  prerequisite = { focus = SRI_flip_monarchist }
+	mutually_exclusive = { focus = SRI_roman_forts }
+	 x = 2
+	y = 1
+	 relative_position_id = SRI_flip_monarchist
+	  cost = 10
+	 ai_will_do = {
+	  factor = 1
+	    }
+	  available_if_capitulated = yes
+	  search_filters = { FOCUS_FILTER_POLITICAL}
+  completion_reward = {
+	 add_political_power = 69
+		 #ticking fascism support needed
+	   #add_popularity = {ideology = fascism popularity= .05}
+	    #add_ideas = {XAV_ultranationalists}
+		 	}
+		  }
+			#
+		focus = {
+	  id = SRI_through_mountains
+   icon = GFX_focus_ger_revive_kaiserreich
+prerequisite = { focus = SRI_attack_prob }
+ 	#mutually_exclusive = { focus = SRI_roman_forts }
+  x = 0
+	y = 1
+	relative_position_id = SRI_attack_prob
+ cost = 10
+ ai_will_do = {
+ factor = 1
+ }
+ available_if_capitulated = yes
+ search_filters = { FOCUS_FILTER_POLITICAL}
+ completion_reward = {
+	 add_political_power = 69
+	 #ticking fascism support needed
+	  #add_popularity = {ideology = fascism popularity= .05}
+	   #add_ideas = {XAV_ultranationalists}
+			}
+	   }
+			#
+	   focus = {
+	   id = SRI_march_sea
+		  icon = GFX_focus_ger_revive_kaiserreich
+		  prerequisite = { focus = SRI_through_mountains }
+		 	#mutually_exclusive = { focus = SRI_roman_forts }
+			   x = 0
+		    y = 1
+	 relative_position_id = SRI_through_mountains
+	  cost = 10
+   ai_will_do = {
+  factor = 1
+ }
+	 available_if_capitulated = yes
+		 search_filters = { FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+	  add_political_power = 69
+	  #ticking fascism support needed
+		 #add_popularity = {ideology = fascism popularity= .05}
+		#add_ideas = {XAV_ultranationalists}
+		}
+			}
+			#
+		 focus = {
+		 id = SRI_revival_friend
+		 icon = GFX_focus_ger_revive_kaiserreich
+		 prerequisite = { focus = SRI_demand_uni focus = SRI_march_sea}
+		#mutually_exclusive = { focus = SRI_roman_forts }
+	   x = 2
+	   y = 1
+		relative_position_id = SRI_demand_uni
+		 cost = 10
+	  ai_will_do = {
+	  factor = 1
+	  }
+	  available_if_capitulated = yes
+		 search_filters = { FOCUS_FILTER_POLITICAL}
 
-				completion_reward = {
-					 add_political_power = 69
+	 completion_reward = {
+		 add_political_power = 69
+	  #ticking fascism support needed
+		#add_popularity = {ideology = fascism popularity= .05}
+	 #add_ideas = {XAV_ultranationalists}
 				}
-				}
+				 }
 				#
-				focus = {
-				id = SRI_demand_uni
-				icon = GFX_focus_ger_revive_kaiserreich
-				prerequisite = { focus = SRI_guerilla_tac }
-				x = 0
-				y = 1
-				relative_position_id = SRI_guerilla_tac
-				cost = 10
-				ai_will_do = {
-				factor = 1
-				}
-				available_if_capitulated = yes
-				search_filters = { FOCUS_FILTER_POLITICAL}
-
-				completion_reward = {
-				add_political_power = 69
-				}
-				}
-				#
-			    focus = {
-			    id = SRI_attack_prob
-			    icon = GFX_focus_ger_revive_kaiserreich
-			    prerequisite = { focus = SRI_flip_monarchist }
-			 	mutually_exclusive = { focus = SRI_roman_forts }
-			    x = 2
-			    y = 1
-		     relative_position_id = SRI_flip_monarchist
-			    cost = 10
-		     ai_will_do = {
-	        factor = 1
-	      }
-	      available_if_capitulated = yes
-		     search_filters = { FOCUS_FILTER_POLITICAL}
-
-		     completion_reward = {
-				   add_political_power = 69
-		       #ticking fascism support needed
-	        #add_popularity = {ideology = fascism popularity= .05}
-	        #add_ideas = {XAV_ultranationalists}
-			  		}
-			      }
-						#
-					    focus = {
-					    id = SRI_through_mountains
-					    icon = GFX_focus_ger_revive_kaiserreich
-					    prerequisite = { focus = SRI_attack_prob }
-					 	#mutually_exclusive = { focus = SRI_roman_forts }
-					    x = 0
-					    y = 1
-				     relative_position_id = SRI_attack_prob
-					    cost = 10
-				     ai_will_do = {
-			        factor = 1
-			      }
-			      available_if_capitulated = yes
-				     search_filters = { FOCUS_FILTER_POLITICAL}
-
-				     completion_reward = {
-						   add_political_power = 69
-				       #ticking fascism support needed
-			        #add_popularity = {ideology = fascism popularity= .05}
-			        #add_ideas = {XAV_ultranationalists}
-					  		}
-					      }
-								#
-							    focus = {
-							    id = SRI_march_sea
-							    icon = GFX_focus_ger_revive_kaiserreich
-							    prerequisite = { focus = SRI_through_mountains }
-							 	#mutually_exclusive = { focus = SRI_roman_forts }
-							    x = 0
-							    y = 1
-						     relative_position_id = SRI_through_mountains
-							    cost = 10
-						     ai_will_do = {
-					        factor = 1
-					      }
-					      available_if_capitulated = yes
-						     search_filters = { FOCUS_FILTER_POLITICAL}
-
-						     completion_reward = {
-								   add_political_power = 69
-						       #ticking fascism support needed
-					        #add_popularity = {ideology = fascism popularity= .05}
-					        #add_ideas = {XAV_ultranationalists}
-							  		}
-							      }
-										#
-									    focus = {
-									    id = SRI_revival_friend
-									    icon = GFX_focus_ger_revive_kaiserreich
-									    prerequisite = { focus = SRI_demand_uni focus = SRI_march_sea}
-									 	#mutually_exclusive = { focus = SRI_roman_forts }
-									    x = 2
-									    y = 1
-								     relative_position_id = SRI_demand_uni
-									    cost = 10
-								     ai_will_do = {
-							        factor = 1
-							      }
-							      available_if_capitulated = yes
-								     search_filters = { FOCUS_FILTER_POLITICAL}
-
-								     completion_reward = {
-										   add_political_power = 69
-								       #ticking fascism support needed
-							        #add_popularity = {ideology = fascism popularity= .05}
-							        #add_ideas = {XAV_ultranationalists}
-									  		}
-									      }
-												#
-											   focus = {
-								   id = SRI_fuck_hungary
-						    icon = GFX_focus_ger_revive_kaiserreich
-									   prerequisite = { focus = SRI_revival_friend }
-							 	#mutually_exclusive = { focus = SRI_roman_forts }
-								    x = 0
-								    y = 1
-						     relative_position_id = SRI_revival_friend
-								    cost = 10
-						     ai_will_do = {
-						        factor = 1
-						      }
-						      available_if_capitulated = yes
-								     search_filters = { FOCUS_FILTER_POLITICAL}
-							     completion_reward = {
-									   add_political_power = 69
-											  		}
-											      }
-														#
-														focus = {
-													    id = SRI_little_things
-													    icon = GFX_goal_generic_demand_territory
-													    prerequisite = { focus = SRI_fuck_hungary }
-													    x = 3
-													    y = 1
-													    relative_position_id = SRI_fuck_hungary
-													    cost = 5
-													    ai_will_do = {
-													      factor = 1
-													    }
-
-													    available_if_capitulated = yes
-													    search_filters = { FOCUS_FILTER_POLITICAL }
-
-													    completion_reward = {
-													      add_political_power = 69
-													    }
-													  }
-														#
-														focus = {
-													    id = SRI_latin_league
-													    icon = GFX_goal_generic_demand_territory
-													    prerequisite = { focus = SRI_little_things }
-													    x = 0
-													    y = 1
-													    relative_position_id = SRI_little_things
-													    cost = 5
-													    ai_will_do = {
-													      factor = 1
-													    }
-
-													    available_if_capitulated = yes
-													    search_filters = { FOCUS_FILTER_POLITICAL }
-
-													    completion_reward = {
-													      add_political_power = 69
-													    }
-													  }
-														#
-														focus = {
-													    id = SRI_indo_ita
-													    icon = GFX_goal_generic_demand_territory
-													    prerequisite = { focus = SRI_latin_league }
-													    x = 0
-													    y = 1
-													    relative_position_id = SRI_latin_league
-													    cost = 5
-													    ai_will_do = {
-													      factor = 1
-													    }
-
-													    available_if_capitulated = yes
-													    search_filters = { FOCUS_FILTER_POLITICAL }
-
-													    completion_reward = {
-													      add_political_power = 69
-													    }
-													  }
-														#
-														focus = {
-													    id = SRI_dep_mus
-													    icon = GFX_goal_generic_demand_territory
-													    prerequisite = { focus = SRI_indo_ita }
-													    x = 3
-													    y = 1
-													    relative_position_id = SRI_indo_ita
-													    cost = 5
-													    ai_will_do = {
-													      factor = 1
-													    }
-
-													    available_if_capitulated = yes
-													    search_filters = { FOCUS_FILTER_POLITICAL }
-
-													    completion_reward = {
-													      add_political_power = 69
-													    }
-													  }
+ focus = {
+	 id = SRI_fuck_hungary
+	 icon = GFX_focus_ger_revive_kaiserreich
+	  prerequisite = { focus = SRI_revival_friend }
+			#mutually_exclusive = { focus = SRI_roman_forts }
+			  x = 0
+	  y = 1
+		   relative_position_id = SRI_revival_friend
+	cost = 10
+		 ai_will_do = {
+	   factor = 1
+	  }
+	 available_if_capitulated = yes
+  search_filters = { FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+	 add_political_power = 69
+		}
+   }
+	#
+		focus = {
+		 id = SRI_little_things
+		 icon = GFX_goal_generic_demand_territory
+		 prerequisite = { focus = SRI_fuck_hungary }
+		  x = 3
+		 y = 1
+	 relative_position_id = SRI_fuck_hungary
+	cost = 5
+ ai_will_do = {
+ factor = 1
+  }
+ available_if_capitulated = yes
+  search_filters = { FOCUS_FILTER_POLITICAL }
+	  completion_reward = {
+add_political_power = 69
+  }
+	 }
+	#
+	focus = {
+id = SRI_latin_league
+	 icon = GFX_goal_generic_demand_territory
+	 prerequisite = { focus = SRI_little_things }
+	 x = 0
+ y = 1
+	 relative_position_id = SRI_little_things
+ cost = 5
+ai_will_do = {
+  factor = 1
+ }
+	available_if_capitulated = yes
+ search_filters = { FOCUS_FILTER_POLITICAL }
+	 completion_reward = {
+ add_political_power = 69
+ }
+	 }
+		#
+	focus = {
+	id = SRI_indo_ita
+ icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_latin_league }
+x = 0
+  y = 1
+  relative_position_id = SRI_latin_league
+  cost = 5
+	ai_will_do = {
+factor = 1
+}
+ available_if_capitulated = yes
+ search_filters = { FOCUS_FILTER_POLITICAL }
+ completion_reward = {
+ add_political_power = 69
+ }
+  }
+		#
+	focus = {
+ id = SRI_dep_mus
+  icon = GFX_goal_generic_demand_territory
+  prerequisite = { focus = SRI_indo_ita }
+  x = 3
+  y = 1
+relative_position_id = SRI_indo_ita
+cost = 5
+ ai_will_do = {
+ factor = 1
+ }
+ available_if_capitulated = yes
+ search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+ add_political_power = 69
+  }
+}
