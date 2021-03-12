@@ -143,3 +143,61 @@ focus_tree = {
 				add_building_construction = { type = bunker province = 3676 level = 3 instant_build = yes }
 		    }
 		  }
+			#
+			focus = {
+				id = SRI_guerilla_tac
+				icon = GFX_focus_ger_revive_kaiserreich
+				prerequisite = { focus = SRI_roman_forts }
+				x = 0
+				y = 1
+				relative_position_id = SRI_roman_forts
+				cost = 10
+				ai_will_do = {
+					factor = 1
+				}
+				available_if_capitulated = yes
+				search_filters = { FOCUS_FILTER_POLITICAL}
+
+				completion_reward = {
+					 add_political_power = 69
+				}
+				}
+				#
+				focus = {
+				id = SRI_demand_uni
+				icon = GFX_focus_ger_revive_kaiserreich
+				prerequisite = { focus = SRI_guerilla_tac }
+				x = 0
+				y = 1
+				relative_position_id = SRI_guerilla_tac
+				cost = 10
+				ai_will_do = {
+				factor = 1
+				}
+				available_if_capitulated = yes
+				search_filters = { FOCUS_FILTER_POLITICAL}
+
+				completion_reward = {
+				add_political_power = 69
+				}
+				}
+				#
+				#
+				focus = {
+					id = SRI_guerilla_tac
+					icon = GFX_focus_ger_revive_kaiserreich
+					prerequisite = { focus = SRI_roman_forts }
+					x = 0
+					y = 1
+					relative_position_id = SRI_roman_forts
+					cost = 10
+					ai_will_do = {
+						factor = 1
+					}
+					available_if_capitulated = yes
+					search_filters = { FOCUS_FILTER_POLITICAL}
+
+					completion_reward = {
+						 add_political_power = 69
+					}
+					}
