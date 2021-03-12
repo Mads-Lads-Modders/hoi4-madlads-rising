@@ -1334,7 +1334,7 @@ focus_tree = {
 																																																			      id = XAV_boost_civilian_industry
 																																																			      icon = GFX_goal_generic_soviet_construction
 																																																			      prerequisite = { focus = XAV_five_year_plan}
-																																																			  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																			  		mutually_exclusive = { focus = XAV_militarization }
 																																																			      x = -1
 																																																			      y = 1
 																																																			      relative_position_id = XAV_five_year_plan
@@ -1406,7 +1406,7 @@ focus_tree = {
 																																																						      id = XAV_militarization
 																																																						      icon = GFX_goal_generic_construct_mil_factory
 																																																						      prerequisite = { focus = XAV_five_year_plan}
-																																																						  		#mutually_exclusive = { focus = XAV_locke_path }
+																																																						  		mutually_exclusive = { focus = XAV_boost_civilian_industry }
 																																																						      x = 1
 																																																						      y = 1
 																																																						      relative_position_id = XAV_five_year_plan
