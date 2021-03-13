@@ -2656,8 +2656,10 @@
  XAV_prussian_army_training:0 "Prussian Army Training"
  XAV_prussian_army_training_desc:0 "..."
 
-
-
+ HOK_tightrope:0 "Walking the Tightrope"
+ HOK_tightrope_desc:0 "Our nation lies in a precarious situation. Our independence is a stain on the Japanese Empire’s image, and the Soviet Union wants us firmly in their sphere of influence, pitting us between two giants. Only through deft political maneuvering can we maintain our sovereignty, at least for now…"
+ HOK_natures_grasp:0 "Nature's Grasp"
+ HOK_natures_grasp_desc:0 "The rocky coasts, dense forests and harsh winters of our territory obstructs conventional construction methods, but gives our acclimated soldiers an advantage within our borders."
 
 
  LOL_comrade_rule:0 "Comrade Alexander's Reign"
@@ -2666,4 +2668,3 @@
  LOL_multiculturalism_desc:0 "Our country is split into three major factions; the Jews, Libs, and Stalinists. All are fighting for control over the government, and they all gain more progress as Alexander grows more braindead. Either we cave into one, or face the possibility of a complete governmental collapse as all three take the country over, one by one."
  LOL_jew_rule:0 "Jewish Industrial Monopoly"
  LOL_jew_rule_desc:0 "Obviously, the Jewish people are going to be the wealthiest due to their frugality and self- loathing nature. The “Top Dawgs” of the Jewish community continue to contribute to our factory production and without their donations and upholdings our factories couldn’t produce a roll of toilet paper in a day. Losing their tributes or them would be a fatal blow to our economy."
- 

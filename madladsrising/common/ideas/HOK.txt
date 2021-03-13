@@ -1,0 +1,26 @@
+ideas = {
+
+  country = {
+    HOK_tightrope = {
+      allowed = {
+        original_TAG = HOK
+      }
+      removal_cost = -1
+      modifier = {
+      stability_factor = -0.15
+      communism_drift = 0.05
+      fascism_drift = 0.05
+      }
+    }
+    HOK_natures_grasp = {
+      allowed = {
+        original_TAG = HOK
+      }
+      removal_cost = -1
+      modifier = {
+      production_speed_buildings_factor = -0.1
+      army_core_defense_factor = 0.1
+      }
+    }
+  } # line up with country
+} # line up with ideas
