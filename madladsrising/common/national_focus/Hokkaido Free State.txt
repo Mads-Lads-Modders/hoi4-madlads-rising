@@ -9,3 +9,61 @@ focus_tree = {
 			tag = HOK
 		}
 	}
+##############################
+####### Political Tree #######
+##############################
+focus = {
+	id = HOK_elect_chair
+	icon = GFX_goal_generic_demand_territory
+	#prerequisite = { focus = ITA_industrial_effort_2 }
+	mutually_exclusive = { focus = HOK_elect_asirpa }
+	x = 30
+	y = 0
+	#relative_position_id = ITA_industrial_effort_2
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = { ideology = fascism popularity = -0.05 }
+	}
+} # end focus
+focus = {
+	id = HOK_elect_asirpa
+	icon = GFX_goal_generic_demand_territory
+	#prerequisite = { focus = ITA_industrial_effort_2 }
+	mutually_exclusive = { focus = HOK_elect_chair }
+	x = 2
+	y = 0
+	relative_position_id = HOK_elect_chair
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = -0.05
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1933.3.5"
+			election_frequency = 48
+			elections_allowed = no
+		 }
+		set_popularities = {
+			neutrality = 25
+			fascism = 65
+			democratic = 5
+			communism = 5
+		}
+	}
+} # end focus
