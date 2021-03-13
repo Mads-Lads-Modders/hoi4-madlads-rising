@@ -25,21 +25,14 @@ ideas = {
 			}
 
 		XAV_ultranationalists = {
-
 			allowed = {
 				original_TAG = XAV
 			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
 			removal_cost = -1
 
 			modifier = {
 				conscription = 0.01
 			}
-
-		}
+		  }
   } #line up with country
 } #line up with ideas

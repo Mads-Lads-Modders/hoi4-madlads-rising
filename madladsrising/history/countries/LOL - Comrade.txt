@@ -30,6 +30,7 @@ set_convoys = 50
 
 add_ideas = {
 LOL_comrade_rule
+LOL_multiculturalism
 }
 
 create_country_leader = {
