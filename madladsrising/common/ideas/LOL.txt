@@ -36,5 +36,29 @@ ideas = {
 				stability_factor = -0.1
 			}
 			}
+		LOL_jew_rule = {
+
+		  allowed = {
+			  original_TAG = LOL
+		  }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+		  stability_factor = 0.1
+			political_power_cost = -0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_start_efficiency_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.2
+
+		}
+		}
+
+
   } # line up with country
 } # line up with ideas

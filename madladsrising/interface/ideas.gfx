@@ -5626,7 +5626,10 @@ spriteTypes = {
 		name = "GFX_idea_LOL_multiculturalism"
 		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_LOL_jew_rule"
+		texturefile = "gfx/interface/ideas/state_economy.dds"
+	}
 
 
 
