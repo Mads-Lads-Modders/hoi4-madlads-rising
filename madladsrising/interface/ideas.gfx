@@ -5638,5 +5638,13 @@ spriteTypes = {
 		name = "GFX_idea_HOK_natures_grasp"
 		texturefile = "gfx/interface/ideas/FRA_fortification_focus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAV_nationalist_sentiments"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_compromised_government"
+		texturefile = "gfx/interface/ideas/spr_masters_of_our_own_fate.dds"
+	}
 
 }

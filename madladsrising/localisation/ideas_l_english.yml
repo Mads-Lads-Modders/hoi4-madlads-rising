@@ -2650,11 +2650,17 @@
  KUR_ihsan_nuri:0 "Ihsan Nuri"
  ##################################################################
  XAV_ultranationalists:0 "Ultranationalist Fervor"
- XAV_ultranationalists_desc:0 "..."
  XAV_undecided_fate:0 "Undecided Fate"
  XAV_undecided_fate_desc:0 "..."
  XAV_prussian_army_training:0 "Prussian Army Training"
  XAV_prussian_army_training_desc:0 "..."
+ XAV_nationalist_sentiments:0 "Nationalist Sentiments"
+ XAV_compromised_government:0 "Compromised Government"
+
+
+
+
+
 
  HOK_tightrope:0 "Walking the Tightrope"
  HOK_tightrope_desc:0 "Our nation lies in a precarious situation. Our independence is a stain on the Japanese Empire’s image, and the Soviet Union wants us firmly in their sphere of influence, pitting us between two giants. Only through deft political maneuvering can we maintain our sovereignty, at least for now…"

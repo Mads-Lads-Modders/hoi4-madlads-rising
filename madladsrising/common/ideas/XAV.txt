@@ -23,6 +23,29 @@ ideas = {
 				training_time_factor = -0.1
 			}
 			}
+		XAV_nationalist_sentiments = {
+		 allowed = {
+		   original_TAG = XAV
+		 }
+		 removal_cost = -1
+
+		 modifier = {
+		   fascism_drift = 0.1
+		 }
+		}
+	  XAV_compromised_government = {
+		 allowed = {
+		   original_TAG = XAV
+		 }
+		 removal_cost = -1
+
+		 modifier = {
+		  democratic_drift = -0.05
+			communism_drift = -0.05
+			neutrality_drift = -0.05
+			stability_factor = -0.1
+		 }
+		}
 
 		XAV_ultranationalists = {
 			allowed = {
@@ -32,6 +55,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				fascism_drift = 0.05
 			}
 		  }
   } #line up with country

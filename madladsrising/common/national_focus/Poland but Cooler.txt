@@ -81,6 +81,9 @@ focus_tree = {
 	      icon = GFX_focus_generic_strike_at_democracy2
 	      prerequisite = { focus = XAV_fascism_path2 }
 	  		#mutually_exclusive = { focus = SRI_monarchist_path }
+				available = {
+				 fascism > 0.4
+				}
 	      x = 0
 	      y = 1
 	      relative_position_id = XAV_fascism_path2
@@ -92,10 +95,10 @@ focus_tree = {
 	      search_filters = { FOCUS_FILTER_POLITICAL}
 
 	      completion_reward = {
-				   add_political_power = 69
-	        #ticking fascism support needed
-	        #add_popularity = {ideology = fascism popularity= .05}
-	        #add_ideas = {XAV_ultranationalists}
+				   add_political_power = -100
+					 effect_tooltip = {
+						 swap_ideas = { remove_idea = XAV_nationalist_sentiments = XAV_compromised_government }
+					 }
 
 	   		}
 	      }

@@ -10,6 +10,7 @@ ideas = {
       stability_factor = -0.15
       communism_drift = 0.05
       fascism_drift = 0.05
+      improve_relations_maintain_cost_factor = -0.25
       }
     }
     HOK_natures_grasp = {
