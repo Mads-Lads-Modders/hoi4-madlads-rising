@@ -5624,7 +5624,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_LOL_multiculturalism"
-		texturefile = "gfx/interface/ideas/chi_war_of_resistance.dds"
+		texturefile = "gfx/interface/ideas/jap_zaibatsu.dds"
 	}
 
 
