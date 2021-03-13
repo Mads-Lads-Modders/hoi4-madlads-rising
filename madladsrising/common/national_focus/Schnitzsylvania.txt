@@ -14,7 +14,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
     id = SRI_first_focus
     icon = GFX_goal_generic_demand_territory
     #prerequisite = { focus = ITA_industrial_effort_2 }
-    x = 4
+    x = 20
     y = 0
     #relative_position_id = ITA_industrial_effort_2
     cost = 5
