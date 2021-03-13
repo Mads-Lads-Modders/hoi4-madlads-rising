@@ -35,9 +35,9 @@ continuous_focus_position = { x = 3000 y = 1600 }
     icon = GFX_goal_support_fascism
     prerequisite = { focus = SRI_first_focus }
 		mutually_exclusive = { focus = SRI_monarchist_path }
-    x = -3
+    x = -10
     y = 2
-    #relative_position_id = SRI_first_focus
+    relative_position_id = SRI_first_focus
     cost = 10
     ai_will_do = {
       factor = 1
@@ -178,11 +178,37 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		factor = 1
 		}
 		available_if_capitulated = yes
+		is_subject = no
 		search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		add_political_power = 69
+		}
+		completion_reward = {
+		setowner SRI 81
+		setowner SRI 46
+		setowner SRI 77
+		setowner SRI 79
+		setowner SRI 80
+		setowner SRI 78
 		}
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		#
 	 focus = {
 	 id = SRI_attack_prob
