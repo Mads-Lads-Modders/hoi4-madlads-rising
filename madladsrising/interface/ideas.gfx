@@ -5628,7 +5628,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_LOL_jew_rule"
-		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 	}
 
 
