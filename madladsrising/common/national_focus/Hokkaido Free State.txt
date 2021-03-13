@@ -30,10 +30,8 @@ focus = {
 
 	completion_reward = {
 		add_political_power = 50
-		stability_factor = 0.05
-		add_popularity = {
-		  fascism = -0.05
-		}
+		add_stability = 0.05
+		add_popularity = { ideology = fascism popularity = -0.05 }
 	}
 } # end focus
 focus = {
@@ -54,7 +52,7 @@ focus = {
 
 	completion_reward = {
 		add_political_power = 50
-		stability_factor = -0.05
+		add_stability = -0.05
 		set_politics = {
 			ruling_party = fascism
 			last_election = "1933.3.5"
