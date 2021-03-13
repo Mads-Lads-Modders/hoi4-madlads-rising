@@ -5618,7 +5618,10 @@ spriteTypes = {
 	  name = "GFX_idea_XAV_undecided_fate"
 		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
 	}
-
+  spriteType = {
+	  name = "GFX_idea_XAV_prussian_army_training"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
 
 
 

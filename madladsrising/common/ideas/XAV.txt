@@ -12,6 +12,18 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		XAV_prussian_army_training = {
+		  allowed = {
+			  original_TAG = XAV
+				}
+			removal_cost = -1
+
+			modifier = {
+			  army_org_Factor = 0.05
+				training_time_factor = -0.1
+			}
+			}
+		}
 		XAV_ultranationalists = {
 
 			allowed = {

@@ -30,6 +30,7 @@ set_convoys = 25
 
 add_ideas = {
   XAV_undecided_fate
+	XAV_prussian_army_training
 }
 
 create_country_leader = {
