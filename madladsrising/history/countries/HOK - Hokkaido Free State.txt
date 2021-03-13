@@ -27,6 +27,10 @@ set_popularities = {
 
 set_convoys = 25
 
+add_ideas = {
+  HOK_tightrope
+	HOK_natures_grasp
+}
 
 create_country_leader = {
 	name = "Achair"
@@ -46,6 +50,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
+	  headstrong
+		popular_queen
 
 	}
 }

@@ -5630,7 +5630,13 @@ spriteTypes = {
 		name = "GFX_idea_LOL_jew_rule"
 		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 	}
-
-
+	spriteType = {
+		name = "GFX_idea_HOK_tightrope"
+		texturefile = "gfx/interface/ideas/idea_hol_aloof_neutrality.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_natures_grasp"
+		texturefile = "gfx/interface/ideas/FRA_fortification_focus.dds"
+	}
 
 }
