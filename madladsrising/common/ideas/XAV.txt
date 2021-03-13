@@ -23,11 +23,11 @@ ideas = {
 				training_time_factor = -0.1
 			}
 			}
-		}
+
 		XAV_ultranationalists = {
 
 			allowed = {
-				always = no
+				original_TAG = XAV
 			}
 
 			allowed_civil_war = {
@@ -41,5 +41,5 @@ ideas = {
 			}
 
 		}
-  }
-}
+  } #line up with country
+} #line up with ideas
