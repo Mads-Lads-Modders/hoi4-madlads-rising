@@ -48,7 +48,7 @@ focus_tree = {
     search_filters = { FOCUS_FILTER_POLITICAL}
 
     completion_reward = {
-      #ticking fascism support needed
+      add_ideas = { XAV_nationalist_sentiments }
       add_popularity = {ideology = fascism popularity= .10}
  		}
     }
