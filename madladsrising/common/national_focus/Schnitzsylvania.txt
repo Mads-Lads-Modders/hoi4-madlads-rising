@@ -423,3 +423,163 @@ completion_reward = {
 add_political_power = 69
 }
 }
+#
+focus = {
+id = SRI_balkan_dom
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_fuck_hungary }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = -3
+y = 1
+relative_position_id = SRI_fuck_hungary
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_unite_balk
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_balkan_dom }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_balkan_dom
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_ins_balk
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_unite_balk }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_unite_balk
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_assasinate_mus
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_ins_balk }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_ins_balk
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_bulg_war
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_assasinate_mus }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_assasinate_mus
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_pay_greece
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_bulg_war }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_bulg_war
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_dem_vas
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_pay_greece }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_pay_greece
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_united_balk
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_dem_vas }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_dem_vas
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
