@@ -261,7 +261,7 @@ prerequisite = { focus = SRI_attack_prob }
 	 available_if_capitulated = yes
 		 search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-add_ideas {SRI_retake_land}
+add_ideas = {SRI_retake_land}
 
 
 	  #ticking fascism support needed
