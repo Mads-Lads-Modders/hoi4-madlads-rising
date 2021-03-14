@@ -5674,5 +5674,12 @@ spriteTypes = {
 		name = "GFX_idea_XAV_idea_military_youth"
 		texturefile = "gfx/interface/ideas/idea_general_staff.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_XAV_idea_military_state"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_industrial_nationalization"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
 }

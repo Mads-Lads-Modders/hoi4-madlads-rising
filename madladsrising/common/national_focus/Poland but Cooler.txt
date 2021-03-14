@@ -124,6 +124,16 @@ focus_tree = {
 
 		      completion_reward = {
 					   add_political_power = 50
+						 create_country_leader = {
+						 	name = "Kaiser Locke I"
+						 	desc = "POLITICS_KING_ZOG_DESC"
+						 	picture = "XAV fascism leader placeholder.dds"
+						 	expire = "1965.1.1"
+						 	ideology = fascism
+						   traits = {
+								indomitable_perseverance
+						   }
+						 }
 		         set_politics = {
 						   ruling_party = fascism
 						 }
@@ -653,11 +663,13 @@ focus_tree = {
 																					      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																					      completion_reward = {
-																								   add_political_power = 69
-																					        #ticking fascism support needed
-																					        #add_popularity = {ideology = fascism popularity= .05}
-																					        #add_ideas = {XAV_ultranationalists}
-
+																								   add_ideas = { XAV_idea_industrial_nationalization }
+																									 5 = {
+																									 add_resource = {
+																									 type = steel
+																									 amount = 12
+																									 }
+																									 }
 																					   		}
 																					      }
 																								#
@@ -677,11 +689,39 @@ focus_tree = {
 																						      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																						      completion_reward = {
-																									   add_political_power = 69
-																						        #ticking fascism support needed
-																						        #add_popularity = {ideology = fascism popularity= .05}
-																						        #add_ideas = {XAV_ultranationalists}
-
+																										 if = {
+																											 limit = {
+																												 has_full_control_of_state = 763
+																											 }
+																											 763 = {
+																												 add_extra_state_shared_building_slots = 2
+																												 add_building_construction = {
+																													 type = arms_factory
+																													 level = 2
+																													 instant_build = yes
+																												 }
+																											 }
+																										 }
+																										 if = {
+																											 limit = {
+																												 has_full_control_of_state = 5
+																											 }
+																											 5 = {
+																												 add_extra_state_shared_building_slots = 2
+																												 add_building_construction = {
+																													 type = arms_factory
+																													 level = 2
+																													 instant_build = yes
+																												 }
+																											 }
+																										 }
+																										 effect_tooltip = {
+											 																swap_ideas = { remove_idea = XAV_idea_stable_politics add_idea = XAV_idea_military_state }
+											 															}
+											 															hidden_effect = {
+											 																remove_ideas = { XAV_idea_stable_politics }
+											 																add_ideas = { XAV_idea_military_state }
+											 															}
 																						   		}
 																						      }
 																									#
