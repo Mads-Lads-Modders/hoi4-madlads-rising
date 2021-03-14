@@ -97,7 +97,7 @@ focus_tree = {
 	      completion_reward = {
 				   add_political_power = -100
 					 effect_tooltip = {
-						 swap_ideas = { remove_idea = XAV_nationalist_sentiments = XAV_compromised_government }
+						 swap_ideas = { remove_idea = XAV_nationalist_sentiments add_idea = XAV_compromised_government }
 					 }
 					 hidden_effect = {
 						 remove_ideas = { XAV_nationalist_sentiments }
