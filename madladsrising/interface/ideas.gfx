@@ -5662,5 +5662,17 @@ spriteTypes = {
 		name = "GFX_idea_XAV_idea_united_peoples"
 		texturefile = "gfx/interface/ideas/triumphant_will.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_secret_police"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_stable_politics"
+		texturefile = "gfx/interface/ideas/neutrality_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_military_youth"
+		texturefile = "gfx/interface/ideas/idea_general_staff.dds"
+	}
 
 }

@@ -108,5 +108,39 @@ ideas = {
 			  can_create_factions = yes
 			 }
 			}
+			XAV_idea_secret_police = {
+			 allowed = {
+			   original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			 drift_defence_factor = 0.5
+			 }
+			}
+			XAV_idea_stable_politics = {
+			 allowed = {
+				 original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			 political_power_gain = 0.1
+			 consumer_goods_factor = -0.2
+			 }
+			}
+			XAV_idea_military_youth = {
+			 allowed = {
+				 original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			 training_time_army_factor = 0.2
+			 conscription = 0.025
+			 }
+			}
+			
+
   } #line up with country
 } #line up with ideas
