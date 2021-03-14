@@ -67,7 +67,7 @@ ideas = {
 			 removal_cost = -1
 
 			 modifier = {
-			  conscription = .001
+			  conscription = 0.01
 				justify_war_goal_time = -0.25
 			}
 			}
