@@ -5683,3 +5683,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 	}
 }
+spriteType = {
+	name = "GFX_idea_SRI_retake_land"
+	texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+}
