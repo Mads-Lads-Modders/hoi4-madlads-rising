@@ -129,7 +129,7 @@ focus_tree = {
 						 	desc = "POLITICS_KING_ZOG_DESC"
 						 	picture = "XAV fascism leader placeholder.dds"
 						 	expire = "1965.1.1"
-						 	ideology = fascism
+						 	ideology = nazism
 						   traits = {
 								indomitable_perseverance
 						   }
