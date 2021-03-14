@@ -169,6 +169,9 @@ focus_tree = {
 				      icon = GFX_goal_generic_occupy_states_ongoing_war
 				      prerequisite = { focus = XAV_prussian_path }
 				  		#mutually_exclusive = { focus = XAV_locke_path }
+							available = {
+							date > 1937.1.1
+							}
 				      x = -5
 				      y = 1
 				      relative_position_id = XAV_prussian_path
@@ -180,10 +183,8 @@ focus_tree = {
 				      search_filters = { FOCUS_FILTER_POLITICAL}
 
 				      completion_reward = {
-							   add_political_power = 69
-				        #ticking fascism support needed
-				        #add_popularity = {ideology = fascism popularity= .05}
-				        #add_ideas = {XAV_ultranationalists}
+							  add_war_support = 0.1
+				        add_ideas = { XAV_idea_prussian_ambition }
 
 				   		}
 				      }

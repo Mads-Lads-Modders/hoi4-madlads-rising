@@ -71,5 +71,16 @@ ideas = {
 				justify_war_goal_time = -0.25
 			}
 			}
+			XAV_idea_prussian_ambition = {
+			 allowed = {
+			   original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			  justify_war_goal_time = -0.4
+				army_attack_factor = 0.1
+			 }
+			}
   } #line up with country
 } #line up with ideas
