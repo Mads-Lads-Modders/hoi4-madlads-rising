@@ -207,7 +207,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 			hidden_effect = {
 				create_corps_commander = {
 					name = "KIMI"
-					gfx = GFX_Portrait_romania_barbu_paraianu
+					portrait_path = "gfx/leaders/SRI/Portrait_SRI_General_Kimi.dds"
 					traits = { infantry_officer }
 					skill = 4
 					attack_skill = 4
