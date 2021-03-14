@@ -201,7 +201,6 @@ continuous_focus_position = { x = 3000 y = 1600 }
   completion_reward = {
 	 add_war_support .15
 	 add_stability .05
-	 army_attack_factor .2
 	 army_experience 20
 	 add_ideas = SRI_army_war_college
 			custom_effect_tooltip = SRI_war_college_tt
