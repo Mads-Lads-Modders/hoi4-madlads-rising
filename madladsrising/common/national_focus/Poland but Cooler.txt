@@ -240,15 +240,7 @@ focus_tree = {
 						      search_filters = { FOCUS_FILTER_POLITICAL}
 
 						      completion_reward = {
-									   add_state_core = 85
-										 add_state_core = 86
-										 create_wargoal = {
-											 type = take_state_focus
-											 target = POL
-											 expire = 0
-											 generator = { 85 86 }
-										 }
-
+									 add_ideas = { XAV_idea_protect_border }
 						   		}
 						      }
 									#
@@ -257,6 +249,9 @@ focus_tree = {
 							      icon = GFX_goal_generic_major_war
 							      prerequisite = { focus = XAV_prussian_claims }
 							  		#mutually_exclusive = { focus = XAV_locke_path }
+										available = {
+										date > 1938.1.1
+										}
 							      x = 1
 							      y = 1
 							      relative_position_id = XAV_prussian_claims
@@ -268,10 +263,12 @@ focus_tree = {
 							      search_filters = { FOCUS_FILTER_POLITICAL}
 
 							      completion_reward = {
-										   add_political_power = 69
-							        #ticking fascism support needed
-							        #add_popularity = {ideology = fascism popularity= .05}
-							        #add_ideas = {XAV_ultranationalists}
+									   	create_wargoal = {
+										  	type = take_state_focus
+											  target = SWE
+										  	expire = 0
+										  	generator = { 138 139 }
+										}
 
 							   		}
 							      }
@@ -292,10 +289,11 @@ focus_tree = {
 								      search_filters = { FOCUS_FILTER_POLITICAL}
 
 								      completion_reward = {
-											   add_political_power = 69
-								        #ticking fascism support needed
-								        #add_popularity = {ideology = fascism popularity= .05}
-								        #add_ideas = {XAV_ultranationalists}
+											create_wargoal = {
+												type = annex_everything
+												target = DEN
+												expire = 0
+											}
 
 								   		}
 								      }
@@ -316,11 +314,14 @@ focus_tree = {
 									      search_filters = { FOCUS_FILTER_POLITICAL}
 
 									      completion_reward = {
-												   add_political_power = 69
-									        #ticking fascism support needed
-									        #add_popularity = {ideology = fascism popularity= .05}
-									        #add_ideas = {XAV_ultranationalists}
-
+												add_state_core = 85
+											 add_state_core = 86
+											 create_wargoal = {
+												 type = take_state_focus
+												 target = POL
+												 expire = 0
+												 generator = { 85 86 }
+											 }
 									   		}
 									      }
 												#
@@ -329,6 +330,9 @@ focus_tree = {
 										      icon = GFX_focus_generic_strike_at_democracy1
 										      prerequisite = { focus = XAV_prussian_claims_poland }
 										  		#mutually_exclusive = { focus = XAV_locke_path }
+													available = {
+													date > 1939.1.1
+													}
 										      x = 0
 										      y = 1
 										      relative_position_id = XAV_prussian_claims_poland
@@ -340,10 +344,21 @@ focus_tree = {
 										      search_filters = { FOCUS_FILTER_POLITICAL}
 
 										      completion_reward = {
-													   add_political_power = 69
-										        #ticking fascism support needed
-										        #add_popularity = {ideology = fascism popularity= .05}
-										        #add_ideas = {XAV_ultranationalists}
+													   add_state_core = 59
+														 add_state_core = 60
+														 add_state_core = 61
+														 add_state_core = 63
+														 add_state_core = 64
+														 add_state_core = 65
+														 add_state_core = 66
+														 add_state_core = 67
+														 add_state_core = 68
+														 create_wargoal = {
+															 type = take_state_focus
+															 target = GER
+															 expire = 0
+															 generator = { 59 60 61 63 64 65 66 67 68 69 }
+														 }
 
 										   		}
 										      }
@@ -353,6 +368,9 @@ focus_tree = {
 											      icon = GFX_goal_generic_more_territorial_claims
 											      prerequisite = { focus = XAV_prussian_claims_border }
 											  		#mutually_exclusive = { focus = XAV_locke_path }
+														available = {
+														date > 1939.1.1
+														}
 											      x = 0
 											      y = 1
 											      relative_position_id = XAV_prussian_claims_border
@@ -364,19 +382,37 @@ focus_tree = {
 											      search_filters = { FOCUS_FILTER_POLITICAL}
 
 											      completion_reward = {
-														   add_political_power = 69
-											        #ticking fascism support needed
-											        #add_popularity = {ideology = fascism popularity= .05}
-											        #add_ideas = {XAV_ultranationalists}
+														 create_wargoal = {
+															type = annex_everything
+															target = SOV
+															expire = 0
+														}
 
 											   		}
 											      }
 														#
 												    focus = {
-												      id = XAV_prussian_claims_unite_peoples
+												      id = XAV_prussian_claims_unite_peoples #Focus Check currently broken
 												      icon = GFX_goal_tripartite_pact
 												      prerequisite = { focus = XAV_prussian_claims_agression }
 												  		#mutually_exclusive = { focus = XAV_locke_path }
+															available = {
+															custom_trigger_tooltip = {
+															XAV = { controls_state = 65 }
+															any_other_country = {
+																is_in_faction_with = XAV
+																controls_state = 65
+															}
+
+														OR = {
+															XAV = { controls_state = 219 }
+															any_other_country = {
+																is_in_faction_with = XAV
+																controls_state = 219
+															}
+														}
+															}
+															}
 												      x = 0
 												      y = 2
 												      relative_position_id = XAV_prussian_claims_agression
@@ -388,10 +424,13 @@ focus_tree = {
 												      search_filters = { FOCUS_FILTER_POLITICAL}
 
 												      completion_reward = {
-															   add_political_power = 69
-												        #ticking fascism support needed
-												        #add_popularity = {ideology = fascism popularity= .05}
-												        #add_ideas = {XAV_ultranationalists}
+															effect_tooltip = {
+																swap_ideas = { remove_idea = XAV_idea_prussian_ambition add_idea = XAV_idea_united_peoples }
+															}
+															hidden_effect = {
+																remove_ideas = { XAV_idea_protect_border }
+																add_ideas = { XAV_idea_united_peoples }
+															}
 
 												   		}
 												      }

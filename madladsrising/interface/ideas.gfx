@@ -5654,5 +5654,13 @@ spriteTypes = {
 		name = "GFX_idea_XAV_idea_prussian_ambition"
 		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_protect_border"
+		texturefile = "gfx/interface/ideas/FRA_fortification_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_united_peoples"
+		texturefile = "gfx/interface/ideas/triumphant_will.dds"
+	}
 
 }
