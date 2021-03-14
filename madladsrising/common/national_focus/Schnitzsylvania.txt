@@ -261,12 +261,18 @@ prerequisite = { focus = SRI_attack_prob }
 	 available_if_capitulated = yes
 		 search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-	  add_political_power = 69
+add_ideas {SRI_retake_land}
+
+
 	  #ticking fascism support needed
 		 #add_popularity = {ideology = fascism popularity= .05}
 		#add_ideas = {XAV_ultranationalists}
 		}
 			}
+
+
+
+
 			#
 		 focus = {
 		 id = SRI_revival_friend
