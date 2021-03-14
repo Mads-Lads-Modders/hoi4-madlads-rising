@@ -135,7 +135,7 @@ focus_tree = {
 						   }
 						 }
 		         set_politics = {
-						   ruling_party = fascism
+						   ruling_party = fascism_ideology
 						 }
 						 effect_tooltip = {
 							 swap_ideas = { remove_idea = XAV_compromised_government add_idea = XAV_idea_prussian_hegemony }
