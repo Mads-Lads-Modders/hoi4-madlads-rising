@@ -199,9 +199,9 @@ continuous_focus_position = { x = 3000 y = 1600 }
 	  available_if_capitulated = yes
 	  search_filters = { FOCUS_FILTER_POLITICAL}
   completion_reward = {
-	 add_war_support 15
-	 add_stability 5
-	 army_experience 20
+	 add_war_support = 0.2
+	 add_stability = 0.05
+	 army_experience = 20
 	 add_ideas = SRI_army_war_college
 			custom_effect_tooltip = SRI_war_college_tt
 			hidden_effect = {
