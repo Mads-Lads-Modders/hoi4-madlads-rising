@@ -182,33 +182,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 		}
-		completion_reward = {
-		setowner SRI 81
-		setowner SRI 46
-		setowner SRI 77
-		setowner SRI 79
-		setowner SRI 80
-		setowner SRI 78
 		}
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		#
 	 focus = {
 	 id = SRI_attack_prob
@@ -225,12 +199,26 @@ continuous_focus_position = { x = 3000 y = 1600 }
 	  available_if_capitulated = yes
 	  search_filters = { FOCUS_FILTER_POLITICAL}
   completion_reward = {
-	 add_political_power = 69
-		 #ticking fascism support needed
-	   #add_popularity = {ideology = fascism popularity= .05}
-	    #add_ideas = {XAV_ultranationalists}
+	 add_war_support .15
+	 add_stability .05
+	 army_attack_factor .2
+	 army_experience 20
+	 add_ideas = SRI_army_war_college
+			custom_effect_tooltip = SRI_war_college_tt
+			hidden_effect = {
+				create_corps_commander = {
+					name = "KIMI"
+					gfx = GFX_Portrait_romania_barbu_paraianu
+					traits = { infantry_officer }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 1
+					planning_skill = 3
+					logistics_skill = 3
 		 	}
 		  }
+			}
+			}
 			#
 		focus = {
 	  id = SRI_through_mountains
