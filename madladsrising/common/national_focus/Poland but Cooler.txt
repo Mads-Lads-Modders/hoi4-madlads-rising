@@ -124,6 +124,16 @@ focus_tree = {
 
 		      completion_reward = {
 					   add_political_power = 50
+						 create_country_leader = {
+						 	name = "Kaiser Locke I"
+						 	desc = "POLITICS_KING_ZOG_DESC"
+						 	picture = "XAV fascism leader placeholder.dds"
+						 	expire = "1965.1.1"
+						 	ideology = fascism
+						   traits = {
+								indomitable_perseverance
+						   }
+						 }
 		         set_politics = {
 						   ruling_party = fascism
 						 }
