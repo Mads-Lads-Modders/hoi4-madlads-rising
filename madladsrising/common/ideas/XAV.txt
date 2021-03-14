@@ -140,7 +140,30 @@ ideas = {
 			 conscription = 0.025
 			 }
 			}
-			
+			XAV_idea_industrial_nationalization = {
+			 allowed = {
+				 original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			 min_export = -0.15
+			 stability_factor = -0.01
+			 }
+			}
+			XAV_idea_military_state = {
+			 allowed = {
+				 original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			 consumer_goods_factor = -0.03
+			 production_speed_arms_factory_factor = 0.2
+			 production_speed_dockyard_factor = 0.2
+			 }
+			}
+
 
   } #line up with country
 } #line up with ideas
