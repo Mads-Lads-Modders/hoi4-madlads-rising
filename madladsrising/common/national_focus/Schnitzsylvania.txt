@@ -202,8 +202,8 @@ continuous_focus_position = { x = 3000 y = 1600 }
 	 add_war_support = 0.2
 	 add_stability = 0.05
 	 army_experience = 20
-	 add_ideas = SRI_army_war_college
-			custom_effect_tooltip = SRI_war_college_tt
+	 #add_ideas = SRI_army_war_college
+			#custom_effect_tooltip = SRI_war_college_tt
 			hidden_effect = {
 				create_corps_commander = {
 					name = "KIMI"
@@ -234,12 +234,17 @@ prerequisite = { focus = SRI_attack_prob }
  available_if_capitulated = yes
  search_filters = { FOCUS_FILTER_POLITICAL}
  completion_reward = {
-	 add_political_power = 69
+ add_tech_bonus = {
+ 				name = SRI_through_mountains
+ 				bonus = 2.0
+ 				uses = 3
+ 				category = mountaineers_tech
 	 #ticking fascism support needed
 	  #add_popularity = {ideology = fascism popularity= .05}
 	   #add_ideas = {XAV_ultranationalists}
 			}
 	   }
+}
 			#
 	   focus = {
 	   id = SRI_march_sea
