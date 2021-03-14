@@ -123,10 +123,19 @@ focus_tree = {
 		      search_filters = { FOCUS_FILTER_POLITICAL}
 
 		      completion_reward = {
-					   add_political_power = 69
-		        #ticking fascism support needed
-		        #add_popularity = {ideology = fascism popularity= .05}
-		        #add_ideas = {XAV_ultranationalists}
+					   add_political_power = 50
+		         set_politics = {
+						   ruling_party = fascism
+						 }
+						 effect_tooltip = {
+							 swap_ideas = { remove_idea = XAV_compromised_government add_idea = XAV_idea_prussian_hegemony }
+						 }
+						 hidden_effect = {
+							 remove_ideas = { XAV_compromised_government }
+							 add_ideas = { XAV_idea_prussian_hegemony }
+						 }
+						 #replace fascist leader portrait
+						 remove_ideas = { XAV_undecided_fate }
 
 		   		}
 		      }

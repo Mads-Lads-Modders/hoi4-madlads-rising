@@ -5646,5 +5646,9 @@ spriteTypes = {
 		name = "GFX_idea_XAV_compromised_government"
 		texturefile = "gfx/interface/ideas/spr_masters_of_our_own_fate.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_prussian_hegemony"
+		texturefile = "gfx/interface/ideas/idea_bul_prussia_of_the_balkans.dds"
+	}
 
 }

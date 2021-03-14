@@ -60,5 +60,16 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		  }
+			XAV_idea_prussian_hegemony = {
+			 allowed = {
+			   original_TAG = XAV
+			 }
+			 removal_cost = -1
+
+			 modifier = {
+			  conscription = .001
+				justify_war_goal_time = -0.25
+			}
+			}
   } #line up with country
 } #line up with ideas
