@@ -181,7 +181,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			consciption = 0.1
+			conscription = 0.1
 			stability_factor = 0.05
 			}
 			}
@@ -192,7 +192,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			consciption = 0.1
+			conscription = 0.1
 			drift_defence_factor = 0.5
 			army_org_Factor = 0.1
 			stability_factor = 0.1
@@ -241,6 +241,82 @@ ideas = {
 			production_speed_dockyard_factor = 0.1
 			production_speed_arms_factory_factor = 0.1
 			industrial_capacity_factory = 0.15
+			}
+			}
+			XAV_idea_forced_labor = {
+			allowed = {
+				original_TAG = XAV
+			}
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = -0.2
+			political_power_gain = -0.2
+			conscription = 0.1
+			industrial_capacity_factory = 0.2
+			}
+			XAV_idea_forced_labor2 = {
+			allowed = {
+				original_TAG = XAV
+			}
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = -0.25
+			war_support_factor = -0.05
+			political_power_gain = -0.2
+			conscription = 0.1
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.4
+			industry_repair_factor = -0.2
+			resistance_damage_to_garrison = 0.2
+			}
+			}
+			XAV_idea_british_alliance = {
+			allowed = {
+				original_TAG = ENG
+			}
+			removal_cost = -1
+
+			modifier = {
+			fascism_acceptance = 85
+			}
+			}
+			XAV_idea_british_advisors = {
+			allowed = {
+				original_TAG = XAV
+			}
+			removal_cost = -1
+
+			modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+		  planning_speed = 0.25
+			}
+			}
+			XAV_idea_british_advisors2 = {
+			allowed = {
+				original_TAG = XAV
+			}
+			removal_cost = -1
+
+			modifier = {
+			#production cost for fighters
+			}
+			}
+			XAV_idea_eliminate_barbarism = {
+			allowed = {
+				original_TAG = XAV
+			}
+			removal_cost = -1
+
+			modifier = {
+			army_attack_factor = 0.1
+			army_movement_speed_factor = 0.1 #guessing on this one
+			war_support_factor = 0.1
+			}
+			rule = {
+			can_send_volunteers = yes
 			}
 			}
 
