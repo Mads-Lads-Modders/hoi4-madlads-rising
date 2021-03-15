@@ -96,6 +96,16 @@ focus_tree = {
 
 	      completion_reward = {
 				   add_political_power = -100
+					 create_country_leader = {
+					 	name = "Yes! We have no politicians!"
+					 	desc = "POLITICS_KING_ZOG_DESC"
+					 	picture = "XAV fallen government.dds"
+					 	expire = "1965.1.1"
+					 	ideology = despotism
+					   traits = {
+					 		cabinet_crisis
+					   }
+					 }
 					 effect_tooltip = {
 						 swap_ideas = { remove_idea = XAV_nationalist_sentiments add_idea = XAV_compromised_government }
 					 }
