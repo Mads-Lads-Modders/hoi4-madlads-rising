@@ -210,6 +210,7 @@ ideas = {
 		traits = { captain_of_industry }
 	}
 
+		} #line up with political advisor
 
 
 # MILITARY
@@ -469,5 +470,4 @@ materiel_manufacturer = {
 	}
 }
 
-	} #line up with political advisor
 } #line up with ideas
