@@ -5682,6 +5682,30 @@ spriteTypes = {
 		name = "GFX_idea_XAV_idea_industrial_nationalization"
 		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_lockean_fascism"
+		texturefile = "gfx/interface/ideas/idea_generic_fascism_drift_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_lockean_religion"
+		texturefile = "gfx/interface/ideas/idea_yug_orthodox_church_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_lockean_religion2"
+		texturefile = "gfx/interface/ideas/spr_appropriate_church_riches.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_social_contract"
+		texturefile = "gfx/interface/ideas/idea_can_wartime_prices_and_trade_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_social_contract2"
+		texturefile = "gfx/interface/ideas/idea_can_wartime_prices_and_trade_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_developed_economy"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
   spriteType = {
 	name = "GFX_idea_SRI_retake_land"
 	texturefile = "gfx/interface/ideas/generic_production_bonus.dds"

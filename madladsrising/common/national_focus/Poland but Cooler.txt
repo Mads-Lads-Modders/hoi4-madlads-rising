@@ -178,9 +178,19 @@ focus_tree = {
 
 			      completion_reward = {
 						   hidden_effect = { set_cosmetic_tag = XAV_locke_fascism }
-			        #ticking fascism support needed
-			        #add_popularity = {ideology = fascism popularity= .05}
-			        #add_ideas = {XAV_ultranationalists}
+			        #need Lockean Locke portrait
+							set_politics = {
+ 						   ruling_party = fascism
+ 						 }
+						 hidden_effect = { set_cosmetic_tag = XAV_locke_fascism }
+						 effect_tooltip = {
+							 swap_ideas = { remove_idea = XAV_compromised_government add_idea = XAV_idea_lockean_fascism }
+						 }
+						 hidden_effect = {
+							 remove_ideas = { XAV_compromised_government }
+							 add_ideas = { XAV_idea_lockean_fascism }
+						 }
+						 remove_ideas = { XAV_undecided_fate }
 
 			   		}
 			      }
@@ -752,10 +762,7 @@ focus_tree = {
 																							      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																							      completion_reward = {
-																										   add_political_power = 69
-																							        #ticking fascism support needed
-																							        #add_popularity = {ideology = fascism popularity= .05}
-																							        #add_ideas = {XAV_ultranationalists}
+																										   add_idea = { XAV_idea_social_contract }
 
 																							   		}
 																							      }
@@ -776,10 +783,13 @@ focus_tree = {
 																								      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																								      completion_reward = {
-																											   add_political_power = 69
-																								        #ticking fascism support needed
-																								        #add_popularity = {ideology = fascism popularity= .05}
-																								        #add_ideas = {XAV_ultranationalists}
+																											effect_tooltip = {
+																											 swap_ideas = { remove_idea = XAV_idea_social_contract add_idea = XAV_idea_social_contract2 }
+																										 }
+																										 hidden_effect = {
+																											 remove_ideas = { XAV_idea_social_contract }
+																											 add_ideas = { XAV_idea_social_contract2 }
+																										 }
 
 																								   		}
 																								      }
@@ -789,6 +799,9 @@ focus_tree = {
 																									      icon = GFX_focus_mex_privatisation
 																									      prerequisite = { focus = XAV_property}
 																									  		#mutually_exclusive = { focus = XAV_locke_path }
+																												available = {
+																												num_of_factories > 50
+																												}
 																									      x = 0
 																									      y = 1
 																									      relative_position_id = XAV_property
@@ -800,10 +813,7 @@ focus_tree = {
 																									      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																									      completion_reward = {
-																												   add_political_power = 69
-																									        #ticking fascism support needed
-																									        #add_popularity = {ideology = fascism popularity= .05}
-																									        #add_ideas = {XAV_ultranationalists}
+																												   add_ideas = { XAV_idea_developed_economy }
 
 																									   		}
 																									      }
@@ -824,10 +834,8 @@ focus_tree = {
 																										      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																										      completion_reward = {
-																													   add_political_power = 69
-																										        #ticking fascism support needed
-																										        #add_popularity = {ideology = fascism popularity= .05}
-																										        #add_ideas = {XAV_ultranationalists}
+																													   add_political_power = 50
+																														 add_ideas = { XAV_idea_lockean_religion }
 
 																										   		}
 																										      }
@@ -848,10 +856,13 @@ focus_tree = {
 																											      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																											      completion_reward = {
-																														   add_political_power = 69
-																											        #ticking fascism support needed
-																											        #add_popularity = {ideology = fascism popularity= .05}
-																											        #add_ideas = {XAV_ultranationalists}
+																															 effect_tooltip = {
+																 																swap_ideas = { remove_idea = XAV_idea_lockean_religion add_idea = XAV_idea_lockean_religion2 }
+																 															}
+																 															hidden_effect = {
+																 																remove_ideas = { XAV_idea_lockean_religion }
+																 																add_ideas = { XAV_idea_lockean_religion2 }
+																 															}
 
 																											   		}
 																											      }
