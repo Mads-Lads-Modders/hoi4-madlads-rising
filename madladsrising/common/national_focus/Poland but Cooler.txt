@@ -1043,10 +1043,23 @@ focus_tree = {
 																																		      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																		      completion_reward = {
-																																					   add_political_power = 69
-																																		        #ticking fascism support needed
-																																		        #add_popularity = {ideology = fascism popularity= .05}
-																																		        #add_ideas = {XAV_ultranationalists}
+																																					create_wargoal = {
+																																						type = annex_everything
+																																						target = LIT
+																																						expire = 0
+																																					}
+																																					create_wargoal = {
+																																					 type = take_state_focus
+																																					 target = LAT
+																																					 expire = 0
+																																					 generator = { 12 190 }
+																																				 }
+																																				 create_wargoal = {
+																																 					type = take_state_focus
+																																 					target = EST
+																																 					expire = 0
+																																 					generator = { 13 191 }
+																																 				}
 
 																																		   		}
 																																		      }
@@ -1067,10 +1080,12 @@ focus_tree = {
 																																			      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																			      completion_reward = {
-																																						   add_political_power = 69
-																																			        #ticking fascism support needed
-																																			        #add_popularity = {ideology = fascism popularity= .05}
-																																			        #add_ideas = {XAV_ultranationalists}
+																																							 create_wargoal = {
+																																			 					type = take_state_focus
+																																			 					target = FIN
+																																			 					expire = 0
+																																			 					generator = { 111 146 }
+																																			 				}
 
 																																			   		}
 																																			      }
@@ -1091,10 +1106,22 @@ focus_tree = {
 																																				      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																				      completion_reward = {
-																																							   add_political_power = 69
-																																				        #ticking fascism support needed
-																																				        #add_popularity = {ideology = fascism popularity= .05}
-																																				        #add_ideas = {XAV_ultranationalists}
+																																								 add_state_core = 85
+																												 											   add_state_core = 86
+																																								 add_state_core = 87
+																																								 add_state_core = 88
+																																								 add_state_core = 90
+																																								 add_state_core = 10
+																																								 add_state_core = 92
+																																								 add_state_core = 97
+																																								 add_state_core = 98
+																																								 add_state_core = 762
+																												 										  	 create_wargoal = {
+																												 												 type = take_state_focus
+																												 												 target = POL
+																												 												 expire = 0
+																												 												 generator = { 85 }
+																												 											 }
 
 																																				   		}
 																																				      }
@@ -1115,10 +1142,16 @@ focus_tree = {
 																																					      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																					      completion_reward = {
-																																								   add_political_power = 69
-																																					        #ticking fascism support needed
-																																					        #add_popularity = {ideology = fascism popularity= .05}
-																																					        #add_ideas = {XAV_ultranationalists}
+																																								   73 = {add_claim_by = XAV}
+																																									 71 = {add_claim_by = XAV}
+																																									 70 = {add_claim_by = XAV}
+																																									 664 = {add_claim_by = XAV}
+																																									 create_wargoal = {
+																													 												 type = take_state_focus
+																													 												 target = CZE
+																													 												 expire = 0
+																													 												 generator = { 73 }
+																													 											 }
 
 																																					   		}
 																																					      }
@@ -1139,11 +1172,16 @@ focus_tree = {
 																																						      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																						      completion_reward = {
-																																									   add_political_power = 69
-																																						        #ticking fascism support needed
-																																						        #add_popularity = {ideology = fascism popularity= .05}
-																																						        #add_ideas = {XAV_ultranationalists}
-
+																																										 add_state_core = 63
+																																										 add_state_core = 66
+																																										 add_state_core = 68
+																																										 add_state_core = 67
+																																										 create_wargoal = {
+																														 												 type = take_state_focus
+																														 												 target = GER
+																														 												 expire = 0
+																														 												 generator = { 63 }
+																														 											 }
 																																						   		}
 																																						      }
 																																									#
@@ -1163,10 +1201,11 @@ focus_tree = {
 																																							      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																							      completion_reward = {
-																																										   add_political_power = 69
-																																							        #ticking fascism support needed
-																																							        #add_popularity = {ideology = fascism popularity= .05}
-																																							        #add_ideas = {XAV_ultranationalists}
+																																											 create_wargoal = {
+																																												type = topple_government
+																																												target = SOV
+																																												expire = 0
+																																											}
 
 																																							   		}
 																																							      }
