@@ -61,7 +61,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Olive"
 	portrait_path = "gfx/leaders/XAV/olive.dds"
-	traits = { urban_assault_specialist armor_officer }
+	traits = { urban_assault_specialist armor_officer panzer_leader }
 	skill = 4
 	attack_skill = 4
     defense_skill = 2
@@ -77,4 +77,15 @@ create_field_marshal = {
     defense_skill = 4
     planning_skill = 2
     logistics_skill = 3
+}
+create_corps_commander = {
+  name = "Charlie"
+	portrait_path = "gfx/leaders/XAV/charlie.dds"
+	traits = { trait_cautious infantry_officer }
+	skill = 3
+	attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+
 }
