@@ -5682,8 +5682,8 @@ spriteTypes = {
 		name = "GFX_idea_XAV_idea_industrial_nationalization"
 		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 	}
-}
-spriteType = {
+  spriteType = {
 	name = "GFX_idea_SRI_retake_land"
 	texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 }
+} # copy paste BEFORE this bracket
