@@ -147,6 +147,7 @@ focus_tree = {
 		         set_politics = {
 						   ruling_party = fascism
 						 }
+						 hidden_effect = { set_cosmetic_tag = XAV_prussia_fascism }
 						 effect_tooltip = {
 							 swap_ideas = { remove_idea = XAV_compromised_government add_idea = XAV_idea_prussian_hegemony }
 						 }
@@ -176,7 +177,7 @@ focus_tree = {
 			      search_filters = { FOCUS_FILTER_POLITICAL}
 
 			      completion_reward = {
-						   add_political_power = 69
+						   hidden_effect = { set_cosmetic_tag = XAV_locke_fascism }
 			        #ticking fascism support needed
 			        #add_popularity = {ideology = fascism popularity= .05}
 			        #add_ideas = {XAV_ultranationalists}

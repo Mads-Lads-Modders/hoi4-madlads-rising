@@ -1062,7 +1062,7 @@
  ###############################################################################
 
 
- XAV_fascism_prussia:0 "Prussian Empire"
- XAV_fascism_prussia_DEF:0 "the Prussian Empire"
- XAV_fascism_locke:0 "Lockean State"
- XAV_fascism_locke_DEF:0 "The Lockean State"
+ XAV_prussia_fascism:0 "Prussian Empire"
+ XAV_prussia_fascism_DEF:0 "the Prussian Empire"
+ XAV_locke_fascism:0 "Lockean State"
+ XAV_locke_fascism_DEF:0 "The Lockean State"
