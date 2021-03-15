@@ -209,7 +209,7 @@ ideas = {
 
 		traits = { captain_of_industry }
 	}
-}
+
 
 
 # MILITARY
@@ -450,7 +450,7 @@ materiel_manufacturer = {
 
 	designer = yes
 
-	arsenal = {
+	gotland_arsenal = {
 
 		picture = generic_infantry_equipment_manufacturer_3
 
@@ -468,6 +468,6 @@ materiel_manufacturer = {
 		traits = { infantry_equipment_manufacturer }
 	}
 }
-}
+
 	} #line up with political advisor
 } #line up with ideas
