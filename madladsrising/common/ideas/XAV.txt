@@ -302,15 +302,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+			planning_speed = 0.25
+			}
 			equipment_bonus = {
 			fighter_equipment = {
 			 build_cost_ic = -0.10 instant = yes
 		 }
 		 }
-			army_org_factor = 0.1
-			army_morale_factor = 0.1
-			planning_speed = 0.25
-			}
 			}
 			XAV_idea_eliminate_barbarism = {
 			allowed = {
@@ -320,7 +320,7 @@ ideas = {
 
 			modifier = {
 			army_attack_factor = 0.1
-			army_movement_speed_factor = 0.1 #guessing on this one
+			army_speed_factor = 0.1
 			war_support_factor = 0.1
 			}
 			rule = {
