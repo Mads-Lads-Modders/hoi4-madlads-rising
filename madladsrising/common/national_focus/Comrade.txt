@@ -9,3 +9,59 @@ focus_tree = {
 			tag = LOL
 		}
 	}
+	focus = {
+		id = LOL_first_focus
+		icon = GFX_goal_generic_demand_territory
+		#prerequisite = { focus = ITA_industrial_effort_2 }
+		x = 44
+		y = 0
+		#relative_position_id = ITA_industrial_effort_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	#
+	focus = {
+		id = LOL_steady_as_she_goes
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_first_focus }
+		x = -8
+		y = 1
+		relative_position_id = LOL_first_focus
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_choosing_comrade_fate
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_first_focus }
+		x = -4
+		y = 1
+		relative_position_id = LOL_steady_as_she_goes
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
