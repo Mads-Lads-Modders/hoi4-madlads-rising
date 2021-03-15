@@ -884,10 +884,7 @@ focus_tree = {
 																												      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																												      completion_reward = {
-																															   add_political_power = 69
-																												        #ticking fascism support needed
-																												        #add_popularity = {ideology = fascism popularity= .05}
-																												        #add_ideas = {XAV_ultranationalists}
+																															   add_ideas = { XAV_idea_forced_labor }
 
 																												   		}
 																												      }
@@ -908,10 +905,13 @@ focus_tree = {
 																													      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																													      completion_reward = {
-																																   add_political_power = 69
-																													        #ticking fascism support needed
-																													        #add_popularity = {ideology = fascism popularity= .05}
-																													        #add_ideas = {XAV_ultranationalists}
+																																effect_tooltip = {
+																																 swap_ideas = { remove_idea = XAV_idea_forced_labor add_idea = XAV_idea_forced_labor2 }
+																															 }
+																															 hidden_effect = {
+																																 remove_ideas = { XAV_idea_forced_labor }
+																																 add_ideas = { XAV_idea_forced_labor2 }
+																															 }
 
 																													   		}
 																													      }
@@ -932,10 +932,9 @@ focus_tree = {
 																														      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																														      completion_reward = {
-																																	   add_political_power = 69
-																														        #ticking fascism support needed
-																														        #add_popularity = {ideology = fascism popularity= .05}
-																														        #add_ideas = {XAV_ultranationalists}
+																																	  ENG = {
+																																		add_ideas = { XAV_idea_british_alliance }
+																																		}
 
 																														   		}
 																														      }
@@ -956,10 +955,14 @@ focus_tree = {
 																															      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																															      completion_reward = {
-																																		   add_political_power = 69
-																															        #ticking fascism support needed
-																															        #add_popularity = {ideology = fascism popularity= .05}
-																															        #add_ideas = {XAV_ultranationalists}
+																																		   add_ideas = { XAV_idea_british_advisors }
+																																			 #effect_tooltip = {
+																																				#swap_ideas = { remove_idea = XAV_idea_lockean_religion add_idea = XAV_idea_lockean_religion2 }
+																																			#}
+																																			#hidden_effect = {
+																																			#	remove_ideas = { XAV_idea_lockean_religion }
+																																			#	add_ideas = { XAV_idea_lockean_religion2 }
+																																			#} replace with another level of british_advisors at some point
 
 																															   		}
 																															      }
@@ -980,10 +983,25 @@ focus_tree = {
 																																      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																      completion_reward = {
-																																			   add_political_power = 69
-																																        #ticking fascism support needed
-																																        #add_popularity = {ideology = fascism popularity= .05}
-																																        #add_ideas = {XAV_ultranationalists}
+																																			add_tech_bonus = {
+																																			 name = fighter_bonus
+																																			 bonus = 1.0
+																																			 uses = 2
+																																			 technology = early_fighter
+																																			 technology = fighter1
+																																			 technology = fighter2
+																																			 technology = fighter3
+																																			 technology = heavy_fighter1
+																																			 technology = heavy_fighter2
+																																			 technology = heavy_fighter3
+																																		 }
+																																				 effect_tooltip = {
+																						 																swap_ideas = { remove_idea = XAV_idea_british_advisors add_idea = XAV_idea_british_advisors2 }
+																						 															}
+																						 															hidden_effect = {
+																						 																remove_ideas = { XAV_idea_british_advisors }
+																						 																add_ideas = { XAV_idea_british_advisors2 }
+																						 															}
 
 																																   		}
 																																      }
@@ -1004,10 +1022,7 @@ focus_tree = {
 																																	      search_filters = { FOCUS_FILTER_POLITICAL}
 
 																																	      completion_reward = {
-																																				   add_political_power = 69
-																																	        #ticking fascism support needed
-																																	        #add_popularity = {ideology = fascism popularity= .05}
-																																	        #add_ideas = {XAV_ultranationalists}
+																																					 add_ideas = { XAV_idea_eliminate_barbarism }
 
 																																	   		}
 																																	      }

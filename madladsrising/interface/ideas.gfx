@@ -5706,6 +5706,30 @@ spriteTypes = {
 		name = "GFX_idea_XAV_idea_developed_economy"
 		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_forced_labor"
+		texturefile = "gfx/interface/ideas/idea_chi_army_corruption.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_forced_labor2"
+		texturefile = "gfx/interface/ideas/idea_chi_forced_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_british_alliance"
+		texturefile = "gfx/interface/ideas/idea_eng_guided_by_britain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_british_advisors"
+		texturefile = "gfx/interface/ideas/idea_eng_service_overseas.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_british_advisors2"
+		texturefile = "gfx/interface/ideas/idea_eng_service_overseas.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAV_idea_eliminate_barbarism"
+		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
+	}
   spriteType = {
 	name = "GFX_idea_SRI_retake_land"
 	texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
