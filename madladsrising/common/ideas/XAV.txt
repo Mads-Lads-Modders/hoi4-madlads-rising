@@ -255,6 +255,7 @@ ideas = {
 			conscription = 0.1
 			industrial_capacity_factory = 0.2
 			}
+			}
 			XAV_idea_forced_labor2 = {
 			allowed = {
 				original_TAG = XAV
