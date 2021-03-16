@@ -341,7 +341,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_exploring_possibilities
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_YUG_pan_slavic_congress
 		prerequisite = { focus = LOL_new_spotlight }
 		x = 0
 		y = 2
@@ -378,7 +378,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_searching_world
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_spr_anarchism_knows_no_borders
 		prerequisite = { focus = LOL_mixed_emotions }
 		x = 0
 		y = 1
@@ -396,7 +396,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_vim_vigor
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = LOL_searching_world }
 		x = 0
 		y = 1
@@ -414,7 +414,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_major_general
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_support_fourth_int
 		prerequisite = { focus = LOL_exploring_possibilities }
 		mutually_exclusive = { focus = LOL_mixed_emotions }
 		x = 1
@@ -433,7 +433,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_hand_ins
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = LOL_major_general }
 		x = 0
 		y = 1
@@ -451,7 +451,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_checking_odds
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_jap_cast_the_die
 		prerequisite = { focus = LOL_hand_ins }
 		x = 0
 		y = 1
@@ -487,7 +487,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_strike_earth
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = LOL_the_country }
 		prerequisite = { focus = LOL_the_ruler }
 		x = -3
@@ -506,7 +506,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_no_shame
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_ger_bulwark_against_bolshevism
 		prerequisite = { focus = LOL_strike_earth }
 		x = 0
 		y = 1
@@ -524,7 +524,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_alexander_knees
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = LOL_no_shame }
 		x = 0
 		y = 1
@@ -542,7 +542,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_new_establishment
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = LOL_alexander_knees }
 		x = 0
 		y = 1
@@ -560,7 +560,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_alexander_fate
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
 		prerequisite = { focus = LOL_new_establishment }
 		x = 3
 		y = 1
@@ -598,7 +598,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_ending_minus
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_rom_parties_end
 		prerequisite = { focus = LOL_alexander_fate }
 		mutually_exclusive = { focus = LOL_lowering_status }
 		x = -1
@@ -617,7 +617,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_favor_military
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = LOL_new_establishment }
 		prerequisite = { focus = LOL_the_military}
 		mutually_exclusive = { focus = LOL_favor_country }
@@ -637,7 +637,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_favor_country
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = LOL_the_people }
 		prerequisite = { focus = LOL_new_establishment}
 		mutually_exclusive = { focus = LOL_favor_military }
@@ -657,7 +657,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_toss_bertucci_aside
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_mex_arrest_general_cedillo
 		prerequisite = { focus = LOL_ending_minus }
 		x = -1
 		y = 1
@@ -693,7 +693,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_follow_through
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = LOL_real_leader }
 		x = 0
 		y = 1
@@ -711,7 +711,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_ban_jews
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = LOL_follow_through }
 		x = -1
 		y = 1
@@ -729,7 +729,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_murder_turks
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = LOL_ban_jews }
 		x = 0
 		y = 1
@@ -747,7 +747,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_execute_left
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = LOL_follow_through }
 		x = 1
 		y = 1
@@ -765,7 +765,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_leave_iran_no_choice
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = LOL_execute_left }
 		x = 0
 		y = 1
@@ -802,7 +802,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_why_debt
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = LOL_lowering_status }
 		x = 1
 		y = 1
@@ -820,7 +820,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_reinvite_jews
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_TUR_the_sun_language_theory
 		prerequisite = { focus = LOL_why_debt }
 		x = -1
 		y = 1
@@ -838,7 +838,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_give_banks
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = LOL_reinvite_jews }
 		x = 0
 		y = 1
@@ -874,7 +874,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_jewish_industrial_control
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = LOL_sundays }
 		x = 0
 		y = 1
@@ -892,7 +892,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_managers
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = LOL_why_debt }
 		x = 1
 		y = 1
@@ -910,7 +910,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_free_samples
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = LOL_managers }
 		x = 0
 		y = 1
@@ -928,7 +928,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_color_dyes
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_usa_voter_registration_act
 		prerequisite = { focus = LOL_free_samples }
 		x = 0
 		y = 1
@@ -946,7 +946,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_concessions_libs
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = LOL_color_dyes }
 		x = 0
 		y = 1
@@ -964,7 +964,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_homework_all
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = LOL_lowering_status }
 		x = 5
 		y = 1
@@ -982,7 +982,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_iranian_brothers
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = LOL_homework_all }
 		x = 0
 		y = 1
@@ -1000,7 +1000,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_turkish_comrades
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = LOL_iranian_brothers }
 		x = 0
 		y = 1
@@ -1018,7 +1018,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_not_exactly_islam
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = LOL_turkish_comrades }
 		x = 0
 		y = 1
