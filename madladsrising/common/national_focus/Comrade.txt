@@ -50,10 +50,654 @@ focus_tree = {
 	focus = {
 		id = LOL_choosing_comrade_fate
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = LOL_first_focus }
+		prerequisite = { focus = LOL_steady_as_she_goes }
 		x = -4
 		y = 1
 		relative_position_id = LOL_steady_as_she_goes
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_new_spotlight
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_choosing_comrade_fate }
+		x = -1
+		y = 1
+		relative_position_id = LOL_choosing_comrade_fate
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_usurpation
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_choosing_comrade_fate }
+		x = -4
+		y = 1
+		relative_position_id = LOL_choosing_comrade_fate
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_prepare_people
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_usurpation }
+		x = -1
+		y = 1
+		relative_position_id = LOL_usurpation
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_prepare_military
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_usurpation }
+		x = 1
+		y = 1
+		relative_position_id = LOL_usurpation
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_kicking_curb
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_prepare_people }
+		x = -5
+		y = 1
+		relative_position_id = LOL_prepare_people
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_getting_money
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_kicking_curb }
+		x = 0
+		y = 1
+		relative_position_id = LOL_kicking_curb
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_the_people
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_getting_money }
+		mutually_exclusive = { focus = LOL_the_military }
+		x = 0
+		y = 2
+		relative_position_id = LOL_getting_money
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_lake_invasion
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_prepare_military }
+		x = -1
+		y = 2
+		relative_position_id = LOL_prepare_military
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_battle_sparks
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_prepare_military }
+		x = -3
+		y = 2
+		relative_position_id = LOL_prepare_military
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_air_support
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_prepare_military }
+		x = -5
+		y = 2
+		relative_position_id = LOL_prepare_military
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_ocean_dom
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_lake_invasion }
+		x = 0
+		y = 1
+		relative_position_id = LOL_lake_invasion
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_war_thunder
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_battle_sparks }
+		x = 0
+		y = 1
+		relative_position_id = LOL_battle_sparks
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_aerial_supremacy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_air_support }
+		x = 0
+		y = 1
+		relative_position_id = LOL_air_support
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_the_military
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_aerial_supremacy }
+		prerequisite = { focus = LOL_war_thunder }
+		prerequisite = { focus = LOL_ocean_dom }
+		mutually_exclusive = { focus = LOL_the_people }
+		x = 0
+		y = 1
+		relative_position_id = LOL_war_thunder
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_the_country
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_the_people focus = LOL_the_military }
+		x = -2
+		y = 1
+		relative_position_id = LOL_the_military
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_exploring_possibilities
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_new_spotlight }
+		x = 0
+		y = 2
+		relative_position_id = LOL_new_spotlight
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_mixed_emotions
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_exploring_possibilities }
+		mutually_exclusive = { focus = LOL_major_general }
+		x = -1
+		y = 1
+		relative_position_id = LOL_exploring_possibilities
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_searching_world
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_mixed_emotions }
+		x = 0
+		y = 1
+		relative_position_id = LOL_mixed_emotions
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_vim_vigor
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_searching_world }
+		x = 0
+		y = 1
+		relative_position_id = LOL_searching_world
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_major_general
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_exploring_possibilities }
+		mutually_exclusive = { focus = LOL_mixed_emotions }
+		x = 1
+		y = 1
+		relative_position_id = LOL_exploring_possibilities
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_hand_ins
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_major_general }
+		x = 0
+		y = 1
+		relative_position_id = LOL_major_general
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_checking_odds
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_hand_ins }
+		x = 0
+		y = 1
+		relative_position_id = LOL_hand_ins
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_the_ruler
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_checking_odds focus = LOL_vim_vigor }
+		x = -1
+		y = 1
+		relative_position_id = LOL_checking_odds
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_strike_earth
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_the_country }
+		prerequisite = { focus = LOL_the_ruler }
+		x = -3
+		y = 1
+		relative_position_id = LOL_the_ruler
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_no_shame
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_strike_earth }
+		x = 0
+		y = 1
+		relative_position_id = LOL_strike_earth
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_alexander_knees
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_no_shame }
+		x = 0
+		y = 1
+		relative_position_id = LOL_no_shame
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_new_establishment
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_alexander_knees }
+		x = 0
+		y = 1
+		relative_position_id = LOL_alexander_knees
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_alexander_fate
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_new_establishment }
+		x = 3
+		y = 1
+		relative_position_id = LOL_new_establishment
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_lowering_status
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_checking_odds }
+		prerequisite = { focus = LOL_alexander_fate }
+		mutually_exclusive = { focus = LOL_ending_minus }
+		x = 2
+		y = 1
+		relative_position_id = LOL_alexander_fate
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_ending_minus
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_alexander_fate }
+		mutually_exclusive = { focus = LOL_lowering_status }
+		x = -1
+		y = 1
+		relative_position_id = LOL_alexander_fate
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_favor_military
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_new_establishment }
+		prerequisite = { focus = LOL_the_military}
+		mutually_exclusive = { focus = LOL_favor_country }
+		x = -3
+		y = 2
+		relative_position_id = LOL_new_establishment
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_favor_country
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_the_people }
+		prerequisite = { focus = LOL_new_establishment}
+		mutually_exclusive = { focus = LOL_favor_military }
+		x = -2
+		y = 0
+		relative_position_id = LOL_favor_military
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_toss_bertucci_aside
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_ending_minus }
+		x = -1
+		y = 1
+		relative_position_id = LOL_ending_minus
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_real_leader
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_toss_bertucci_aside }
+		x = 0
+		y = 1
+		relative_position_id = LOL_toss_bertucci_aside
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_follow_through
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_real_leader }
+		x = 0
+		y = 1
+		relative_position_id = LOL_real_leader
 		cost = 10
 
 		ai_will_do = { factor = 1}
