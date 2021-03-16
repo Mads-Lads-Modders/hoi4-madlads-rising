@@ -709,3 +709,346 @@ focus_tree = {
 		}
 	}
 	#
+	focus = {
+		id = LOL_ban_jews
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_follow_through }
+		x = -1
+		y = 1
+		relative_position_id = LOL_follow_through
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_murder_turks
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_ban_jews }
+		x = 0
+		y = 1
+		relative_position_id = LOL_ban_jews
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_execute_left
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_follow_through }
+		x = 1
+		y = 1
+		relative_position_id = LOL_follow_through
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_leave_iran_no_choice
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_execute_left }
+		x = 0
+		y = 1
+		relative_position_id = LOL_execute_left
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_true_stalin
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_murder_turks }
+		prerequisite = { focus = LOL_leave_iran_no_choice }
+		x = 1
+		y = 2
+		relative_position_id = LOL_murder_turks
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_why_debt
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_lowering_status }
+		x = 1
+		y = 1
+		relative_position_id = LOL_lowering_status
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_reinvite_jews
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_why_debt }
+		x = -1
+		y = 1
+		relative_position_id = LOL_why_debt
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_give_banks
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_reinvite_jews }
+		x = 0
+		y = 1
+		relative_position_id = LOL_reinvite_jews
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_sundays
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_give_banks }
+		x = 0
+		y = 1
+		relative_position_id = LOL_give_banks
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_jewish_industrial_control
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_sundays }
+		x = 0
+		y = 1
+		relative_position_id = LOL_sundays
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_managers
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_why_debt }
+		x = 1
+		y = 1
+		relative_position_id = LOL_why_debt
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_free_samples
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_managers }
+		x = 0
+		y = 1
+		relative_position_id = LOL_managers
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_color_dyes
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_free_samples }
+		x = 0
+		y = 1
+		relative_position_id = LOL_free_samples
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_concessions_libs
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_color_dyes }
+		x = 0
+		y = 1
+		relative_position_id = LOL_color_dyes
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_homework_all
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_lowering_status }
+		x = 5
+		y = 1
+		relative_position_id = LOL_lowering_status
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_iranian_brothers
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_homework_all }
+		x = 0
+		y = 1
+		relative_position_id = LOL_homework_all
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_turkish_comrades
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_iranian_brothers }
+		x = 0
+		y = 1
+		relative_position_id = LOL_iranian_brothers
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_not_exactly_islam
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_turkish_comrades }
+		x = 0
+		y = 1
+		relative_position_id = LOL_turkish_comrades
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_chapter_ten
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LOL_not_exactly_islam }
+		x = 0
+		y = 1
+		relative_position_id = LOL_not_exactly_islam
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
