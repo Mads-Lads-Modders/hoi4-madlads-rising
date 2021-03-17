@@ -279,12 +279,6 @@ create_wargoal = {
 	}
 	}
 	}
-
-	  #ticking fascism support needed
-		 #add_popularity = {ideology = fascism popularity= .05}
-		#add_ideas = {XAV_ultranationalists}
-		}
-			}
 			#
 		 focus = {
 		 id = SRI_revival_friend
