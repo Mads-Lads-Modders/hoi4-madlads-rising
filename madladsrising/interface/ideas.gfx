@@ -5632,11 +5632,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_HOK_tightrope"
-		texturefile = "gfx/interface/ideas/idea_hol_aloof_neutrality.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_flexible_foreign_policy.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_HOK_natures_grasp"
-		texturefile = "gfx/interface/ideas/FRA_fortification_focus.dds"
+		texturefile = "gfx/interface/ideas/idea_hol_prepare_the_inundation_lines.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_XAV_nationalist_sentiments"
