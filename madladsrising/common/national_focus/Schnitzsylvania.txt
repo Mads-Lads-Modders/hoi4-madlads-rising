@@ -162,7 +162,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL}
 	completion_reward = {
-		 add_political_power = 69
+		 out_of_supply_factor =.2
 		}
 		}
 		#
@@ -206,14 +206,24 @@ continuous_focus_position = { x = 3000 y = 1600 }
 			#custom_effect_tooltip = SRI_war_college_tt
 			hidden_effect = {
 				create_corps_commander = {
-					name = "KIMI"
-					portrait_path = "gfx/leaders/SRI/Portrait_SRI_General_Kimi.dds"
-					traits = { infantry_officer }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 1
-					planning_skill = 3
-					logistics_skill = 3
+		name = "KIMI"
+		portrait_path = "gfx/leaders/SRI/Portrait_SRI_General_Kimi.dds"
+		traits = { infantry_officer old_guard }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 3
+	}
+		create_field_marshal = {
+		name = Cristi
+		portrait_path = "gfx/leaders/SRI/Portrait_SRI_Field_Marshal_Cristi.dds"
+		traits = {unyielding_defender expert_delegator inspirational_leader }
+		skill = 3
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
 		 	}
 		  }
 			}
@@ -262,17 +272,21 @@ prerequisite = { focus = SRI_attack_prob }
 		 search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 add_ideas = {SRI_retake_land}
-
+completion_reward = {
+create_wargoal = {
+	type = annex_everything
+	target = ROM
+	expire = 0
+	}
+	}
+	}
+	}
 
 	  #ticking fascism support needed
 		 #add_popularity = {ideology = fascism popularity= .05}
 		#add_ideas = {XAV_ultranationalists}
 		}
 			}
-
-
-
-
 			#
 		 focus = {
 		 id = SRI_revival_friend
@@ -312,7 +326,11 @@ add_ideas = {SRI_retake_land}
 	 available_if_capitulated = yes
   search_filters = { FOCUS_FILTER_POLITICAL}
 	completion_reward = {
-	 add_political_power = 69
+	create_wargoal = {
+		type = annex_everything
+		target = LIT
+		expire = 0
+	}
 		}
    }
 	#
