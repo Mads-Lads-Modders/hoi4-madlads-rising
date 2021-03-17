@@ -272,12 +272,10 @@ prerequisite = { focus = SRI_attack_prob }
 		 search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 add_ideas = {SRI_retake_land}
-completion_reward = {
 create_wargoal = {
 	type = annex_everything
 	target = ROM
 	expire = 0
-	}
 	}
 	}
 	}
