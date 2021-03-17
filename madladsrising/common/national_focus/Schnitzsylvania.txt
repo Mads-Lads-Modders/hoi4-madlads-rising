@@ -320,7 +320,7 @@ create_wargoal = {
 	completion_reward = {
 	create_wargoal = {
 		type = annex_everything
-		target = LIT
+		target = HUN
 		expire = 0
 	}
 		}
@@ -358,7 +358,8 @@ ai_will_do = {
 	available_if_capitulated = yes
  search_filters = { FOCUS_FILTER_POLITICAL }
 	 completion_reward = {
- add_political_power = 69
+ set_rule = { can_create_factions = yes }
+ create_faction = SRI_latin_league
  }
 	 }
 		#
