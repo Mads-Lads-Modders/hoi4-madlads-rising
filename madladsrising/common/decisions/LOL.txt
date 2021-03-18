@@ -23,7 +23,9 @@ LOL_annex_by_soviet_category = {
    		# EFFECTS OF THIS DECISION/MISSION
 
    		timeout_effect = {		#The effects to execute once the mission timer expires.
-         SOV = { annex = LOL }
+         SOV = {
+         annex_country = { target = LOL}
+      }
       }
 
    		complete_effect  = {
