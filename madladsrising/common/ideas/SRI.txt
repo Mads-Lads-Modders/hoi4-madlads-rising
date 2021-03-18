@@ -10,10 +10,10 @@ SRI_retake_land = {
   army_core_defence_factor = 0.2
   }
   }
-  }
+
 SRI_Omnium_Rerum_Principia_Parva_Sunt = {
 allowed = {
-original_TAG =SRI 
+original_TAG =SRI
 }
 removal_cost = -1
 modifier = {
@@ -25,5 +25,5 @@ consumer_goods_factor = 0.1
 
 
 
-
+}
 }

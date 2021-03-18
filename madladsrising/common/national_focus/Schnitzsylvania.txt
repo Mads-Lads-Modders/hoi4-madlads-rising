@@ -340,7 +340,8 @@ create_wargoal = {
  available_if_capitulated = yes
   search_filters = { FOCUS_FILTER_POLITICAL }
 	  completion_reward = {
-add_political_power = 69
+		add_ideas = {SRI_Omnium_Rerum_Principia_Parva_Sunt}
+
   }
 	 }
 	#
@@ -576,7 +577,11 @@ factor = 1
 available_if_capitulated = yes
 search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-create_wargoal = BUL
+create_wargoal = {
+	type = annex_everything
+	target = BUL
+	expire = 0
+}
 }
 }
 #
