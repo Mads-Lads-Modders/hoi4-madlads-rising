@@ -1106,3 +1106,203 @@ focus_tree = {
 		}
 	}
 	#
+	focus = {
+		id = LOL_fueling_tanks
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = LOL_favor_military }
+		x = 0
+		y = 1
+		relative_position_id = LOL_favor_military
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_repair_planes
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = LOL_fueling_tanks }
+		x = 0
+		y = 1
+		relative_position_id = LOL_fueling_tanks
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_arming_country
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = LOL_repair_planes }
+		x = 0
+		y = 1
+		relative_position_id = LOL_repair_planes
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_tank_factories
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = LOL_favor_country }
+		x = -3
+		y = 1
+		relative_position_id = LOL_favor_country
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_pineapple_factories
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = LOL_favor_country }
+		x = 0
+		y = 1
+		relative_position_id = LOL_favor_country
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_prioritize_tanks
+		icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = LOL_tank_factories focus = LOL_pineapple_factories }
+		mutually_exclusive = { focus = LOL_prioritize_pineapples }
+		x = -1
+		y = 1
+		relative_position_id = LOL_tank_factories
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_better_armor
+		icon = GFX_focus_CZE_military_research_institute
+		prerequisite = { focus = LOL_prioritize_tanks}
+		x = 0
+		y = 2
+		relative_position_id = LOL_prioritize_tanks
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_united_army
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = LOL_better_armor focus = LOL_arming_country }
+		x = 3
+		y = 4
+		relative_position_id = LOL_better_armor
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_prioritize_pineapples
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = LOL_tank_factories focus = LOL_pineapple_factories }
+		mutually_exclusive = { focus = LOL_prioritize_tanks }
+		x = 1
+		y = 1
+		relative_position_id = LOL_tank_factories
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_more_pineapples
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = LOL_prioritize_pineapples }
+		x = 0
+		y = 1
+		relative_position_id = LOL_prioritize_pineapples
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
+	focus = {
+		id = LOL_pineapple_man
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = LOL_more_pineapples }
+		x = 0
+		y = 1
+		relative_position_id = LOL_more_pineapples
+		cost = 10
+
+		ai_will_do = { factor = 1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 69
+		}
+	}
+	#
