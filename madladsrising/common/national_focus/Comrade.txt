@@ -842,7 +842,7 @@ focus_tree = {
 		prerequisite = { focus = LOL_mobilization_north }
 		x = 0
 		y = 1
-		relative_position_id = LOL_murder_turks
+		relative_position_id = LOL_mobilization_north
 		cost = 10
 
 		ai_will_do = { factor = 1}
