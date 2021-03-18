@@ -54,7 +54,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 	#
 	focus = {
 		id = SRI_monarchist_path
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = SRI_first_focus }
 		mutually_exclusive = { focus = SRI_fascism_path }
 		x = 0
@@ -76,7 +76,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 	#
 	focus = {
 		id = SRI_flip_monarchist
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_monarchy_1
 		prerequisite = { focus = SRI_monarchist_path }
 		x = 0
 		y = 2
@@ -118,7 +118,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 #
 		focus = {
 		id = SRI_roman_forts
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = SRI_flip_monarchist }
 		mutually_exclusive = { focus = SRI_attack_prob }
 		x = -2
@@ -150,7 +150,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 			#
 			focus = {
 		id = SRI_guerilla_tac
-		icon = GFX_focus_ger_revive_kaiserreich
+		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = SRI_roman_forts }
 		x = 0
 		y = 1
@@ -168,7 +168,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		#
 		focus = {
 		id = SRI_demand_uni
-		icon = GFX_focus_ger_revive_kaiserreich
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = SRI_guerilla_tac }
 		x = 0
 		y = 1
@@ -186,7 +186,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		#
 	 focus = {
 	 id = SRI_attack_prob
-  icon = GFX_focus_ger_revive_kaiserreich
+  icon = GFX_goal_generic_position_armies
   prerequisite = { focus = SRI_flip_monarchist }
 	mutually_exclusive = { focus = SRI_roman_forts }
 	 x = 2
@@ -231,7 +231,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 			#
 		focus = {
 	  id = SRI_through_mountains
-   icon = GFX_focus_ger_revive_kaiserreich
+   icon = GFX_focus_GRE_a_land_of_mountains
 prerequisite = { focus = SRI_attack_prob }
  	#mutually_exclusive = { focus = SRI_roman_forts }
   x = 0
@@ -258,7 +258,7 @@ prerequisite = { focus = SRI_attack_prob }
 			#
 	   focus = {
 	   id = SRI_march_sea
-		  icon = GFX_focus_ger_revive_kaiserreich
+		  icon = GFX_goal_generic_occupy_states_ongoing_war
 		  prerequisite = { focus = SRI_through_mountains }
 		 	#mutually_exclusive = { focus = SRI_roman_forts }
 			   x = 0
@@ -282,7 +282,7 @@ create_wargoal = {
 			#
 		 focus = {
 		 id = SRI_revival_friend
-		 icon = GFX_focus_ger_revive_kaiserreich
+		 icon = GFX_goal_generic_improve_relations
 		 prerequisite = { focus = SRI_demand_uni focus = SRI_march_sea}
 		#mutually_exclusive = { focus = SRI_roman_forts }
 	   x = 2
@@ -305,7 +305,7 @@ create_wargoal = {
 				#
  focus = {
 	 id = SRI_fuck_hungary
-	 icon = GFX_focus_ger_revive_kaiserreich
+	 icon = GFX_focus_hun_assassinate_horthy
 	  prerequisite = { focus = SRI_revival_friend }
 			#mutually_exclusive = { focus = SRI_roman_forts }
 			  x = 0
