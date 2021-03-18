@@ -17,9 +17,9 @@ original_TAG = SRI
 }
 removal_cost = -1
 modifier = {
-production_speed_buildings_factor = 0.2
-industrial_capacity_factory = 0.2
-consumer_goods_factor = -0.1
+production_speed_buildings_factor = 0.1
+industrial_capacity_factory = 0.1
+consumer_goods_factor = -0.05
 }
 }
 SRI_Balkan_Dom = {
