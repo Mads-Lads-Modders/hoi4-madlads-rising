@@ -32,8 +32,16 @@ justify_war_goal_time = -0.25
 Conscription = 0.02
 }
 }
-
-
+SRI_Guerilla_Tac = {
+allowed - {
+original_TAG = SRI
+}
+removal_cost = -1
+modifier = {
+supply_consumption_factor = -0.1
+out_of_supply_factor = -0.2
+}
+}
 
 
 }

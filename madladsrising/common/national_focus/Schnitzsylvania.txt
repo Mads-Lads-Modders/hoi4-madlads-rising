@@ -162,7 +162,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL}
 	completion_reward = {
-		 out_of_supply_factor =.2
+		 add_ideas = {SRI_Guerilla_Tac}
 		}
 		}
 		#
