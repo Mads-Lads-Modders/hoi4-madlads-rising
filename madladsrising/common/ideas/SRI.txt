@@ -13,7 +13,7 @@ SRI_retake_land = {
 
 SRI_Omnium_Rerum_Principia_Parva_Sunt = {
 allowed = {
-original_TAG =SRI
+original_TAG = SRI
 }
 removal_cost = -1
 modifier = {
@@ -22,6 +22,17 @@ industrial_capacity_factory = 0.2
 consumer_goods_factor = -0.1
 }
 }
+SRI_Balkan_Dom = {
+allowed - {
+original_TAG = SRI
+}
+removal_cost = -1
+modifier = {
+justify_war_goal_time = -0.25
+Conscription = 0.02
+}
+}
+
 
 
 
