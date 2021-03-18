@@ -11,5 +11,19 @@ SRI_retake_land = {
   }
   }
   }
+SRI_Omnium_Rerum_Principia_Parva_Sunt = {
+allowed = {
+original_TAG =SRI 
 }
-  
+removal_cost = -1
+modifier = {
+production_speed_buildings_factor = 0.2
+industrial_capacity_factory = 0.2
+consumer_goods_factor = 0.1
+}
+}
+
+
+
+
+}

@@ -523,19 +523,40 @@ focus = {
 id = SRI_assasinate_mus
 icon = GFX_goal_generic_demand_territory
 prerequisite = { focus = SRI_ins_balk }
-#mutually_exclusive = { focus = SRI_stay_here }
-#mutually_exclusive = { focus = SRI_dig_up }
+available = {
+			is_puppet = no
+			NOT = { has_war_with = ITA }
+			ITA = { has_country_leader = { ruling_only = yes name = "Benito Mussolini" } }
+			}
+		cancel_if_invalid = yes
 x = 0
 y = 1
 relative_position_id = SRI_ins_balk
 cost = 5
 ai_will_do = {
-factor = 1
+factor = 10
 }
 available_if_capitulated = yes
 search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-add_political_power = 69
+effect_tooltip = {
+				ITA = {
+					set_politics = { ruling_party = neutrality elections_allowed = yes }
+					add_popularity = { ideology = neutrality popularity = 0.1 }
+					effect_tooltip = {
+						create_country_leader = {
+							name = "Victor Emmanuel III"
+							desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+							picture = "GFX_portrait_italy_victor_emmanuel_iii"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+
+							}
+						}
+					}
+}
+}
 }
 }
 #
@@ -555,7 +576,7 @@ factor = 1
 available_if_capitulated = yes
 search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-add_political_power = 69
+create_wargoal = BUL
 }
 }
 #
