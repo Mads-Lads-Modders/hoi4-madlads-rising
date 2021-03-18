@@ -747,7 +747,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_sword_throats
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = LOL_murder_turks }
 		x = 0
 		y = 1
@@ -801,7 +801,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_make_bleed
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = LOL_leave_iran_no_choice }
 		x = 0
 		y = 1
@@ -819,7 +819,7 @@ focus_tree = {
 	#
 	focus = {
 		id = LOL_mobilization_north
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = LOL_sword_throats }
 		prerequisite = { focus = LOL_make_bleed }
 		x = -1
