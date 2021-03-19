@@ -29,8 +29,8 @@ ideas = {
     }
     removal_cost = -1
     modifier = {
-    research_speed_factor = .1
-    stability_factor = .1
+    research_speed_factor = 0.1
+    stability_factor = 0.1
     }
     }
   } # line up with country

@@ -424,3 +424,106 @@ focus = {
 		add_political_power = 69
 	}
 } # end focus
+focus = {
+	id = HOK_modernize_writing
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_industrial_foundation }
+	x = -1
+	y = 1
+	relative_position_id = HOK_industrial_foundation
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_spiritual_science
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_modernize_writing }
+	x = 0
+	y = 1
+	relative_position_id = HOK_modernize_writing
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_establish_districts
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_industrial_foundation }
+	x = 1
+	y = 1
+	relative_position_id = HOK_industrial_foundation
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_invest_gold
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_establish_districts }
+	x = 0
+	y = 1
+	relative_position_id = HOK_establish_districts
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_research_development
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_invest_gold }
+	prerequisite = { focus = HOK_spiritual_science }
+	x = 1
+	y = 1
+	relative_position_id = HOK_spiritual_science
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_economic_niche
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_research_development }
+	x = 0
+	y = 1
+	relative_position_id = HOK_research_development
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
