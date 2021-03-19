@@ -67,3 +67,360 @@ focus = {
 		}
 	}
 } # end focus
+focus = {
+	id = HOK_trust_ourselves
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_elect_asirpa }
+	mutually_exclusive = { focus = HOK_submit_japanese }
+	x = 4
+	y = 1
+	relative_position_id = HOK_elect_asirpa
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_stability = .05
+		add_war_support = .05
+		add_political_power = 50
+	}
+} # end focus
+focus = {
+	id = HOK_international_rebirth
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_elect_chair }
+	mutually_exclusive = { focus = HOK_submit_japanese }
+	x = -4
+	y = 1
+	relative_position_id = HOK_elect_chair
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_submit_japanese
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_elect_chair focus = HOK_elect_asirpa}
+	mutually_exclusive = { focus = HOK_international_rebirth focus = HOK_trust_ourselves }
+	x = -1
+	y = 1
+	relative_position_id = HOK_elect_asirpa
+	cost = 10
+
+	ai_will_do = { factor = 99}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+	JAP = {
+	if = {
+		limit = {
+			has_dlc = "Death or Dishonor"
+		}
+		set_autonomy = { target = HOK autonomy_state = autonomy_satellite }
+	}
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+			NOT = { has_dlc = "Death or Dishonor" }
+		}
+		set_autonomy = { target = HOK autonomy_state = autonomy_dominion }
+	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "Together for Victory" }
+			NOT = { has_dlc = "Death or Dishonor" }
+		}
+		puppet = HOK
+	}
+	}
+	}
+} # end focus
+focus = {
+	id = HOK_ezochi_province
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_submit_japanese }
+	x = 0
+	y = 1
+	relative_position_id = HOK_submit_japanese
+	cost = 10
+
+	ai_will_do = { factor = 99}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		JAP = {
+		annex_country = { target = HOK }
+		}
+	}
+} # end focus
+focus = {
+	id = HOK_save_language
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_trust_ourselves }
+	x = 0
+	y = 1
+	relative_position_id = HOK_trust_ourselves
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_ideas = { HOK_idea_save_language }
+	}
+} # end focus
+focus = {
+	id = HOK_state_traditions
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_save_language }
+	x = 0
+	y = 1
+	relative_position_id = HOK_save_language
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_blend_change
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_state_traditions }
+	mutually_exclusive = { focus = HOK_strict_conservatism }
+	x = -1
+	y = 1
+	relative_position_id = HOK_state_traditions
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_strict_conservatism
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_state_traditions }
+	mutually_exclusive = { focus = HOK_blend_change }
+	x = 1
+	y = 1
+	relative_position_id = HOK_state_traditions
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_ainu_spirit
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_strict_conservatism focus = HOK_blend_change }
+	x = 6
+	y = 1
+	relative_position_id = HOK_strict_conservatism
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_wolf_cunning
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_ainu_spirit }
+	x = -3
+	y = 1
+	relative_position_id = HOK_ainu_spirit
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_raptor_dominion
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_ainu_spirit }
+	mutually_exclusive = { focus = HOK_whale_dominion }
+	x = -1
+	y = 1
+	relative_position_id = HOK_ainu_spirit
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_whale_dominion
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_ainu_spirit }
+	mutually_exclusive = { focus = HOK_raptor_dominion }
+	x = 1
+	y = 1
+	relative_position_id = HOK_ainu_spirit
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_bear_strength
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_ainu_spirit }
+	x = 3
+	y = 1
+	relative_position_id = HOK_ainu_spirit
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_pack_training
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_wolf_cunning }
+	x = 0
+	y = 2
+	relative_position_id = HOK_wolf_cunning
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_take_sky
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_raptor_dominion }
+	x = 0
+	y = 1
+	relative_position_id = HOK_raptor_dominion
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_take_sea
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_whale_dominion }
+	x = 0
+	y = 1
+	relative_position_id = HOK_whale_dominion
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_claws_steel
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_bear_strength }
+	x = 0
+	y = 2
+	relative_position_id = HOK_bear_strength
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_modern_hunter
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_take_sea focus = HOK_take_sky }
+	prerequisite = { focus = HOK_claws_steel }
+	prerequisite = { focus = HOK_pack_training }
+	x = -1
+	y = 2
+	relative_position_id = HOK_take_sea
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_industrial_foundation
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_blend_change focus = HOK_strict_conservatism }
+	x = -1
+	y = 1
+	relative_position_id = HOK_strict_conservatism
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
