@@ -14,7 +14,7 @@ focus_tree = {
 ##############################
 focus = {
 	id = HOK_elect_chair
-	icon = GFX_goal_generic_demand_territory
+	icon = GFX_goal_anschluss
 	#prerequisite = { focus = ITA_industrial_effort_2 }
 	mutually_exclusive = { focus = HOK_elect_asirpa }
 	x = 30
@@ -36,7 +36,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_elect_asirpa
-	icon = GFX_goal_generic_demand_territory
+	icon = GFX_focus_generic_diplomatic_treaty
 	#prerequisite = { focus = ITA_industrial_effort_2 }
 	mutually_exclusive = { focus = HOK_elect_chair }
 	x = 2
@@ -69,7 +69,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_trust_ourselves
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_support_the_left_right
 	prerequisite = { focus = HOK_elect_asirpa }
 	mutually_exclusive = { focus = HOK_submit_japanese }
 	x = 4
@@ -107,7 +107,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_submit_japanese
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_CZE_german_puppet
 	prerequisite = { focus = HOK_elect_chair focus = HOK_elect_asirpa}
 	mutually_exclusive = { focus = HOK_international_rebirth focus = HOK_trust_ourselves }
 	x = -1
@@ -146,7 +146,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_ezochi_province
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_jap_pacific_guardian
 	prerequisite = { focus = HOK_submit_japanese }
 	x = 0
 	y = 1
@@ -160,12 +160,13 @@ focus = {
 	completion_reward = {
 		JAP = {
 		annex_country = { target = HOK }
+		add_state_core = 536
 		}
 	}
 } # end focus
 focus = {
 	id = HOK_save_language
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_hol_the_foundations_of_defense
 	prerequisite = { focus = HOK_trust_ourselves }
 	x = 0
 	y = 1
@@ -182,7 +183,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_state_traditions
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_jap_spiritual_mobilization
 	prerequisite = { focus = HOK_save_language }
 	x = 0
 	y = 1
@@ -194,7 +195,8 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_stability = 0.15
+		add_war_support = 0.05
 	}
 } # end focus
 focus = {
@@ -212,7 +214,15 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+	add_popularity = { ideology = democratic popularity = 0.05 }
+	add_war_support = 0.05
+	effect_tooltip = {
+		swap_ideas = { remove_idea = HOK_tightrope add_idea = HOK_idea_national_identity }
+	}
+	hidden_effect = {
+		remove_ideas = { HOK_tightrope }
+		add_ideas = { HOK_idea_national_identity }
+	}
 	}
 } # end focus
 focus = {
@@ -230,12 +240,20 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_stability = 0.05
+		add_war_support = -0.05
+		effect_tooltip = {
+			swap_ideas = { remove_idea = HOK_tightrope add_idea = HOK_idea_national_identity }
+		}
+		hidden_effect = {
+			remove_ideas = { HOK_tightrope }
+			add_ideas = { HOK_idea_national_identity }
+		}
 	}
 } # end focus
 focus = {
 	id = HOK_ainu_spirit
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_japanese_imperial_glory
 	prerequisite = { focus = HOK_strict_conservatism focus = HOK_blend_change }
 	x = 6
 	y = 1
@@ -252,7 +270,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_wolf_cunning
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_wolf_pack
 	prerequisite = { focus = HOK_ainu_spirit }
 	x = -3
 	y = 1
@@ -269,7 +287,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_raptor_dominion
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_territory_or_war
 	prerequisite = { focus = HOK_ainu_spirit }
 	mutually_exclusive = { focus = HOK_whale_dominion }
 	x = -1
@@ -287,7 +305,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_whale_dominion
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_navy_submarine
 	prerequisite = { focus = HOK_ainu_spirit }
 	mutually_exclusive = { focus = HOK_raptor_dominion }
 	x = 1
@@ -305,7 +323,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_bear_strength
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_hol_united_netherlands
 	prerequisite = { focus = HOK_ainu_spirit }
 	x = 3
 	y = 1
@@ -322,7 +340,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_pack_training
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_spa_the_phalanx_ascendant
 	prerequisite = { focus = HOK_wolf_cunning }
 	x = 0
 	y = 2
@@ -339,7 +357,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_take_sky
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_occupy_start_war
 	prerequisite = { focus = HOK_raptor_dominion }
 	x = 0
 	y = 1
@@ -356,7 +374,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_take_sea
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_occupy_states_coastal
 	prerequisite = { focus = HOK_whale_dominion }
 	x = 0
 	y = 1
@@ -373,7 +391,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_claws_steel
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_army_artillery
 	prerequisite = { focus = HOK_bear_strength }
 	x = 0
 	y = 2
@@ -390,7 +408,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_modern_hunter
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_manpower
 	prerequisite = { focus = HOK_take_sea focus = HOK_take_sky }
 	prerequisite = { focus = HOK_claws_steel }
 	prerequisite = { focus = HOK_pack_training }
@@ -477,7 +495,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_invest_gold
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_usa_reestablish_the_gold_standard
 	prerequisite = { focus = HOK_establish_districts }
 	x = 0
 	y = 1
