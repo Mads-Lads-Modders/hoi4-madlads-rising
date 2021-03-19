@@ -168,7 +168,7 @@ continuous_focus_position = { x = 3000 y = 1600 }
 		#
 		focus = {
 		id = SRI_demand_uni
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = SRI_guerilla_tac }
 		x = 0
 		y = 1
@@ -328,7 +328,7 @@ create_wargoal = {
 	#
 		focus = {
 		 id = SRI_little_things
-		 icon = GFX_goal_generic_demand_territory
+		 icon = GFX_focus_generic_industry_1
 		 prerequisite = { focus = SRI_fuck_hungary }
 		 mutually_exclusive = { focus = SRI_little_things }
 		  x = 3
@@ -348,7 +348,7 @@ create_wargoal = {
 	#
 	focus = {
 id = SRI_latin_league
-	 icon = GFX_goal_generic_demand_territory
+	 icon = GFX_focus_GRE_an_orthodox_state
 	 prerequisite = { focus = SRI_little_things }
 	 x = 0
  y = 1
@@ -463,7 +463,7 @@ add_political_power = 69
 #
 focus = {
 id = SRI_balkan_dom
-icon = GFX_goal_generic_demand_territory
+icon = GFX_goal_generic_political_pressure
 prerequisite = { focus = SRI_fuck_hungary }
 #mutually_exclusive = { SRI_ }
 x = -3
@@ -482,7 +482,7 @@ add_ideas = {SRI_Balkan_Dom}
 #
 focus = {
 id = SRI_unite_balk
-icon = GFX_goal_generic_demand_territory
+icon = GFX_focus_BUL_free_balkan_states
 prerequisite = { focus = SRI_balkan_dom }
 #mutually_exclusive = { focus = SRI_stay_here }
 #mutually_exclusive = { focus = SRI_dig_up }
@@ -524,7 +524,7 @@ add_political_power = 69
 #
 focus = {
 id = SRI_assasinate_mus
-icon = GFX_goal_generic_demand_territory
+icon = GFX_focus_ger_assassinate_mussolini
 prerequisite = { focus = SRI_ins_balk }
 available = {
 			is_puppet = no
@@ -565,7 +565,7 @@ effect_tooltip = {
 #
 focus = {
 id = SRI_bulg_war
-icon = GFX_goal_generic_demand_territory
+icon = GFX_focus_generic_attack_bulgaria
 prerequisite = { focus = SRI_assasinate_mus }
 #mutually_exclusive = { focus = SRI_stay_here }
 #mutually_exclusive = { focus = SRI_dig_up }
