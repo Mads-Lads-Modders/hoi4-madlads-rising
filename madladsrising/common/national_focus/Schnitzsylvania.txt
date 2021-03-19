@@ -329,11 +329,8 @@ create_wargoal = {
 		 id = SRI_little_things
 		 icon = GFX_focus_generic_industry_1
 		 prerequisite = { focus = SRI_fuck_hungary }
-<<<<<<< HEAD
 		 mutually_exclusive = { focus = SRI_balkan_dom }
-=======
 		 mutually_exclusive = { focus = SRI_little_things }
->>>>>>> cf3c3f5acd33ea25773627b00a69c43b80bba70c
 		  x = 3
 		 y = 1
 	 relative_position_id = SRI_fuck_hungary
