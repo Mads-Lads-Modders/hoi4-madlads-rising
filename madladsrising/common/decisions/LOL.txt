@@ -3,7 +3,7 @@ LOL_annex_by_soviet_category = {
    LOL_annex_by_soviet_mission = {
 
    		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
-   		days_mission_timeout = 365	#The amount of days remaining until the mission is removed.
+   		days_mission_timeout = 730	#The amount of days remaining until the mission is removed.
    		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
 
    		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
