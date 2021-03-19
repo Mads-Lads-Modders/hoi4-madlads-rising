@@ -330,7 +330,7 @@ create_wargoal = {
 		 id = SRI_little_things
 		 icon = GFX_goal_generic_demand_territory
 		 prerequisite = { focus = SRI_fuck_hungary }
-		 mutually_exclusive = { SRI_little_things }
+		 mutually_exclusive = { focus = SRI_little_things }
 		  x = 3
 		 y = 1
 	 relative_position_id = SRI_fuck_hungary
