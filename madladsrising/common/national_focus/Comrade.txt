@@ -33,7 +33,7 @@ focus_tree = {
 		id = LOL_steady_as_she_goes
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = LOL_first_focus }
-		x = -8
+		x = -4
 		y = 1
 		relative_position_id = LOL_first_focus
 		cost = 10
@@ -50,8 +50,8 @@ focus_tree = {
 	focus = {
 		id = LOL_choosing_comrade_fate
 		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = LOL_steady_as_she_goes }
-		x = -4
+		prerequisite = { focus = LOL_first_focus }
+		x = -8
 		y = 1
 		relative_position_id = LOL_steady_as_she_goes
 		cost = 10

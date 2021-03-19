@@ -1,0 +1,11 @@
+#
+LOL_annex_by_soviet_category = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	picture = GFX_decision_cat_generic_mefo_bills	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+
+	allowed = {
+		original_tag = LOL
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player. Can leave blank?
+	}
+}

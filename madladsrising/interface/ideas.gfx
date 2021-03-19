@@ -5639,6 +5639,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_hol_prepare_the_inundation_lines.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_HOK_idea_save_language"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_national_identity"
+		texturefile = "gfx/interface/ideas/generic_morale_bonus.dds"
+	}
+
+
+
+
+	spriteType = {
 		name = "GFX_idea_XAV_nationalist_sentiments"
 		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
 	}

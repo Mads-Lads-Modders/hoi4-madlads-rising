@@ -1,0 +1,41 @@
+#
+LOL_annex_by_soviet_category = {
+   LOL_annex_by_soviet_mission = {
+
+   		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+   		days_mission_timeout = 730	#The amount of days remaining until the mission is removed.
+   		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+
+   		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+
+   		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+   			NOT = { has_idea = LOL_multiculturalism }
+   		}
+
+   		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+   		visible = {		#Conditions to make this mission visible, can be left blank to make it always appear.
+   			ROOT = {
+   				is_ai = no
+   			}
+   		}
+
+   		# EFFECTS OF THIS DECISION/MISSION
+
+   		timeout_effect = {		#The effects to execute once the mission timer expires.
+         SOV = {
+         annex_country = { target = LOL}
+      }
+      }
+
+   		complete_effect  = {
+   		   add_political_power = 69
+   		}
+
+   		# AI LOGIC FOR THIS DECISION/MISSION
+
+   		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+   			factor = 0
+   		}
+   }
+}
