@@ -201,7 +201,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_blend_change
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_TUR_crowning_ourselves_with_the_fin_ugor
 	prerequisite = { focus = HOK_state_traditions }
 	mutually_exclusive = { focus = HOK_strict_conservatism }
 	x = -1
@@ -227,7 +227,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_strict_conservatism
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_eng_imperial_federation
 	prerequisite = { focus = HOK_state_traditions }
 	mutually_exclusive = { focus = HOK_blend_change }
 	x = 1
@@ -427,7 +427,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_industrial_foundation
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_industry_2
 	prerequisite = { focus = HOK_blend_change focus = HOK_strict_conservatism }
 	x = -1
 	y = 1
@@ -444,7 +444,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_modernize_writing
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_research
 	prerequisite = { focus = HOK_industrial_foundation }
 	x = -1
 	y = 1
@@ -461,7 +461,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_spiritual_science
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_research2
 	prerequisite = { focus = HOK_modernize_writing }
 	x = 0
 	y = 1
@@ -478,7 +478,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_establish_districts
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_industry_1
 	prerequisite = { focus = HOK_industrial_foundation }
 	x = 1
 	y = 1
@@ -512,7 +512,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_research_development
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_scientific_exchange
 	prerequisite = { focus = HOK_invest_gold }
 	prerequisite = { focus = HOK_spiritual_science }
 	x = 1
