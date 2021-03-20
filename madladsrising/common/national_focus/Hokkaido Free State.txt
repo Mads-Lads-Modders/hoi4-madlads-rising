@@ -89,7 +89,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_international_rebirth
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_usa_union_representation_act
 	prerequisite = { focus = HOK_elect_chair }
 	mutually_exclusive = { focus = HOK_submit_japanese }
 	x = -4
