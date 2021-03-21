@@ -827,3 +827,93 @@ completion_reward = {
 add_political_power = 69
 }
 }
+#
+focus = {
+id = SRI_spread_cat
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_pope_here }
+x = 0
+y = 1
+relative_position_id = SRI_pope_here
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_state_cat
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_spread_cat }
+x = 0
+y = 1
+relative_position_id = SRI_spread_cat
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_DUES_VULT
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_state_cat }
+x = 0
+y = 1
+relative_position_id = SRI_state_cat
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_holy_land
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_DUES_VULT }
+x = 0
+y = 1
+relative_position_id = SRI_DUES_VULT
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_fund_vatican
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_holy_land }
+x = 0
+y = 1
+relative_position_id = SRI_holy_land
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
