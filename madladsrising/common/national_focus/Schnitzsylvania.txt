@@ -646,3 +646,95 @@ completion_reward = {
 add_political_power = 69
 }
 }
+#
+focus = {
+id = SRI_navis_longe
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_dig_up }
+#mutually_exclusive = { focus = SRI_stay_here }
+#mutually_exclusive = { focus = SRI_dig_up }
+x = 0
+y = 1
+relative_position_id = SRI_dig_up
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_annex_bri
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_navis_longe }
+x = 0
+y = 1
+relative_position_id = SRI_navis_longe
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_fra_spa
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_annex_bri }
+x = 0
+y = 1
+relative_position_id = SRI_annex_bri
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_thro_gib
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_fra_spa}
+x = 0
+y = 1
+relative_position_id = SRI_fra_spa
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_remake_empire
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_thro_gib }
+x = 0
+y = 1
+relative_position_id = SRI_thro_gib
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
