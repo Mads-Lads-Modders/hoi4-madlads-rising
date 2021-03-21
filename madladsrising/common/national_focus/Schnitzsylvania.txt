@@ -713,7 +713,11 @@ factor = 1
 available_if_capitulated = yes
 search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-
+create_wargoal = {
+	type = annex_everything
+	target = FRA
+	expire = 0
+}
 }
 }
 #
