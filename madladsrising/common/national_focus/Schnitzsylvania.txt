@@ -428,7 +428,7 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 		dictator
-		assassination_survivor
+		Assassination Survivor
 		}
 }
 }
@@ -664,8 +664,6 @@ focus = {
 id = SRI_navis_longe
 icon = GFX_goal_generic_demand_territory
 prerequisite = { focus = SRI_dig_up }
-#mutually_exclusive = { focus = SRI_stay_here }
-#mutually_exclusive = { focus = SRI_dig_up }
 x = 0
 y = 1
 relative_position_id = SRI_dig_up
@@ -676,7 +674,7 @@ factor = 1
 available_if_capitulated = yes
 search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-add_political_power = 69
+add_ideas = {SRI_Navis_Longe}
 }
 }
 #

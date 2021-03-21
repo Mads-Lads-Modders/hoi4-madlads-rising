@@ -5758,6 +5758,9 @@ spriteType = {
 	name = "SRI_Guerilla_Tac"
 	texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_fascism.dds"
 }
-
+spriteType = {
+	name = "SRI_Navis_Longe"
+	texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_fascism.dds"
+}
 
 } # copy paste BEFORE this bracket
