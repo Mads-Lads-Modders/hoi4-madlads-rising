@@ -796,7 +796,7 @@ add_political_power = 69
 focus = {
 id = SRI_free_tuva
 icon = GFX_goal_generic_demand_territory
-prerequisite = { focus = SRI_strike_first
+prerequisite = { focus = SRI_strike_first }
 y = 1
 relative_position_id = SRI_strike_first
 cost = 5
