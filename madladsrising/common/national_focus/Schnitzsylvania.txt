@@ -717,11 +717,6 @@ create_wargoal = {
 	type = annex_everything
 	target = FRA
 	expire = 0
-	create_wargoal = {
-		type = annex_everything
-		target = ESP
-		expire = 0
-}
 }
 }
 }
