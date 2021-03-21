@@ -89,7 +89,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_international_rebirth
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_usa_union_representation_act
 	prerequisite = { focus = HOK_elect_chair }
 	mutually_exclusive = { focus = HOK_submit_japanese }
 	x = -4
@@ -201,7 +201,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_blend_change
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_TUR_crowning_ourselves_with_the_fin_ugor
 	prerequisite = { focus = HOK_state_traditions }
 	mutually_exclusive = { focus = HOK_strict_conservatism }
 	x = -1
@@ -227,7 +227,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_strict_conservatism
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_eng_imperial_federation
 	prerequisite = { focus = HOK_state_traditions }
 	mutually_exclusive = { focus = HOK_blend_change }
 	x = 1
@@ -427,7 +427,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_industrial_foundation
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_industry_2
 	prerequisite = { focus = HOK_blend_change focus = HOK_strict_conservatism }
 	x = -1
 	y = 1
@@ -439,12 +439,31 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		 name = industry_bonus
+		 bonus = 1.0
+		 uses = 2
+		 category = industry
+	}
+	  if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
 	}
 } # end focus
 focus = {
 	id = HOK_modernize_writing
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_research
 	prerequisite = { focus = HOK_industrial_foundation }
 	x = -1
 	y = 1
@@ -456,12 +475,17 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		 name = electronics_bonus
+		 bonus = 1.0
+		 uses = 2
+		 category = electronics
+	}
 	}
 } # end focus
 focus = {
 	id = HOK_spiritual_science
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_research2
 	prerequisite = { focus = HOK_modernize_writing }
 	x = 0
 	y = 1
@@ -473,12 +497,12 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_research_slot = 1
 	}
 } # end focus
 focus = {
 	id = HOK_establish_districts
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_generic_industry_1
 	prerequisite = { focus = HOK_industrial_foundation }
 	x = 1
 	y = 1
@@ -490,7 +514,45 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 537
+			}
+			537 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 555
+			}
+			555 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 } # end focus
 focus = {
@@ -507,17 +569,67 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_ideas = { HOK_idea_ainu_gold }
 	}
 } # end focus
 focus = {
 	id = HOK_research_development
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_goal_generic_scientific_exchange
 	prerequisite = { focus = HOK_invest_gold }
 	prerequisite = { focus = HOK_spiritual_science }
+	available = {
+	num_of_factories > 40
+	}
 	x = 1
 	y = 1
 	relative_position_id = HOK_spiritual_science
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_research_slot = 1
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+} # end focus
+focus = {
+	id = HOK_economic_niche
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_research_development }
+	x = 0
+	y = 1
+	relative_position_id = HOK_research_development
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_ideas = { HOK_idea_economic_niche }
+	}
+} # end focus
+focus = {
+	id = HOK_hunting_grounds
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = HOK_modern_hunter }
+	x = 0
+	y = 1
+	relative_position_id = HOK_modern_hunter
 	cost = 10
 
 	ai_will_do = { factor = 1}
@@ -529,12 +641,154 @@ focus = {
 	}
 } # end focus
 focus = {
-	id = HOK_economic_niche
-	icon = GFX_focus_generic_industry_3
-	prerequisite = { focus = HOK_research_development }
+	id = HOK_purify_russia
+	icon = GFX_goal_generic_major_war
+	prerequisite = { focus = HOK_hunting_grounds }
+	mutually_exclusive = { focus = HOK_befriend_russia }
+	x = -5
+	y = 1
+	relative_position_id = HOK_hunting_grounds
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_befriend_russia
+	icon = GFX_goal_generic_major_alliance
+	prerequisite = { focus = HOK_hunting_grounds }
+	mutually_exclusive = { focus = HOK_purify_russia }
+	x = -3
+	y = 1
+	relative_position_id = HOK_hunting_grounds
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_ancestral_lands
+	icon = GFX_focus_generic_monarchy_1
+	prerequisite = { focus = HOK_purify_russia}
 	x = 0
 	y = 1
-	relative_position_id = HOK_research_development
+	relative_position_id = HOK_purify_russia
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_turn_tables
+	icon = GFX_focus_jap_cast_the_die
+	prerequisite = { focus = HOK_hunting_grounds }
+	x = 0
+	y = 1
+	relative_position_id = HOK_hunting_grounds
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_ainu_manchuria
+	icon = GFX_focus_jap_manchurian_project
+	prerequisite = { focus = HOK_turn_tables }
+	x = 0
+	y = 1
+	relative_position_id = HOK_turn_tables
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_ally_inuit
+	icon = GFX_goal_generic_major_alliance
+	prerequisite = { focus = HOK_hunting_grounds }
+	mutually_exclusive = { focus = HOK_subjugate_inuit }
+	x = 3
+	y = 1
+	relative_position_id = HOK_hunting_grounds
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_subjugate_inuit
+	icon = GFX_goal_generic_major_war
+	prerequisite = { focus = HOK_hunting_grounds }
+	mutually_exclusive = { focus = HOK_ally_inuit }
+	x = 5
+	y = 1
+	relative_position_id = HOK_hunting_grounds
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_northern_expansion
+	icon = GFX_focus_generic_monarchy_1
+	prerequisite = { focus = HOK_subjugate_inuit }
+	x = 0
+	y = 1
+	relative_position_id = HOK_subjugate_inuit
+	cost = 10
+
+	ai_will_do = { factor = 1}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	completion_reward = {
+		add_political_power = 69
+	}
+} # end focus
+focus = {
+	id = HOK_supremacy_north
+	icon = GFX_focus_generic_monarchy_2
+	prerequisite = { focus = HOK_northern_expansion }
+	prerequisite = { focus = HOK_ancestral_lands }
+	prerequisite = { focus = HOK_ainu_manchuria }
+	x = 0
+	y = 1
+	relative_position_id = HOK_ainu_manchuria
 	cost = 10
 
 	ai_will_do = { factor = 1}
