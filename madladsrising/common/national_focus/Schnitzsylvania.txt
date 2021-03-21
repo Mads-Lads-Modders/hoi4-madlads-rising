@@ -417,7 +417,20 @@ factor = 1
 available_if_capitulated = yes
 search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-add_political_power = 69
+hidden_effect = {
+	retire_country_leader = yes
+}
+create_country_leader = {
+	name = "GAIVS IVLIVS GAI FILIVS CAESAR"
+	desc = "POLITICS_GETÚLIO_VARGAS_DESC"
+	picture = "julius.dds"
+	expire = "1954.8.24"
+	ideology = despotism
+	traits = {
+		dictator
+
+		}
+}
 }
 }
 #
