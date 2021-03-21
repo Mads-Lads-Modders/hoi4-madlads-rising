@@ -718,6 +718,9 @@ create_wargoal = {
 	type = annex_everything
 	target = FRA
 	expire = 0
+	type = annex_everything
+	target = SPR
+	expire = 0
 }
 }
 }
