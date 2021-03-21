@@ -48,8 +48,7 @@ original_TAG = SRI
 }
 removal_cost = -1
 modifier = {
-offence = 0.2
-defence = 0.2
+naval_accidents_chance = 0.1
 experience_gain_navy = 0.02
 navy_submarine_attack_factor = 0.3
 navy_capital_ship_attack_factor = 0.3
