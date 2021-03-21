@@ -723,6 +723,8 @@ create_wargoal = {
 		expire = 0
 }
 }
+}
+}
 #
 focus = {
 id = SRI_thro_gib
