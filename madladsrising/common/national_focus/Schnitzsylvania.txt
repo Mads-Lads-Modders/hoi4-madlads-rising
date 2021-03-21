@@ -738,3 +738,92 @@ completion_reward = {
 add_political_power = 69
 }
 }
+#
+focus = {
+id = SRI_new_empire
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_stay_here }
+x = 0
+y = 1
+relative_position_id = SRI_stay_here
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_agro_pro
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_new_empire }
+x = 0
+y = 1
+relative_position_id = SRI_new_empire
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_strike_first
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_agro_pro }
+x = 0
+y = 1
+relative_position_id = SRI_agro_pro
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_free_tuva
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_strike_first
+y = 1
+relative_position_id = SRI_strike_first
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
+#
+focus = {
+id = SRI_buff_tuva
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = SRI_free_tuva }
+x = 0
+y = 1
+relative_position_id = SRI_free_tuva
+cost = 5
+ai_will_do = {
+factor = 1
+}
+available_if_capitulated = yes
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+add_political_power = 69
+}
+}
