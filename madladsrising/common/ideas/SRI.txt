@@ -33,7 +33,7 @@ Conscription = 0.02
 }
 }
 SRI_Guerilla_Tac = {
-allowed - {
+allowed = {
 original_TAG = SRI
 }
 removal_cost = -1
@@ -42,6 +42,23 @@ supply_consumption_factor = -0.1
 out_of_supply_factor = -0.2
 }
 }
+SRI_Navis_Longe = {
+allowed = {
+original_TAG = SRI
+}
+removal_cost = -1
+modifier = {
+offence = 0.2
+defence = 0.2
+experience_gain_navy = 0.02
+navy_submarine_attack_factor = 0.3
+navy_capital_ship_attack_factor = 0.3
+repair_speed_factor = 0.3
+production_speed_buildings_factor = 0.1
+}
+}
+
+
 
 
 }
