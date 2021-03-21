@@ -439,7 +439,26 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		 name = industry_bonus
+		 bonus = 1.0
+		 uses = 2
+		 category = industry
+	}
+	  if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
 	}
 } # end focus
 focus = {
@@ -456,7 +475,12 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		 name = electronics_bonus
+		 bonus = 1.0
+		 uses = 2
+		 category = electronics
+	}
 	}
 } # end focus
 focus = {
@@ -473,7 +497,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_research_slot = 1
 	}
 } # end focus
 focus = {
@@ -490,7 +514,45 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 537
+			}
+			537 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 555
+			}
+			555 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 } # end focus
 focus = {
@@ -507,7 +569,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_ideas = { HOK_idea_ainu_gold }
 	}
 } # end focus
 focus = {
@@ -515,6 +577,9 @@ focus = {
 	icon = GFX_goal_generic_scientific_exchange
 	prerequisite = { focus = HOK_invest_gold }
 	prerequisite = { focus = HOK_spiritual_science }
+	available = {
+	num_of_factories > 40
+	}
 	x = 1
 	y = 1
 	relative_position_id = HOK_spiritual_science
@@ -525,7 +590,20 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_research_slot = 1
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 } # end focus
 focus = {
@@ -542,7 +620,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_ideas = { HOK_idea_economic_niche }
 	}
 } # end focus
 focus = {
