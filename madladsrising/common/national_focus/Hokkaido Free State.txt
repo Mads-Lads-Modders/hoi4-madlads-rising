@@ -85,6 +85,16 @@ focus = {
 		add_stability = .05
 		add_war_support = .05
 		add_political_power = 50
+		create_field_marshal = {
+			name = "Asirpa"
+			portrait_path = "Asirpa Field Marshal.dds"
+			traits = {  logistics_wizard aggressive_assaulter ranger commando winter_specialist }
+			skill = 6
+			attack_skill = 4
+		    defense_skill = 3
+		    planning_skill = 3
+		    logistics_skill = 4
+		}
 	}
 } # end focus
 focus = {
@@ -625,7 +635,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_hunting_grounds
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_hol_war_on_pacifism
 	prerequisite = { focus = HOK_modern_hunter }
 	x = 0
 	y = 1
