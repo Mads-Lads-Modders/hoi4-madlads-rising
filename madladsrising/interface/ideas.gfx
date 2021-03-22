@@ -5654,6 +5654,10 @@ spriteTypes = {
 		name = "GFX_idea_HOK_idea_economic_niche"
 		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_ainu_spirit"
+		texturefile = "gfx/interface/ideas/idea_tur_arctic_wolves.dds"
+	}
 
 
 

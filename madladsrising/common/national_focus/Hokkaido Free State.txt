@@ -88,7 +88,7 @@ focus = {
 		create_field_marshal = {
 			name = "Asirpa"
 			portrait_path = "gfx/leaders/HOK/Asirpa Field Marshal.dds"
-			traits = {  logistics_wizard aggressive_assaulter ranger commando winter_specialist }
+			traits = {  organizer logistics_wizard aggressive_assaulter ranger commando winter_specialist }
 			skill = 6
 			attack_skill = 4
 		    defense_skill = 3
@@ -275,7 +275,8 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_war_support = 0.1
+		add_ideas = { HOK_idea_ainu_spirit }
 	}
 } # end focus
 focus = {
