@@ -5658,6 +5658,14 @@ spriteTypes = {
 		name = "GFX_idea_HOK_idea_ainu_spirit"
 		texturefile = "gfx/interface/ideas/idea_tur_arctic_wolves.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_wolf"
+		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_bear"
+		texturefile = "gfx/interface/ideas/generic_acquire_tanks.dds"
+	}
 
 
 

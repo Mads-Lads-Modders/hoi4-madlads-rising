@@ -293,7 +293,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = land_doc_bonus
+		bonus = 1.0
+		uses = 2
+		category = land_doctrine
+		}
+		add_ideas = { HOK_idea_wolf }
 	}
 } # end focus
 focus = {
@@ -311,7 +317,37 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = air_sup_bonus
+		bonus = 1.0
+		uses = 2
+		category = air_doctrine
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		add_equipment_to_stockpile = {
+		   type = fighter_equipment
+			 amount = 300
+			 producer = HOK
+		}
 	}
 } # end focus
 focus = {
@@ -329,7 +365,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = naval_sup_bonus
+		bonus = 1.0
+		uses = 2
+		category = naval_doctrine
+		}
+		#steal some of japan's navy?
 	}
 } # end focus
 focus = {
@@ -346,7 +388,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = land_doc_bonus
+		bonus = 1.0
+		uses = 2
+		category = land_doctrine
+		}
+		add_ideas = { HOK_idea_bear }
 	}
 } # end focus
 focus = {
@@ -363,7 +411,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		effect_tooltip = {
+			swap_ideas = { remove_idea = HOK_idea_wolf add_idea = HOK_idea_wolf2 }
+		}
+		hidden_effect = {
+			remove_ideas = { HOK_idea_wolf }
+			add_ideas = { HOK_idea_wolf2 }
+		}
 	}
 } # end focus
 focus = {
@@ -414,7 +468,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		effect_tooltip = {
+			swap_ideas = { remove_idea = HOK_idea_bear add_idea = HOK_idea_bear2 }
+		}
+		hidden_effect = {
+			remove_ideas = { HOK_idea_bear }
+			add_ideas = { HOK_idea_bear2 }
+		}
 	}
 } # end focus
 focus = {
