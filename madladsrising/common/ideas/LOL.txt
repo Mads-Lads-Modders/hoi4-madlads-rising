@@ -62,11 +62,6 @@ ideas = {
 
   } # line up with country
 
-
-	ideas = {
-		# MILITARY
-
-
 		political_advisor = {
 
 			LOL_lmao_sadin = {
@@ -321,6 +316,5 @@ ideas = {
 			}
 
 		}
-	}
 
 } # line up with ideas
