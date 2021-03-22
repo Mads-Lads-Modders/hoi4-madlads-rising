@@ -61,4 +61,266 @@ ideas = {
 
 
   } # line up with country
+
+
+	ideas = {
+		# MILITARY
+
+
+		political_advisor = {
+
+			LOL_lmao_sadin = {
+
+				picture = generic_political_advisor_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { captain_of_industry }
+			}
+
+			LOL_mahmud_jimba = {
+
+				picture = generic_political_advisor_arab_2
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { silent_workhorse }
+			}
+
+			LOL_genghis_khan_mansour = {
+
+				picture = generic_political_advisor_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { quartermaster_general }
+			}
+		}
+
+		army_chief = {
+
+			LOL_abdolrenza_afkhami = {
+
+				picture = generic_army_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { army_chief_organizational_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			LOL_hassan_majuid_firooz = {
+
+				picture = generic_army_arab_1
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { army_chief_offensive_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+
+		air_chief = {
+
+			LOL_ahmad_khan_nakhjaveen = {
+
+				picture = generic_air_arab_1
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { air_chief_all_weather_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			LOL_mohammed_lmaojavani = {
+
+				picture = generic_air_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { air_chief_ground_support_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+		}
+
+		navy_chief = {
+
+			LOL_ahmad_lmao_nakhjaavan = {
+
+				picture = generic_navy_arab_1
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { navy_chief_decisive_battle_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			LOL_reza_mizooni = {
+
+				picture = generic_navy_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { navy_chief_maneuver_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+
+		high_command = {
+
+			LOL_mira_afkhami = {
+				ledger = army
+
+				picture = generic_army_arab_1
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { army_regrouping_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			LOL_fazlollah_zahoodi = {
+				ledger = army
+
+				picture = generic_army_arab_2
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { army_infantry_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+
+			LOL_ali_lmaomara = {
+				ledger = air
+
+				picture = generic_air_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { air_airborne_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			LOL_ahmad_lmao_khosravani = {
+				ledger = navy
+
+				picture = generic_navy_arab_1
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				traits = { navy_submarine_2 }
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+
+		theorist = {
+			LOL_mohammood_reza_pahlavi = {
+				ledger = army
+
+				picture = generic_army_arab_3
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				research_bonus = {
+					land_doctrine = 0.10
+				}
+
+				traits = { military_theorist }
+			}
+
+			LOL_hossein_afkhoomi = {
+				ledger = navy
+
+				picture = generic_navy_arab_1
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				research_bonus = {
+					naval_doctrine = 0.10
+				}
+
+				traits = { naval_theorist }
+			}
+
+			LOL_admiral_akbar_deiva = {
+				ledger = air
+
+				picture = generic_air_arab_2
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				research_bonus = {
+					air_doctrine = 0.10
+				}
+
+				traits = { air_warfare_theorist }
+			}
+
+		}
+	}
+
 } # line up with ideas
