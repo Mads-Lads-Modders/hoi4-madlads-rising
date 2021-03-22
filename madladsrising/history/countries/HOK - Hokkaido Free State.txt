@@ -120,7 +120,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Saichi Sugimoto"
-	portrait_path = "Saichi_Sugimoto.dds"
+	portrait_path = "gfx/leaders/HOK/Saichi Sugimoto.dds"
 	traits = {  infantry_leader trickster ranger winter_specialist }
 	skill = 6
 	attack_skill = 2
