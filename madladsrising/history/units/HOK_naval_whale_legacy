@@ -1,0 +1,21 @@
+units = {
+	fleet = {
+		name = "Arctic Coastal Fleet"
+		naval_base = 10444
+		task_force = {
+			name = "Escorts"
+			location = 10444
+			ship = { name = "Destroyer 100" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+			ship = { name = "Destroyer 101" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+			ship = { name = "Destroyer 102" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+			ship = { name = "Destroyer 103" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 104" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 105" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 106" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 107" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 108" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 109" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+      ship = { name = "Destroyer 110" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = HOK } } }
+		}
+	}
+}

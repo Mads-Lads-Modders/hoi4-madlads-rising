@@ -371,7 +371,23 @@ focus = {
 		uses = 2
 		category = naval_doctrine
 		}
-		#steal some of japan's navy?
+		hidden_effect = {
+			if = {
+							limit = {
+								has_dlc = "Man the Guns"
+				}
+				set_technology = {
+					basic_ship_hull_light = 1
+				}
+				load_oob = "HOK_naval_whal_mtg"
+			}
+					else = {
+				set_technology = {
+					basic_destroyer = 1
+				}
+						load_oob = "HOK_naval_whale_legacy"
+			}
+		}
 	}
 } # end focus
 focus = {
