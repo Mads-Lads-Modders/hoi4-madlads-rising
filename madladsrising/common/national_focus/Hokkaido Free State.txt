@@ -378,12 +378,14 @@ focus = {
 				}
 				set_technology = {
 					basic_ship_hull_light = 1
+					ship_hull_light_2 = 1
 				}
-				load_oob = "HOK_naval_whal_mtg"
+				load_oob = "HOK_naval_whale_mtg"
 			}
 					else = {
 				set_technology = {
 					basic_destroyer = 1
+					destroyer_2 = 1
 				}
 						load_oob = "HOK_naval_whale_legacy"
 			}

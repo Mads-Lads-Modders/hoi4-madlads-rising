@@ -5663,8 +5663,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_HOK_idea_wolf2"
+		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_HOK_idea_bear"
-		texturefile = "gfx/interface/ideas/generic_acquire_tanks.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_bear2"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
 	}
 
 
