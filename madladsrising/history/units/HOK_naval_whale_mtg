@@ -1,7 +1,7 @@
 instant_effect = {
 	create_equipment_variant = {
 		name = "Ainu Hunting Vessel"
-		type = ship_hull_light_2
+		type = basic_ship_hull_light
 		#name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -23,17 +23,17 @@ units = {
 		task_force = {
 			name = "Escorts"
 			location = 10444
-			ship = { name = "Destroyer 100" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-			ship = { name = "Destroyer 101" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-			ship = { name = "Destroyer 102" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 103" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 104" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 105" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 106" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 107" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 108" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 109" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
-      ship = { name = "Destroyer 110" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+			ship = { name = "Destroyer 100" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+			ship = { name = "Destroyer 101" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+			ship = { name = "Destroyer 102" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 103" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 104" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 105" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 106" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 107" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 108" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 109" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
+      ship = { name = "Destroyer 110" definition = destroyer equipment = { basic_ship_hull_light = { amount = 1 owner = HOK version_name = "Ainu Hunting Vessel"} } }
 		}
 	}
 }
