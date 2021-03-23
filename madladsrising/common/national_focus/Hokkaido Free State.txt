@@ -371,6 +371,7 @@ focus = {
 		uses = 2
 		category = naval_doctrine
 		}
+		hidden_effect = {
 			if = {
 							limit = {
 								has_dlc = "Man the Guns"
@@ -378,14 +379,15 @@ focus = {
 				set_technology = {
 					basic_ship_hull_light = 1
 				}
-				load_oob = "HOK_naval_whale_mtg"
+				load_oob = "HOK_naval_whale_mtg.txt"
 			}
 					else = {
 				set_technology = {
 					basic_destroyer = 1
 				}
-						load_oob = "HOK_naval_whale_legacy"
+						load_oob = "HOK_naval_whale_legacy.txt"
 			}
+		}
 
 	}
 } # end focus
