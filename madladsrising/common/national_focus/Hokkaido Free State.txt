@@ -844,8 +844,24 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
-	}
+		add_war_support = 0.15
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_manpower = 100000
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 537
+				}
+				537 = {
+					add_manpower = 50000
+					}
+				}
+		}
 } # end focus
 focus = {
 	id = HOK_purify_russia
@@ -862,7 +878,22 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_state_core = 655
+	 add_state_core = 408
+	 add_state_core = 409
+	 add_state_core = 560
+	 add_state_core = 657
+	 add_state_core = 561
+	 add_state_core = 574
+	 add_state_core = 644
+	 add_state_core = 562
+	 add_state_core = 637
+	 create_wargoal = {
+		 type = take_state_focus
+		 target = SOV
+		 expire = 0
+		 generator = { 408 655 }
+	}
 	}
 } # end focus
 focus = {
@@ -881,6 +912,7 @@ focus = {
 
 	completion_reward = {
 		add_political_power = 69
+		#some sort of event here
 	}
 } # end focus
 focus = {
@@ -897,7 +929,21 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		set_truce ={
+		target = SOV
+		days = 365
+		} #truce/whit peace doesn't work, might need to use an event
+		655 = { remove_core_of = SOV }
+		408 = { remove_core_of = SOV }
+		409 = { remove_core_of = SOV }
+		560 = { remove_core_of = SOV }
+		657 = { remove_core_of = SOV }
+		561 = { remove_core_of = SOV }
+		574 = { remove_core_of = SOV }
+		644 = { remove_core_of = SOV }
+		562 = { remove_core_of = SOV }
+		637 = { remove_core_of = SOV }
+		add_political_power = 100
 	}
 } # end focus
 focus = {
@@ -967,7 +1013,14 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_state_core = 85
+	 add_state_core = 86
+	 create_wargoal = {
+		 type = take_state_focus
+		 target = USA
+		 expire = 0
+		 generator = { 85 86 }
+	}
 	}
 } # end focus
 focus = {
