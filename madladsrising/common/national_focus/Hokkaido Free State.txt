@@ -929,9 +929,9 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		set_truce = { target = SOV days = 365 } #set truce still doesn't work
+		white_peace = SOV
 		HOK = {
-		effect_tooltip = {
+		effect_tooltip = { #find tooltip that works
 			transfer_state = 655
 			transfer_state = 408
 			transfer_state = 409
