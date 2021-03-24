@@ -127,5 +127,40 @@ ideas = {
     pocket_penalty = -0.25
     }
     }
+    HOK_idea_take_sky = {
+    allowed = {
+      original_TAG = HOK
+    }
+    removal_cost = -1
+    modifier = {
+    air_superiority_efficiency = 0.5
+    air_cas_efficiency = 0.5
+    air_range_factor = 0.25
+    }
+    }
+    HOK_idea_take_sea = {
+    allowed = {
+      original_TAG = HOK
+    }
+    removal_cost = -1
+    modifier = {
+    naval_invasion_penalty = -0.5
+    naval_speed_factor = 0.5
+    naval_hit_chance = 0.5
+    }
+    }
+    HOK_idea_modern_hunter = {
+    allowed = {
+      original_TAG = HOK
+    }
+    removal_cost = -1
+    modifier = {
+    special_forces_min = 500
+    special_forces_out_of_supply_factor = -0.25
+    special_forces_attack_factor = 0.25
+    special_forces_defence_factor = 0.25
+    special_forces_speed_factor = 0.5
+    }
+    }
   } # line up with country
 } # line up with ideas

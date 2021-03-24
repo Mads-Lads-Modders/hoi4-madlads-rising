@@ -5674,7 +5674,18 @@ spriteTypes = {
 		name = "GFX_idea_HOK_idea_bear2"
 		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_HOK_idea_take_sky"
+		texturefile = "gfx/interface/ideas/air_support_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_take_sea"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_modern_hunter"
+		texturefile = "gfx/interface/ideas/idea_man_militarism.dds"
+	}
 
 
 
