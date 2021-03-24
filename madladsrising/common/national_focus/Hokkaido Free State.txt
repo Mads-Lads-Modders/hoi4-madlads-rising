@@ -573,19 +573,19 @@ focus = {
 				name = "Ainu Elite Marines"
 				priority = 2
 				division_names_group = JAP_MAR_01
-				regiments = {
-					marines = { x = 0 y = 0 }
-					marines = { x = 0 y = 1 }
-					marines = { x = 0 y = 2 }
+				regiment = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
 
-							marines = { x = 1 y = 0 }
-					marines = { x = 1 y = 1 }
-					marines = { x = 1 y = 2 }
-					marines = { x = 1 y = 3 }
+							marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
 
-							marines = { x = 2 y = 0 }
-					marines = { x = 2 y = 1 }
-					marines = { x = 2 y = 2 }
+							marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
@@ -604,18 +604,18 @@ focus = {
 				priority = 2
 				division_names_group = JAP_MAR_01
 				regiments = {
-					paratroopers = { x = 0 y = 0 }
-					paratroopers = { x = 0 y = 1 }
-					paratroopers = { x = 0 y = 2 }
+					paratrooper = { x = 0 y = 0 }
+					paratrooper = { x = 0 y = 1 }
+					paratrooper = { x = 0 y = 2 }
 
-							paratroopers = { x = 1 y = 0 }
-					paratroopers = { x = 1 y = 1 }
-					paratroopers = { x = 1 y = 2 }
-					paratroopers = { x = 1 y = 3 }
+							paratrooper = { x = 1 y = 0 }
+					paratrooper = { x = 1 y = 1 }
+					paratrooper = { x = 1 y = 2 }
+					paratrooper = { x = 1 y = 3 }
 
-							paratroopers = { x = 2 y = 0 }
-					paratroopers = { x = 2 y = 1 }
-					paratroopers = { x = 2 y = 2 }
+							paratrooper = { x = 2 y = 0 }
+					paratrooper = { x = 2 y = 1 }
+					paratrooper = { x = 2 y = 2 }
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
