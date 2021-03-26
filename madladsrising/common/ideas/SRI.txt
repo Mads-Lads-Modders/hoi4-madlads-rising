@@ -62,7 +62,7 @@ original_TAG = ITA
 }
 removal_cost = -1
 modifier = {
-nuetrality_drift = 0.15
+neutrality_drift = 0.15
 add_stability = -0.1
 add_war_support = 0.1
 }
