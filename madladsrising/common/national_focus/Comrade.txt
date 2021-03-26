@@ -597,19 +597,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+		  set_capital = 229
 			start_civil_war = {
     ruling_party = fascism
     ideology = communism
     size = 0.6
-    only_own_territory = no
     capital = 217
     states = {
         217 265 245 218 238 235 237 236
     }
-    # keep_unit_leaders = {
-    #    750 751 752
-    # }
-    keep_political_leader = yes
 }
     hidden_effect = {
 		set_party_name = { ideology = fascism long_name = LOL_bertucci_communism name = LOL_bertucci_communism }
