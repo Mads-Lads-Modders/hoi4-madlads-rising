@@ -401,7 +401,16 @@ cost = 5
  available_if_capitulated = yes
  search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
- add_political_power = 69
+set_politics = {
+	ruling_party = neutrality
+}
+
+set_popularities = {
+democratic = 5
+neutrality = 70
+fascism = 20
+communism = 5
+}
   }
   }
 	#
