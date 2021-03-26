@@ -401,7 +401,7 @@ cost = 5
  available_if_capitulated = yes
  search_filters = { FOCUS_FILTER_POLITICAL }
 completion_reward = {
-set_politics = {
+ITA = {set_politics = {
 	ruling_party = neutrality
 }
 
@@ -414,6 +414,7 @@ communism = 5
 }
   }
   }
+	}
 	#
 focus = {
 id = SRI_dig_up
