@@ -383,8 +383,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+      remove_ideas = { LOL_idea_navy LOL_idea_airforce2 }
 			swap_ideas = {
-				remove_ideas = { LOL_idea_navy LOL_idea_army2 LOL_idea_airforce2 }
+				remove_idea = LOL_idea_army2
 				add_idea = LOL_idea_military
 			}
 			137 = {

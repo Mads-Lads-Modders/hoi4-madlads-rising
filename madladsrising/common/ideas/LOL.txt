@@ -153,7 +153,7 @@ ideas = {
 		modifier = {
 			army_infantry_attack_factor = 0.025
 			army_infantry_defence_factor = 0.025
-			army_infantry_org_factor = 0.05
+			army_org_factor = 0.05
 		}
 		}
 		LOL_idea_army2 = {
@@ -171,7 +171,7 @@ ideas = {
 		modifier = {
 			army_infantry_attack_factor = 0.05
 			army_infantry_defence_factor = 0.05
-			army_infantry_org_factor = 0.1
+			army_org_factor = 0.1
 		}
 		}
 		LOL_idea_airforce = {
@@ -248,8 +248,8 @@ ideas = {
 				navy_screen_attack_factor = 0.1
 				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
-				army_infantry_org_factor = 0.2
-				cavalry_breakthough_factor = 0.1
+				army_org_factor = 0.2
+				breakthough_factor = 0.1
 				motorized_defence_factor = 0.1
 				mechanized_defense_factor = 0.1
 				}
