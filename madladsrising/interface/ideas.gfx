@@ -5606,21 +5606,14 @@ spriteTypes = {
 	}
 #########################################
 
-  spriteType = {
-	  name = "GFX_idea_XAV_ultranationalists"
-	  texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
-  }
+
 	spriteType = {
 	  name = "GFX_idea_LOL_comrade_rule"
 	  texturefile = "gfx/interface/ideas/officers_purged.dds"
   }
 	spriteType = {
-	  name = "GFX_idea_XAV_undecided_fate"
-		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
-	}
-  spriteType = {
-	  name = "GFX_idea_XAV_prussian_army_training"
-		texturefile = "gfx/interface/ideas/german_advisors.dds"
+		name = "GFX_idea_LOL_comrade_rule2"
+		texturefile = "gfx/interface/ideas/officers_purged.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LOL_multiculturalism"
@@ -5630,6 +5623,44 @@ spriteTypes = {
 		name = "GFX_idea_LOL_jew_rule"
 		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_lost_support"
+		texturefile = "gfx/interface/ideas/anti_soviet_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_money_laundering"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_navy"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_army"
+		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_army2"
+		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_airforce"
+		texturefile = "gfx/interface/ideas/generic_air_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_airforce2"
+		texturefile = "gfx/interface/ideas/generic_air_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_military"
+		texturefile = "gfx/interface/ideas/idea_generic_license_production.dds"
+	}
+
+
+
+
+
+
 	spriteType = {
 		name = "GFX_idea_HOK_tightrope"
 		texturefile = "gfx/interface/ideas/idea_generic_flexible_foreign_policy.dds"
@@ -5654,10 +5685,54 @@ spriteTypes = {
 		name = "GFX_idea_HOK_idea_economic_niche"
 		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_ainu_spirit"
+		texturefile = "gfx/interface/ideas/idea_tur_arctic_wolves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_wolf"
+		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_wolf2"
+		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_bear"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_bear2"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_take_sky"
+		texturefile = "gfx/interface/ideas/air_support_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_take_sea"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOK_idea_modern_hunter"
+		texturefile = "gfx/interface/ideas/idea_man_militarism.dds"
+	}
 
 
 
 
+	spriteType = {
+	  name = "GFX_idea_XAV_ultranationalists"
+	  texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+  }
+	spriteType = {
+	  name = "GFX_idea_XAV_undecided_fate"
+		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
+	}
+  spriteType = {
+	  name = "GFX_idea_XAV_prussian_army_training"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_XAV_nationalist_sentiments"
 		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"

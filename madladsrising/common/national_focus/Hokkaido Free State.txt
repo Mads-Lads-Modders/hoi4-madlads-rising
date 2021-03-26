@@ -85,6 +85,16 @@ focus = {
 		add_stability = .05
 		add_war_support = .05
 		add_political_power = 50
+		create_field_marshal = {
+			name = "Asirpa"
+			portrait_path = "gfx/leaders/HOK/Asirpa Field Marshal.dds"
+			traits = {  organizer logistics_wizard aggressive_assaulter ranger commando winter_specialist }
+			skill = 6
+			attack_skill = 4
+		    defense_skill = 3
+		    planning_skill = 3
+		    logistics_skill = 4
+		}
 	}
 } # end focus
 focus = {
@@ -265,7 +275,8 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_war_support = 0.1
+		add_ideas = { HOK_idea_ainu_spirit }
 	}
 } # end focus
 focus = {
@@ -282,7 +293,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = land_doc_bonus
+		bonus = 1.0
+		uses = 2
+		category = land_doctrine
+		}
+		add_ideas = { HOK_idea_wolf }
 	}
 } # end focus
 focus = {
@@ -300,7 +317,37 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = air_sup_bonus
+		bonus = 1.0
+		uses = 2
+		category = air_doctrine
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		add_equipment_to_stockpile = {
+		   type = fighter_equipment
+			 amount = 300
+			 producer = HOK
+		}
 	}
 } # end focus
 focus = {
@@ -318,7 +365,30 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = naval_sup_bonus
+		bonus = 1.0
+		uses = 2
+		category = naval_doctrine
+		}
+		hidden_effect = {
+			if = {
+							limit = {
+								has_dlc = "Man the Guns"
+				}
+				set_technology = {
+					basic_ship_hull_light = 1
+				}
+				load_oob = "HOK_naval_whale_mtg"
+			}
+					else = {
+				set_technology = {
+					basic_destroyer = 1
+				}
+						load_oob = "HOK_naval_whale_legacy"
+			}
+		}
+
 	}
 } # end focus
 focus = {
@@ -335,7 +405,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_tech_bonus = {
+		name = land_doc_bonus
+		bonus = 1.0
+		uses = 2
+		category = land_doctrine
+		}
+		add_ideas = { HOK_idea_bear }
 	}
 } # end focus
 focus = {
@@ -352,7 +428,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		effect_tooltip = {
+			swap_ideas = { remove_idea = HOK_idea_wolf add_idea = HOK_idea_wolf2 }
+		}
+		hidden_effect = {
+			remove_ideas = { HOK_idea_wolf }
+			add_ideas = { HOK_idea_wolf2 }
+		}
 	}
 } # end focus
 focus = {
@@ -369,7 +451,20 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+	if = {
+		limit = {
+			has_full_control_of_state = 536
+		}
+		536 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+		add_ideas = { HOK_idea_take_sky }
 	}
 } # end focus
 focus = {
@@ -386,7 +481,20 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		add_ideas = { HOK_idea_take_sea }
 	}
 } # end focus
 focus = {
@@ -403,7 +511,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		effect_tooltip = {
+			swap_ideas = { remove_idea = HOK_idea_bear add_idea = HOK_idea_bear2 }
+		}
+		hidden_effect = {
+			remove_ideas = { HOK_idea_bear }
+			add_ideas = { HOK_idea_bear2 }
+		}
 	}
 } # end focus
 focus = {
@@ -422,7 +536,100 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		army_experience = 50
+		add_ideas = { HOK_idea_modern_hunter }
+		hidden_effect = {
+			division_template = {
+				name = "Ainu Elite Mountaineers"
+				priority = 2
+				division_names_group = ROM_MTN_01
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+
+							mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+
+							mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 536 }
+				create_unit = {
+					division = "name = \"Sapporo Mountain Men\" division_template = \"Ainu Elite Mountaineers\" start_experience_factor = 1.0"
+					owner = HOK
+				}
+			}
+			division_template = {
+				name = "Ainu Elite Marines"
+				priority = 2
+				division_names_group = JAP_MAR_01
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+
+							marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+
+							marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 536 }
+				create_unit = {
+					division = "name = \"Ezo Raiders\" division_template = \"Ainu Elite Marines\" start_experience_factor = 1.0"
+					owner = HOK
+				}
+			}
+			division_template = {
+				name = "Ainu Elite Paratroopers"
+				priority = 2
+				division_names_group = JAP_MAR_01
+				regiments = {
+					paratrooper = { x = 0 y = 0 }
+					paratrooper = { x = 0 y = 1 }
+					paratrooper = { x = 0 y = 2 }
+
+							paratrooper = { x = 1 y = 0 }
+					paratrooper = { x = 1 y = 1 }
+					paratrooper = { x = 1 y = 2 }
+					paratrooper = { x = 1 y = 3 }
+
+							paratrooper = { x = 2 y = 0 }
+					paratrooper = { x = 2 y = 1 }
+					paratrooper = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 536 }
+				create_unit = {
+					division = "name = \"1st Ainu Paratrooper Brigade\" division_template = \"Ainu Elite Paratroopers\" start_experience_factor = 1.0"
+					owner = HOK
+				}
+			}
+		}
 	}
 } # end focus
 focus = {
@@ -625,7 +832,7 @@ focus = {
 } # end focus
 focus = {
 	id = HOK_hunting_grounds
-	icon = GFX_focus_generic_industry_3
+	icon = GFX_focus_hol_war_on_pacifism
 	prerequisite = { focus = HOK_modern_hunter }
 	x = 0
 	y = 1
@@ -637,8 +844,24 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
-	}
+		add_war_support = 0.15
+		if = {
+			limit = {
+				has_full_control_of_state = 536
+			}
+			536 = {
+				add_manpower = 100000
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 537
+				}
+				537 = {
+					add_manpower = 50000
+					}
+				}
+		}
 } # end focus
 focus = {
 	id = HOK_purify_russia
@@ -655,7 +878,22 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_state_core = 655
+	 add_state_core = 408
+	 add_state_core = 409
+	 add_state_core = 560
+	 add_state_core = 657
+	 add_state_core = 561
+	 add_state_core = 574
+	 add_state_core = 644
+	 add_state_core = 562
+	 add_state_core = 637
+	 create_wargoal = {
+		 type = take_state_focus
+		 target = SOV
+		 expire = 0
+		 generator = { 408 655 }
+	}
 	}
 } # end focus
 focus = {
@@ -674,6 +912,7 @@ focus = {
 
 	completion_reward = {
 		add_political_power = 69
+		#some sort of event here
 	}
 } # end focus
 focus = {
@@ -690,7 +929,21 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		white_peace = SOV
+		HOK = {
+		complete_tooltip = { #find tooltip that works
+			transfer_state = 655
+			transfer_state = 408
+			transfer_state = 409
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 574
+			transfer_state = 644
+			transfer_state = 562
+			transfer_state = 637
+		}
+		}
 	}
 } # end focus
 focus = {
@@ -707,7 +960,11 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		create_wargoal = {
+ 		 type = puppet_wargoal_focus
+ 		 target = JAP
+ 		 expire = 0
+ 	}
 	}
 } # end focus
 focus = {
@@ -725,6 +982,7 @@ focus = {
 
 	completion_reward = {
 		add_political_power = 69
+		# take some northern land, puppet manchuria and korea?
 	}
 } # end focus
 focus = {
@@ -760,7 +1018,14 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 69
+		add_state_core = 650
+	 add_state_core = 463
+	 create_wargoal = {
+		 type = take_state_focus
+		 target = USA
+		 expire = 0
+		 generator = { 650 463 }
+	}
 	}
 } # end focus
 focus = {

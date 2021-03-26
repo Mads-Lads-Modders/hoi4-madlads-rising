@@ -1,0 +1,46 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = hokkaido
+
+#
+#country_event = {
+#	id = hokkaido.1
+#	title = hokkaido.1.t
+#	desc = hokkaido.1.d
+#	picture = GFX_report_event_japan_army_mountainside
+
+#	is_triggered_only = yes
+
+#	option = { # Accept demands
+#		name = hokkaido.1.a
+#		ai_chance = {
+#			factor = 25
+#			modifier = {
+#				factor = 50
+#				has_war = yes
+#				any_enemy_country = {
+#					strength_ratio = {
+#						tag = ROOT
+#						ratio < 0.4
+#					}
+#				}
+#			}
+#   	modifier = {
+#				factor = 75
+#				16 = { NOT = { is_controlled_by = FRA } } #Paris
+#			}
+#		}
+#		JAP = {
+#			country_event = { days = 5 id = japan.6 }
+#		}
+#	}
+#	option = { # Refuse
+#		name = hokkaido.1.b
+#		ai_chance = { factor = 25 }
+#		JAP = {
+#			country_event = { days = 5 id = japan.7 }
+#		}
+#	}
+#}

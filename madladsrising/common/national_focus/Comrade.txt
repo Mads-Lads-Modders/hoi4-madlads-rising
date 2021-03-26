@@ -61,7 +61,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_political_power = 50
 		}
 	}
 	#
@@ -72,14 +72,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = LOL_choosing_comrade_fate
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_political_power = 25
+			swap_ideas = {
+				remove_idea = LOL_comrade_rule
+				add_idea = LOL_comrade_rule2
+			}
 		}
 	}
 	#
@@ -97,7 +101,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_popularity = { ideology = fascism popularity = 0.05 }
 		}
 	}
 	#
@@ -108,14 +112,29 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = LOL_usurpation
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
 		}
 	}
 	#
@@ -133,7 +152,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
 		}
 	}
 	#
@@ -144,14 +178,17 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = LOL_prepare_people
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_jew_rule
+				add_idea = LOL_idea_lost_support
+			}
 		}
 	}
 	#
@@ -162,14 +199,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_kicking_curb
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_idea_lost_support
+				add_idea = LOL_idea_money_laundering
+			}
 		}
 	}
 	#
@@ -188,7 +228,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
 		}
 	}
 	#
@@ -199,14 +255,14 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = LOL_prepare_military
-		cost = 10
+		cost = 2
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_navy }
 		}
 	}
 	#
@@ -217,14 +273,14 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = LOL_prepare_military
-		cost = 10
+		cost = 4
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_army }
 		}
 	}
 	#
@@ -235,14 +291,14 @@ focus_tree = {
 		x = -5
 		y = 2
 		relative_position_id = LOL_prepare_military
-		cost = 10
+		cost = 2
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_airforce }
 		}
 	}
 	#
@@ -253,14 +309,21 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_lake_invasion
-		cost = 10
+		cost = 2
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			137 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+			}
 		}
 	}
 	#
@@ -271,14 +334,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_battle_sparks
-		cost = 10
+		cost = 4
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+		swap_ideas = {
+			remove_idea = LOL_idea_army
+			add_idea = LOL_idea_army2
+		}
 		}
 	}
 	#
@@ -289,14 +355,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_air_support
-		cost = 10
+		cost = 2
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+		swap_ideas = {
+			remove_idea = LOL_idea_airforce
+			add_idea = LOL_idea_airforce2
+		}
 		}
 	}
 	#
@@ -317,7 +386,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+      remove_ideas = { LOL_idea_navy LOL_idea_airforce2 }
+			swap_ideas = {
+				remove_idea = LOL_idea_army2
+				add_idea = LOL_idea_military
+			}
+			137 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+			}
 		}
 	}
 	#
@@ -335,7 +416,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			remove_ideas = { LOL_multiculturalism }
 		}
 	}
 	#
