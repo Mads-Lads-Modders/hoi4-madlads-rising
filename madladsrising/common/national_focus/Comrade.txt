@@ -602,9 +602,9 @@ focus_tree = {
     ideology = communism
     size = 0.6
     only_own_territory = no
-    capital = 229
+    capital = 217
     states = {
-        229 230 231 232 233 137 234
+        217 265 245 218 238 235 237 236
     }
     # keep_unit_leaders = {
     #    750 751 752
