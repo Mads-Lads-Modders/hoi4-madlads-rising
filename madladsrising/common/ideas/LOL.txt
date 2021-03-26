@@ -39,6 +39,24 @@ ideas = {
 					war_support_factor = 0.05
 				}
 				}
+				LOL_comrade_rule2 = {
+
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					removal_cost = -1
+
+					modifier = {
+						political_power_cost = 0.5
+						stability_factor = -0.15
+						war_support_factor = 0.05
+					}
+					}
 		LOL_multiculturalism = {
 
 			allowed = {
@@ -264,6 +282,122 @@ ideas = {
 						CAS_equipment = {
 							build_cost_ic = -0.05 instant = yes
 						}
+		}
+		}
+		LOL_idea_figurehead = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_core_attack_factor = 0.15
+			army_core_defence_factor = -0.1
+			stability_factor = -0.05
+			war_support_factor = 0.1
+		}
+		}
+		LOL_idea_figurehead2 = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = -0.125
+			stability_factor = -0.075
+			war_support_factor = 0.2
+		}
+		}
+		LOL_idea_figurehead3 = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = -0.15
+			stability_factor = -0.075
+			war_support_factor = 0.15
+			surrender_limit = -0.05
+		}
+		}
+		LOL_idea_major_general = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			stability_factor = 0.1
+			war_support_factor = 0.1
+		}
+		}
+		LOL_idea_major_general2 = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.05
+			stability_factor = 0.1
+			war_support_factor = 0.15
+		}
+		}
+		LOL_idea_major_general3 = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
+			stability_factor = 0.15
+			war_support_factor = 0.15
+			surrender_limit = 0.05
 		}
 		}
 

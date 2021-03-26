@@ -427,14 +427,14 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = LOL_new_spotlight
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_political_power = 59
 		}
 	}
 	#
@@ -446,14 +446,14 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = LOL_exploring_possibilities
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_figurehead }
 		}
 	}
 	#
@@ -471,7 +471,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_idea_figurehead
+				add_idea = LOL_idea_figurehead2
+			}
 		}
 	}
 	#
@@ -489,7 +492,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_idea_figurehead2
+				add_idea = LOL_idea_figurehead3
+			}
 		}
 	}
 	#
@@ -508,7 +514,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_major_general }
 		}
 	}
 	#
@@ -526,7 +532,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_idea_major_general
+				add_idea = LOL_idea_major_general2
+			}
 		}
 	}
 	#
@@ -544,7 +553,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_idea_major_general2
+				add_idea = LOL_idea_major_general3
+			}
 		}
 	}
 	#
@@ -562,7 +574,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+				remove_idea = LOL_comrade_rule2
+				add_idea = LOL_comrade_rule3
+			}
+			add_political_power = 50
 		}
 	}
 	#
@@ -581,7 +597,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			start_civil_war = {
+    ruling_party = communism
+    ideology = fascism
+    size = 0.6
+    only_own_territory = no
+    capital = 229
+    states = {
+        229 230 231 232 233
+    }
+    # keep_unit_leaders = {
+    #    750 751 752
+    # }
+    keep_political_leader = yes
+}
 		}
 	}
 	#
