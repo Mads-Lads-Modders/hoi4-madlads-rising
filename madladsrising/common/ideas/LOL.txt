@@ -15,10 +15,30 @@ ideas = {
 
 			modifier = {
 				political_power_cost = 0.5
-        stability_factor = -0.4
+        stability_factor = -0.3
         war_support_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_org_factor = 0.05
 			}
 		  }
+			LOL_comrade_rule2 = {
+
+				allowed = {
+					always = yes
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				modifier = {
+					political_power_cost = 0.5
+					stability_factor = -0.25
+					war_support_factor = 0.05
+				}
+				}
 		LOL_multiculturalism = {
 
 			allowed = {
@@ -58,6 +78,194 @@ ideas = {
 
 		}
 		}
+		LOL_idea_lost_support = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = -0.15
+			political_power_cost = -0.1
+			production_factory_start_efficiency_factor = -0.15
+			line_change_production_efficiency_factor = -0.1
+			industrial_capacity_factory = -0.25
+
+		}
+		}
+		LOL_idea_money_laundering = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_cost = 0.1
+			production_factory_start_efficiency_factor = -0.05
+			line_change_production_efficiency_factor = -0.05
+			industrial_capacity_factory = -0.1
+
+		}
+		}
+		LOL_idea_navy = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			navy_submarine_attack_factor = 0.1
+			navy_capital_ship_attack_factor = 0.1
+			navy_screen_attack_factor = 0.1 # find light cruiser specific modifier?
+		}
+		}
+		LOL_idea_army = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_infantry_attack_factor = 0.025
+			army_infantry_defence_factor = 0.025
+			army_infantry_org_factor = 0.05
+		}
+		}
+		LOL_idea_army2 = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+		modifier = {
+			army_infantry_attack_factor = 0.05
+			army_infantry_defence_factor = 0.05
+			army_infantry_org_factor = 0.1
+		}
+		}
+		LOL_idea_airforce = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+
+			  equipment_bonus = {
+				  fighter_equipment = {
+					  build_cost_ic = -0.05 instant = yes
+				  }
+					tac_bomber_equipment = {
+						build_cost_ic = -0.05 instant = yes
+					}
+						CAS_equipment = {
+							build_cost_ic = -0.05 instant = yes
+						}
+		}
+		}
+		LOL_idea_airforce2 = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+        modifier = {
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				}
+
+				equipment_bonus = {
+					fighter_equipment = {
+						build_cost_ic = -0.05 instant = yes
+					}
+					tac_bomber_equipment = {
+						build_cost_ic = -0.05 instant = yes
+					}
+						CAS_equipment = {
+							build_cost_ic = -0.05 instant = yes
+						}
+		}
+		}
+		LOL_idea_military = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+		removal_cost = -1
+
+				modifier = {
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				navy_submarine_attack_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_screen_attack_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_infantry_org_factor = 0.2
+				cavalry_breakthough_factor = 0.1
+				motorized_defence_factor = 0.1
+				mechanized_defense_factor = 0.1
+				}
+
+				equipment_bonus = {
+					fighter_equipment = {
+						build_cost_ic = -0.1 instant = yes
+					}
+					tac_bomber_equipment = {
+						build_cost_ic = -0.05 instant = yes
+					}
+						CAS_equipment = {
+							build_cost_ic = -0.05 instant = yes
+						}
+		}
+		}
 
 
   } # line up with country
@@ -73,6 +281,24 @@ ideas = {
 				}
 
 				traits = { captain_of_industry }
+			}
+
+			LOL_alfred_hugenberg = {
+
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				available = {
+					has_completed_focus = LOL_usurpation
+				}
+
+				traits = { fascist_demagogue }
+
+				ai_will_do = {
+					factor = 0
+				}
 			}
 
 			LOL_mahmud_jimba = {

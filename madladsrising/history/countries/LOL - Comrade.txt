@@ -102,7 +102,6 @@ create_country_leader = {
 	ideology = stalinism
 	traits = {
 		staunch_stalinist
-		army_infantry_1
 	}
 }
 
