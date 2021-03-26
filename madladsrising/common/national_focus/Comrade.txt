@@ -598,19 +598,32 @@ focus_tree = {
 
 		completion_reward = {
 			start_civil_war = {
-    ruling_party = communism
-    ideology = fascism
+    ruling_party = fascism
+    ideology = communism
     size = 0.6
     only_own_territory = no
     capital = 229
     states = {
-        229 230 231 232 233
+        229 230 231 232 233 137 234
     }
     # keep_unit_leaders = {
     #    750 751 752
     # }
     keep_political_leader = yes
 }
+    hidden_effect = {
+		set_party_name = { ideology = fascism long_name = LOL_bertucci_communism name = LOL_bertucci_communism }
+		load_oob = "LOL_civil_war_tucci"
+		random_other_country = {
+			limit = {
+				original_tag = LOL
+				has_government = communism
+			}
+			set_stability = 0.9
+			set_war_support = 0.8
+			load_oob = "LOL_civil_war_comrade"
+		}
+		}
 		}
 	}
 	#
