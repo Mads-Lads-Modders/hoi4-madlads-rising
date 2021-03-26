@@ -400,6 +400,217 @@ ideas = {
 			surrender_limit = 0.05
 		}
 		}
+		LOL_idea_right_cause = {
+
+			allowed = {
+				original_TAG = LOL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			  army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+
+			}
+			}
+			LOL_idea_comrade_legacy = {
+
+				allowed = {
+					original_TAG = LOL
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				modifier = {
+					stability_factor = -0.05
+
+				}
+				}
+				LOL_idea_jewish_right = {
+
+					allowed = {
+						original_TAG = LOL
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					removal_cost = -1
+
+					modifier = {
+						stability_factor = -0.05
+
+					}
+					}
+					LOL_idea_jewish_right2 = {
+
+						allowed = {
+							original_TAG = LOL
+						}
+
+						allowed_civil_war = {
+							always = yes
+						}
+
+						removal_cost = -1
+
+						modifier = {
+							production_factory_start_efficiency_factor = 0.05
+							industrial_capacity_factory = 0.05
+
+						}
+						}
+						LOL_idea_jewish_right3 = {
+
+							allowed = {
+								original_TAG = LOL
+							}
+
+							allowed_civil_war = {
+								always = yes
+							}
+
+							removal_cost = -1
+
+							modifier = {
+								production_factory_start_efficiency_factor = 0.15
+								industrial_capacity_factory = 0.1
+
+							}
+							}
+							LOL_idea_jewish_control = {
+
+								allowed = {
+									original_TAG = LOL
+								}
+
+								allowed_civil_war = {
+									always = yes
+								}
+
+								removal_cost = -1
+
+								modifier = {
+									production_factory_start_efficiency_factor = 0.25
+									production_factory_max_efficiency_factor = 0.1
+									production_factory_efficiency_gain_factor = 0.1
+									industrial_capacity_factory = 0.25
+									conscription_factor = -0.005
+
+								}
+								}
+								LOL_idea_cave_libs = {
+
+									allowed = {
+										original_TAG = LOL
+									}
+
+									allowed_civil_war = {
+										always = yes
+									}
+
+									removal_cost = -1
+
+									modifier = {
+										conscription_factor = 0.005
+
+									}
+									}
+									LOL_idea_cave_libs2 = {
+
+										allowed = {
+											original_TAG = LOL
+										}
+
+										allowed_civil_war = {
+											always = yes
+										}
+
+										removal_cost = -1
+
+										modifier = {
+											conscription_factor = 0.01
+
+										}
+										}
+										LOL_idea_cave_libs3 = {
+
+											allowed = {
+												original_TAG = LOL
+											}
+
+											allowed_civil_war = {
+												always = yes
+											}
+
+											removal_cost = -1
+
+											modifier = {
+												conscription_factor = 0.06
+												send_volunteer_size = 3
+
+											}
+											}
+											LOL_idea_concessions_libs = {
+
+												allowed = {
+													original_TAG = LOL
+												}
+
+												allowed_civil_war = {
+													always = yes
+												}
+
+												removal_cost = -1
+
+												modifier = {
+													conscription_factor = 0.075
+													send_volunteer_size = 3
+
+											}
+											}
+LOL_idea_homework_all = {
+
+	allowed = {
+	original_TAG = LOL
+	}
+
+allowed_civil_war = {
+	always = yes
+}
+
+removal_cost = -1
+
+modifier = {
+justify_war_goal_time = -0.5
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   } # line up with country
@@ -429,6 +640,23 @@ ideas = {
 				}
 
 				traits = { fascist_demagogue }
+
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			LOL_bankowner_alxander = {
+
+
+				allowed = {
+					original_tag = LOL
+				}
+
+				available = {
+					has_completed_focus = LOL_lowering_status
+				}
+
+				traits = { popular_figurehead }
 
 				ai_will_do = {
 					factor = 0

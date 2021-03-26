@@ -630,14 +630,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_strike_earth
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			load_oob = "LOL_war_no_shame"
 		}
 	}
 	#
@@ -655,7 +655,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_right_cause }
 		}
 	}
 	#
@@ -663,6 +663,9 @@ focus_tree = {
 		id = LOL_new_establishment
 		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = LOL_alexander_knees }
+		available = {
+		has_war = no
+		}
 		x = 0
 		y = 1
 		relative_position_id = LOL_alexander_knees
@@ -673,7 +676,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_popularity = { ideology = fascism popularity = 0.25 }
+			remove_ideas = { LOL_idea_right_cause LOL_comrade_rule3 }
 		}
 	}
 	#
@@ -684,14 +688,14 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = LOL_new_establishment
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_comrade_legacy}
 		}
 	}
 	#
@@ -704,14 +708,14 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = LOL_alexander_fate
-		cost = 10
+		cost = 5
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			remove_idea = LOL_idea_comrade_legacy
 		}
 	}
 	#
@@ -987,7 +991,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_political_power = 100
 		}
 	}
 	#
@@ -1005,7 +1009,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_money_laundering
+			add_idea = LOL_idea_jewish_right
+			}
 		}
 	}
 	#
@@ -1023,7 +1030,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_jewish_right
+			add_idea = LOL_idea_jewish_right2
+			}
 		}
 	}
 	#
@@ -1041,7 +1051,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+		swap_ideas = {
+		remove_idea = LOL_idea_jewish_right2
+		add_idea = LOL_idea_jewish_right3
+		}
 		}
 	}
 	#
@@ -1052,14 +1065,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_sundays
-		cost = 10
+		cost = 15
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_jewish_right3
+			add_idea = LOL_idea_jewish_control
+			}
 		}
 	}
 	#
@@ -1077,7 +1093,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			add_ideas = { LOL_idea_cave_libs }
 		}
 	}
 	#
@@ -1095,7 +1111,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_cave_libs
+			add_idea = LOL_idea_cave_libs2
+			}
 		}
 	}
 	#
@@ -1113,7 +1132,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_cave_libs2
+			add_idea = LOL_idea_cave_libs3
+			}
 		}
 	}
 	#
@@ -1124,14 +1146,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = LOL_color_dyes
-		cost = 10
+		cost = 15
 
 		ai_will_do = { factor = 1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_cave_libs3
+			add_idea = LOL_idea_concessions_libs
+			}
 		}
 	}
 	#
@@ -1149,7 +1174,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+		#	add_state_claim = moscow
+		  add_ideas = { LOL_idea_homework_all }
 		}
 	}
 	#
