@@ -405,11 +405,12 @@ set_politics = {
 	ruling_party = neutrality
 }
 
-set_popularities = {
-democratic = 5
-neutrality = 70
+ITA = {set_popularities = {
+democratic = 15
+neutrality = 60
 fascism = 20
 communism = 5
+}
 }
   }
   }
