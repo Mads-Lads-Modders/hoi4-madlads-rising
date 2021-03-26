@@ -80,7 +80,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 25
-			add_ideas = { LOL_comrade_rule2 }
+			swap_ideas = {
+				remove_idea = LOL_comrade_rule
+				add_idea = LOL_comrade_rule2
+			}
 		}
 	}
 	#
