@@ -101,7 +101,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-		staunch_stalinist
+		inexperienced_monarch
+		jefe
 	}
 }
 
@@ -112,7 +113,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
- 	revolutionary_general
+ 	great_war_hero
  }
 }
 
