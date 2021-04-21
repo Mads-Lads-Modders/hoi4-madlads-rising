@@ -595,7 +595,43 @@ modifier = {
 justify_war_goal_time = -0.5
 
 }
+
 }
+LOL_idea_comrade_legacy2 = {
+
+	allowed = {
+		original_TAG = LOL
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		stability_factor = -0.1
+
+	}
+	}
+
+	LOL_idea_comrade_legacy3 = {
+
+		allowed = {
+			original_TAG = LOL
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = -0.25
+
+		}
+		}
 
 
 

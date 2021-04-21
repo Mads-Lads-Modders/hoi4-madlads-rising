@@ -734,7 +734,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_comrade_legacy
+			add_idea = LOL_idea_comrade_legacy2
+			}
 		}
 	}
 	#
@@ -792,7 +795,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 69
+			swap_ideas = {
+			remove_idea = LOL_idea_comrade_legacy2
+			add_idea = LOL_idea_comrade_legacy3
+			}
 		}
 	}
 	#

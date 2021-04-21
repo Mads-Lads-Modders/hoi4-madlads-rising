@@ -5691,6 +5691,14 @@ spriteTypes = {
 		name = "GFX_idea_LOL_idea_comrade_legacy"
 		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_fascism.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_comrade_legacy2"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LOL_idea_comrade_legacy3"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_fascism.dds"
+	}
 
 
 
