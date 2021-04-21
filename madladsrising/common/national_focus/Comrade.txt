@@ -799,6 +799,17 @@ focus_tree = {
 			remove_idea = LOL_idea_comrade_legacy2
 			add_idea = LOL_idea_comrade_legacy3
 			}
+			create_country_leader = {
+				name = "Joseph R. Biden Jr."
+				desc = "POLITICS_KING_ZOG_DESC"
+				picture = "LOL biden.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+			 	stammer
+				humble
+			 }
+			}
 		}
 	}
 	#
