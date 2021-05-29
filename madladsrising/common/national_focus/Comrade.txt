@@ -715,7 +715,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			remove_idea = LOL_idea_comrade_legacy
+			remove_ideas = { LOL_idea_comrade_legacy }
 		}
 	}
 	#
@@ -1191,7 +1191,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		#	add_state_claim = moscow
+			add_state_claim = 219
 		  add_ideas = { LOL_idea_homework_all }
 		}
 	}
